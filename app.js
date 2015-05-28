@@ -207,19 +207,23 @@ function initializeClock() {
 }
 
 function step(timestamp) {
+
 	d3.select('#minuteArc')
+		.transition()
 		.attr('transform', function(d){
 			var angle = 360 * ((new Date().getTime() / 1000) % 60) / 60.0;
-			return 'rotate(' + angle + ')';
+			return 'rotate(' + Math.round(angle) + ')';
 		});
 
 	d3.select('#hourArc')
+		.transition()
 		.attr('transform', function(d){
 			var angle = 360 * ((new Date().getTime() / 1000) % 3600) / 3600.0;
 			return 'rotate(' + angle + ')';
 		});
 
 	d3.select('#dayCircle')
+		.transition()
 		.attr('transform', function(d){
 			var tmp = new Date();
 			var percentage = (tmp.getHours() * 3600 + tmp.getMinutes() * 60) / 86400.0;
@@ -228,13 +232,14 @@ function step(timestamp) {
 		});
 
 	d3.select('#yearCircle')
+		.transition()
 		.attr('transform', function(d){
 			var tmp = new Date();
 			return 'rotate(' + yearDegreesScale(tmp.getTime()) + ')';
 		});
 
-	window.setTimeout(step, 200);
+	window.setTimeout(step, 1000);
 }
 
 initializeClock();
-window.setTimeout(step, 200);
+window.setTimeout(step, 1000);
