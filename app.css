@@ -2,6 +2,30 @@
 	fill: #eee;
 }
 
+#sunday {
+	fill: #eee
+}
+
 #sunlightArc {
 	fill: yellow;
+}
+
+#advent {
+	fill: red;
+}
+
+#lent {
+	fill: purple;
+}
+
+#holyWeek {
+	fill: red;
+}
+
+#easter {
+	fill: gold;
+}
+
+#ordinary {
+	fill: green;
 }
