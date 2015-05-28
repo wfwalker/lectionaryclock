@@ -106,6 +106,9 @@ function getSeasonsForYear(Y) {
     // ascension 40 days after easter
     days.ascension = new Date(days.easter.getTime() + 39 * oneDay);
 
+    days.nye = new Date(Y, 11, 31);
+    days.nyd = new Date(Y, 0, 1);
+
     // christmas is fixed
     days.christmas = new Date(Y,11,25);
 
@@ -117,6 +120,9 @@ function getSeasonsForYear(Y) {
 
     var seasons = [
 	    [days.advent.getTime(), days.christmas.getTime(), 'advent'],
+	    [days.christmas.getTime(), days.nye.getTime(), 'epiphany'],
+	    [days.nyd.getTime(), days.epiphany.getTime(), 'epiphany'],
+	    [days.epiphany.getTime(), days.ashWednesday.getTime(), 'ordinary'],
 	    [days.ashWednesday.getTime(), days.palmSunday.getTime(), 'lent'],
 	    [days.palmSunday.getTime(), days.easter.getTime(), 'holyWeek'],
 	    [days.easter.getTime(), days.pentecost.getTime(), 'easter'],
@@ -135,7 +141,7 @@ function addSundays(seasons, Y) {
 	while (D) {
 	    D.setDate(D.getDate()+7);
 	    if (D.getFullYear() != Y) return;
-	    seasons.push([D.getTime(), D.getTime() + 0.3 * oneDay, 'sunday']);
+	    seasons.push([D.getTime(), D.getTime() + oneDay, 'sunday']);
 	}
 }
 
@@ -166,6 +172,9 @@ function initializeYearCircle(face) {
 		.attr("d", seasonArc)
 		.attr("id", function(d){
 			return d[2];
+		})
+		.on('mouseover', function(d) {
+			console.log(d[2], new Date(d[0]).toLocaleDateString(), new Date(d[1]).toLocaleDateString());
 		});
 
 	yearCircle.selectAll("path").data(seasons).enter();
@@ -203,7 +212,7 @@ function initializeClock() {
       .attr("x", 0)
       .attr("width", 1)
       .attr("y", -340)
-      .attr("height", 300);			
+      .attr("height", 260);			
 }
 
 function step(timestamp) {
