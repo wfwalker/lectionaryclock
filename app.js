@@ -47,7 +47,7 @@ endYear.setSeconds(59);
 var oneDay = 1000 * 60 * 60 * 24;
 
 var dayScale = d3.scale.linear().domain([24, 0]).range([0, 2 * Math.PI]);
-var yearScale = d3.scale.linear().domain([endYear.getTime(), beginYear.getTime()]).range([0, 2 * Math.PI]);
+var yearScale = d3.scale.linear().domain([beginYear.getTime(), endYear.getTime()]).range([0, 2 * Math.PI]);
 var yearDegreesScale = d3.scale.linear().domain([beginYear.getTime(), endYear.getTime()]).range([0, 360]);
 
 
@@ -119,9 +119,12 @@ function getSundays(year) {
 		var lectionaryDates = lectionary(year, month);
 		for (var index in lectionaryDates) {
 			var aSunday = lectionaryDates[index];
-			if (aSunday.date.getDay() == 0) {
-				sundays.push([aSunday.date.getTime(), aSunday.date.getTime() + 6.9*oneDay, aSunday.lectionaryShortName, JSON.stringify(getScriptures(aSunday))]);
-			}
+			sundays.push([
+				aSunday.date.getTime() - 2 * oneDay,
+				aSunday.date.getTime() + 2 * oneDay,
+				aSunday.lectionaryShortName,
+				JSON.stringify(getScriptures(aSunday))
+			]);
 		}
 	}
 	
@@ -141,6 +144,7 @@ function initializeSeasonCircle(face) {
 	var seasonArc = d3.svg.arc()
 		.innerRadius(230)
 		.outerRadius(340)
+		.cornerRadius(10)
 		.startAngle(function(d) {
 			return yearScale(d[0]);
 		})
@@ -183,8 +187,9 @@ function initializeWeekCircle(face) {
 	var sundays = getSundays(new Date().getFullYear());
 
 	var weekArc = d3.svg.arc()
-		.innerRadius(250)
-		.outerRadius(300)
+		.innerRadius(260)
+		.outerRadius(290)
+		.cornerRadius(10)
 		.startAngle(function(d) {
 			return yearScale(d[0]);
 		})
@@ -246,8 +251,9 @@ function initializeClock() {
 
 	face.append("rect")
       .attr("class", "bar")
+      .attr("id", "pointer")
       .attr("x", 0)
-      .attr("width", 1)
+      .attr("width", 5)
       .attr("y", -340)
       .attr("height", 190);			
 }
@@ -256,14 +262,7 @@ function step(timestamp) {
 
 	document.getElementById('timeView').textContent = new Date().getFullYear();
 
-	d3.select('#yearCircle')
-		.transition()
-		.attr('transform', function(d){
-			var tmp = new Date();
-			return 'rotate(' + yearDegreesScale(tmp.getTime()) + ')';
-		});
-
-	d3.select('#weekCircle')
+	d3.select('#pointer')
 		.transition()
 		.attr('transform', function(d){
 			var tmp = new Date();
@@ -274,4 +273,5 @@ function step(timestamp) {
 }
 
 initializeClock();
+step();
 window.setTimeout(step, 10000);
