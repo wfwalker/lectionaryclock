@@ -2,12 +2,8 @@
 	fill: #eee;
 }
 
-#sunday {
-	fill: #eee
-}
-
-#sunlightArc {
-	fill: yellow;
+.sunday {
+	stroke: none; fill: white; opacity: 0.3;
 }
 
 #advent {
