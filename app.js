@@ -120,8 +120,7 @@ function getSundays(year) {
 		for (var index in lectionaryDates) {
 			var aSunday = lectionaryDates[index];
 			sundays.push([
-				aSunday.date.getTime() - 2 * oneDay,
-				aSunday.date.getTime() + 2 * oneDay,
+				aSunday.date.getTime(),
 				aSunday.lectionaryShortName,
 				JSON.stringify(getScriptures(aSunday))
 			]);
@@ -187,14 +186,18 @@ function initializeWeekCircle(face) {
 	var sundays = getSundays(new Date().getFullYear());
 
 	var weekArc = d3.svg.arc()
-		.innerRadius(260)
-		.outerRadius(290)
+		.innerRadius(function(d) {
+			return 260 + 25 * (new Date(d[0]).getDay() % 3);
+		})
+		.outerRadius(function(d) {
+			return 280 + 25 * (new Date(d[0]).getDay() % 3);
+		})
 		.cornerRadius(10)
 		.startAngle(function(d) {
-			return yearScale(d[0]);
+			return yearScale(d[0] - 2 * oneDay);
 		})
 		.endAngle(function(d){ 
-			return yearScale(d[1]);
+			return yearScale(d[0] + 2 * oneDay);
 		});
 
 	weekCircle.selectAll("path")
@@ -204,8 +207,8 @@ function initializeWeekCircle(face) {
 		.attr("d", weekArc)
 		.attr('class', 'sunday')
 		.on('mouseover', function(d) {
-			document.getElementById('selectionName').textContent = d[2];
-			scriptures = JSON.parse(d[3]);
+			document.getElementById('selectionName').textContent = d[1];
+			scriptures = JSON.parse(d[2]);
 			if (scriptures.complementary) { scriptures = scriptures.complementary }
 			document.getElementById('first').textContent = scriptures.first;
 			document.getElementById('second').textContent = scriptures.second;
