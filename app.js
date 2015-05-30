@@ -266,7 +266,7 @@ function step(timestamp) {
 	document.getElementById('timeView').textContent = new Date().getFullYear();
 
 	d3.select('#pointer')
-		.transition()
+		.transition().duration(1000)
 		.attr('transform', function(d){
 			var tmp = new Date();
 			return 'rotate(' + yearDegreesScale(tmp.getTime()) + ')';
