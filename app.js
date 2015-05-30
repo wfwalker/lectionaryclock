@@ -84,8 +84,8 @@ function getSeasonsForYear(Y) {
     // ascension 40 days after easter
     days.ascension = new Date(days.easter.getTime() + 39 * oneDay);
 
-    days.nye = new Date(Y, 11, 31);
-    days.nyd = new Date(Y, 0, 1);
+    days.nye = new Date(Y, 11, 31, 23, 59, 59);
+    days.nyd = new Date(Y, 0, 1, 0, 0, 0);
 
     // christmas is fixed
     days.christmas = new Date(Y,11,25);
