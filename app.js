@@ -156,8 +156,9 @@ function initializeSeasonCircle(face) {
 		.enter()
 		.append("path")
 		.attr("d", seasonArc)
-		.attr("id", function(d){
-			return d[2];
+		.attr('stroke-width', 2)
+		.attr("class", function(d){
+			return 'season ' + d[2];
 		})
 		.attr("data-scriptures", function(d){
 			return d[3];
@@ -185,10 +186,10 @@ function initializeWeekCircle(face) {
 
 	var weekArc = d3.svg.arc()
 		.innerRadius(function(d) {
-			return 260 + 25 * (new Date(d[0]).getDay() % 3);
+			return 240 + 25 * (new Date(d[0]).getDay() % 3);
 		})
 		.outerRadius(function(d) {
-			return 280 + 25 * (new Date(d[0]).getDay() % 3);
+			return 260 + 25 * (new Date(d[0]).getDay() % 3);
 		})
 		.cornerRadius(10)
 		.startAngle(function(d) {

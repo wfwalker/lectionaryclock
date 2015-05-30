@@ -6,26 +6,35 @@
 	stroke: none; fill: white; opacity: 0.6;
 }
 
-#advent {
+.sunday:hover {
+	opacity: 1.0;
+	stroke: black;
+}
+
+.season:hover {
+	stroke: black;
+}
+
+.advent {
 	fill: red;
 }
 
-#epiphany {
+.epiphany {
 	fill: gold;
 }
 
-#lent {
+.lent {
 	fill: purple;
 }
 
-#holyWeek {
+.holyWeek {
 	fill: red;
 }
 
-#easter {
+.easter {
 	fill: gold;
 }
 
-#ordinary {
+.ordinary {
 	fill: green;
 }
