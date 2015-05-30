@@ -164,13 +164,11 @@ function initializeSeasonCircle(face) {
 		})
 		.on('mouseover', function(d) {
 			document.getElementById('selectionName').textContent = d[3];
-			document.getElementById('first').textContent = new Date(d[0]).toLocaleDateString();
-			document.getElementById('second').textContent = new Date(d[1]).toLocaleDateString();
+			document.getElementById('dates').textContent = new Date(d[0]).toLocaleDateString() + ' - ' + new Date(d[1]).toLocaleDateString();
 		})
 		.on('mouseleave', function(d) {
 			document.getElementById('selectionName').textContent = '';
-			document.getElementById('first').textContent = '';
-			document.getElementById('second').textContent = '';
+			document.getElementById('dates').textContent = '';
 		});
 ;
 
@@ -208,6 +206,7 @@ function initializeWeekCircle(face) {
 		.attr('class', 'sunday')
 		.on('mouseover', function(d) {
 			document.getElementById('selectionName').textContent = d[1];
+			document.getElementById('dates').textContent = new Date(d[0]).toLocaleDateString();
 			scriptures = JSON.parse(d[2]);
 			if (scriptures.complementary) { scriptures = scriptures.complementary }
 			document.getElementById('first').textContent = scriptures.first;
@@ -217,6 +216,7 @@ function initializeWeekCircle(face) {
 		})
 		.on('mouseleave', function(d) {
 			document.getElementById('selectionName').textContent = '';
+			document.getElementById('dates').textContent = '';
 			document.getElementById('first').textContent = '';
 			document.getElementById('second').textContent = '';
 			document.getElementById('psalm').textContent = '';
