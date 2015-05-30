@@ -12,6 +12,8 @@ var yearBScriptures = require('./year-b.json')
 var yearAScriptures = require('./year-a.json')
 var yearCScriptures = require('./year-c.json')
 
+var currentSunday = null;
+
 function getScriptures(lectionaryDate) {
 	if (lectionaryDate.lectionaryYear == 'A' || lectionaryDate.lectionaryYear == 'A-B-C') {			
 		var scriptures = yearAScriptures[lectionaryDate.lectionaryShortName];
@@ -30,26 +32,15 @@ function getScriptures(lectionaryDate) {
 	return scriptures;
 }
 
-var beginYear = new Date();
-beginYear.setMonth(0);
-beginYear.setDate(1);
-beginYear.setHours(0);
-beginYear.setMinutes(0);
-beginYear.setSeconds(0);
-
-var endYear = new Date();
-endYear.setMonth(11);
-endYear.setDate(31);
-endYear.setHours(23);
-endYear.setMinutes(59);
-endYear.setSeconds(59);
+var currentYear = new Date().getFullYear();
+var endYear = new Date(currentYear, 11, 31, 23, 59, 59);
+var beginYear = new Date(currentYear, 0, 1, 0, 0, 0);
 
 var oneDay = 1000 * 60 * 60 * 24;
 
 var dayScale = d3.scale.linear().domain([24, 0]).range([0, 2 * Math.PI]);
 var yearScale = d3.scale.linear().domain([beginYear.getTime(), endYear.getTime()]).range([0, 2 * Math.PI]);
 var yearDegreesScale = d3.scale.linear().domain([beginYear.getTime(), endYear.getTime()]).range([0, 360]);
-
 
 function getEasterForYear(Y) {
     // http://coderzone.org/library/Get-Easter-Date-for-any-year-in-Javascript_1059.htm
@@ -112,7 +103,6 @@ function getSeasonsForYear(Y) {
 }
 
 function getSundays(year) {
-	console.log('addSundays', year);
 	var sundays = [];
 
 	for (var month = 0; month < 12; month++) {
@@ -124,6 +114,12 @@ function getSundays(year) {
 				aSunday.lectionaryShortName,
 				JSON.stringify(getScriptures(aSunday))
 			]);
+
+			var delta = aSunday.date.getTime() - new Date().getTime();
+			if (delta > 0 && delta < 7 * oneDay) {
+				currentSunday = aSunday;
+				showSunday(currentSunday);
+			}
 		}
 	}
 	
@@ -168,12 +164,22 @@ function initializeSeasonCircle(face) {
 			document.getElementById('dates').textContent = new Date(d[0]).toLocaleDateString() + ' - ' + new Date(d[1]).toLocaleDateString();
 		})
 		.on('mouseleave', function(d) {
-			document.getElementById('selectionName').textContent = '';
-			document.getElementById('dates').textContent = '';
+			showSunday(currentSunday);
 		});
 ;
 
 	yearCircle.selectAll("path").data(seasons).enter();
+}
+
+function showSunday(aSunday) {
+	document.getElementById('selectionName').textContent = aSunday.lectionaryShortName;
+	document.getElementById('dates').textContent = aSunday.date.toLocaleDateString();
+	scriptures = getScriptures(aSunday);
+	if (scriptures.complementary) { scriptures = scriptures.complementary }
+	document.getElementById('first').textContent = scriptures.first;
+	document.getElementById('second').textContent = scriptures.second;
+	document.getElementById('psalm').textContent = scriptures.psalm;
+	document.getElementById('gospel').textContent = scriptures.gospel;
 }
 
 function initializeWeekCircle(face) {
@@ -216,12 +222,7 @@ function initializeWeekCircle(face) {
 			document.getElementById('gospel').textContent = scriptures.gospel;
 		})
 		.on('mouseleave', function(d) {
-			document.getElementById('selectionName').textContent = '';
-			document.getElementById('dates').textContent = '';
-			document.getElementById('first').textContent = '';
-			document.getElementById('second').textContent = '';
-			document.getElementById('psalm').textContent = '';
-			document.getElementById('gospel').textContent = '';
+			showSunday(currentSunday);
 		});
 
 	weekCircle.selectAll("path").data(sundays).enter();
@@ -247,19 +248,19 @@ function initializeClock() {
 		.attr("id", 'fullArc')
 		.attr("d", fullArc)
 
-	initializeSeasonCircle(face);
-
-	initializeWeekCircle(face);
-
 	// vertical mark showing now
 
 	face.append("rect")
       .attr("class", "bar")
       .attr("id", "pointer")
       .attr("x", 0)
-      .attr("width", 5)
+      .attr("width", 10)
       .attr("y", -340)
       .attr("height", 190);			
+
+	initializeSeasonCircle(face);
+
+	initializeWeekCircle(face);
 }
 
 function step(timestamp) {

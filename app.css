@@ -1,9 +1,15 @@
 #fullArc {
-	fill: #eee;
+	fill: #DDDDDD;
+}
+
+body {
+	background-color: #DDDDDD;
 }
 
 .sunday {
-	stroke: none; fill: white; opacity: 0.6;
+	stroke: gray;
+	fill: white;
+	opacity: 0.6;
 }
 
 .sunday:hover {
@@ -32,7 +38,7 @@
 }
 
 .easter {
-	fill: gold;
+	fill: #EEEEEE;
 }
 
 .ordinary {
