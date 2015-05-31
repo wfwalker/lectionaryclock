@@ -162,6 +162,10 @@ function initializeSeasonCircle(face) {
 		.on('mouseover', function(d) {
 			document.getElementById('selectionName').textContent = d[3];
 			document.getElementById('dates').textContent = new Date(d[0]).toLocaleDateString() + ' - ' + new Date(d[1]).toLocaleDateString();
+			document.getElementById('first').textContent = '';
+			document.getElementById('second').textContent = '';
+			document.getElementById('psalm').textContent = '';
+			document.getElementById('gospel').textContent = '';
 		})
 		.on('mouseleave', function(d) {
 			showSunday(currentSunday);
@@ -278,5 +282,13 @@ function step(timestamp) {
 }
 
 initializeClock();
+
+// event handler for clicking on Psalm
+document.getElementById('psalm').addEventListener("click", function(e) {
+    e.preventDefault(); 
+	var passageURL = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(this.textContent);
+	window.open(passageURL);
+});
+
 step();
 window.setTimeout(step, 10000);
