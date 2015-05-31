@@ -259,12 +259,16 @@ function step(timestamp) {
 
 initializeClock();
 
-// event handler for clicking on Psalm
-document.getElementById('psalm').addEventListener("click", function(e) {
-    e.preventDefault(); 
-	var passageURL = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(this.textContent);
-	window.open(passageURL);
-});
+// event handlers for clicking on scriptures
+var scriptureElems = document.getElementsByClassName('scripture');
+for (var elemIndex = 0; elemIndex < scriptureElems.length; elemIndex++) {
+	var aScriptureElem = scriptureElems[elemIndex];
+	aScriptureElem.addEventListener("click", function(e) {
+	    e.preventDefault(); 
+		var passageURL = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(this.textContent);
+		window.open(passageURL);
+	});
+}
 
 step();
 window.setTimeout(step, 10000);
