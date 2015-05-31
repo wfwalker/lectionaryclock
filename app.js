@@ -109,14 +109,12 @@ function getSundays(year) {
 		var lectionaryDates = lectionary(year, month);
 		for (var index in lectionaryDates) {
 			var aSunday = lectionaryDates[index];
-			sundays.push([
-				aSunday.date.getTime(),
-				aSunday.lectionaryShortName,
-				JSON.stringify(getScriptures(aSunday))
-			]);
+			sundays.push(
+				aSunday
+			);
 
 			var delta = aSunday.date.getTime() - new Date().getTime();
-			if (delta > 0 && delta < 7 * oneDay) {
+			if (delta > -1 * oneDay && delta < 6 * oneDay) {
 				currentSunday = aSunday;
 				showSunday(currentSunday);
 			}
@@ -156,9 +154,6 @@ function initializeSeasonCircle(face) {
 		.attr("class", function(d){
 			return 'season ' + d[2];
 		})
-		.attr("data-scriptures", function(d){
-			return d[3];
-		})
 		.on('mouseover', function(d) {
 			document.getElementById('selectionName').textContent = d[3];
 			document.getElementById('dates').textContent = new Date(d[0]).toLocaleDateString() + ' - ' + new Date(d[1]).toLocaleDateString();
@@ -196,17 +191,17 @@ function initializeWeekCircle(face) {
 
 	var weekArc = d3.svg.arc()
 		.innerRadius(function(d) {
-			return 240 + 25 * (new Date(d[0]).getDay() % 3);
+			return 240 + 25 * (d.date.getDay() % 3);
 		})
 		.outerRadius(function(d) {
-			return 260 + 25 * (new Date(d[0]).getDay() % 3);
+			return 260 + 25 * (d.date.getDay() % 3);
 		})
 		.cornerRadius(10)
 		.startAngle(function(d) {
-			return yearScale(d[0] - 2 * oneDay);
+			return yearScale(d.date.getTime() - 2 * oneDay);
 		})
 		.endAngle(function(d){ 
-			return yearScale(d[0] + 2 * oneDay);
+			return yearScale(d.date.getTime() + 2 * oneDay);
 		});
 
 	weekCircle.selectAll("path")
@@ -216,14 +211,7 @@ function initializeWeekCircle(face) {
 		.attr("d", weekArc)
 		.attr('class', 'sunday')
 		.on('mouseover', function(d) {
-			document.getElementById('selectionName').textContent = d[1];
-			document.getElementById('dates').textContent = new Date(d[0]).toLocaleDateString();
-			scriptures = JSON.parse(d[2]);
-			if (scriptures.complementary) { scriptures = scriptures.complementary }
-			document.getElementById('first').textContent = scriptures.first;
-			document.getElementById('second').textContent = scriptures.second;
-			document.getElementById('psalm').textContent = scriptures.psalm;
-			document.getElementById('gospel').textContent = scriptures.gospel;
+			showSunday(d);
 		})
 		.on('mouseleave', function(d) {
 			showSunday(currentSunday);
@@ -239,18 +227,6 @@ function initializeClock() {
 	var face = vis.append('g')
 		.attr('id','clock-face')
 		.attr('transform','translate(400,400)');	
-
-	// background gray circle
-
-	var fullArc = d3.svg.arc()
-		.innerRadius(150)
-		.outerRadius(340)
-		.startAngle(0)
-		.endAngle(2 * Math.PI);
-
-	face.append("path")
-		.attr("id", 'fullArc')
-		.attr("d", fullArc)
 
 	// vertical mark showing now
 
