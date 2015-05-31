@@ -1,9 +1,7 @@
 #fullArc {
-	fill: #DDDDDD;
 }
 
 body {
-	background-color: #DDDDDD;
 	font-family: Verdana;
 }
 
@@ -23,11 +21,11 @@ body {
 }
 
 .advent {
-	fill: red;
+	fill: lightblue;
 }
 
 .epiphany {
-	fill: gold;
+	fill: #EEEEEE;
 }
 
 .lent {
