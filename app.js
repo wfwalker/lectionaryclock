@@ -153,7 +153,9 @@ function initializeSeasonCircle(face) {
 		.attr('stroke-width', 2)
 		.attr("class", function(d){
 			return 'season ' + d[2];
-		});
+		})
+		.append('svg:title')
+		.text(function(d) { return d[3] + ', ' + d[0] + ' - ' + d[1]; });
 
 	yearCircle.selectAll("path").data(seasons).enter();
 }
@@ -212,7 +214,9 @@ function initializeWeekCircle(face) {
 			d3.selectAll('.sunday').classed({selected: false});
 			this.classList.add('selected');
 			console.log('click', this);
-		});
+		})
+		.append('svg:title')
+		.text(function(d) { return d.lectionaryShortName + ', ' + d.date.toLocaleDateString(); });
 
 	weekCircle.selectAll("path").data(sundays).enter();
 }
