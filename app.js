@@ -244,17 +244,6 @@ function initializeClock() {
 	initializeWeekCircle(face);
 }
 
-function step(timestamp) {
-	document.getElementById('timeView').textContent = new Date().getFullYear();
-
-	d3.select('#pointer')
-		.transition().duration(1000)
-		.attr('transform', function(d){
-			var tmp = new Date();
-			return 'rotate(' + yearDegreesScale(tmp.getTime()) + ')';
-		});
-}
-
 initializeClock();
 
 // event handlers for clicking on scriptures
@@ -268,4 +257,13 @@ for (var elemIndex = 0; elemIndex < scriptureElems.length; elemIndex++) {
 	});
 }
 
-step();
+
+document.getElementById('timeView').textContent = new Date().getFullYear();
+
+d3.select('#pointer')
+	.transition().duration(1000)
+	.attr('transform', function(d){
+		var tmp = new Date();
+		return 'rotate(' + yearDegreesScale(tmp.getTime()) + ')';
+	});
+
