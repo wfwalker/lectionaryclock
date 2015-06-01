@@ -165,7 +165,6 @@ function initializeSeasonCircle(face) {
 		.on('mouseleave', function(d) {
 			showSunday(currentSunday);
 		});
-;
 
 	yearCircle.selectAll("path").data(seasons).enter();
 }
@@ -210,8 +209,16 @@ function initializeWeekCircle(face) {
 		.append("path")
 		.attr("d", weekArc)
 		.attr('class', 'sunday')
+		.attr('id', function(d) { return d.lectionaryShortName; })
 		.on('mouseover', function(d) {
 			showSunday(d);
+		})
+		.on('click', function(d) {
+			currentSunday = d;
+			showSunday(currentSunday);
+			d3.selectAll('.sunday').classed({selected: false});
+			this.classList.add('selected');
+			console.log('click', this);
 		})
 		.on('mouseleave', function(d) {
 			showSunday(currentSunday);
