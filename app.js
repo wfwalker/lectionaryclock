@@ -153,17 +153,6 @@ function initializeSeasonCircle(face) {
 		.attr('stroke-width', 2)
 		.attr("class", function(d){
 			return 'season ' + d[2];
-		})
-		.on('mouseover', function(d) {
-			document.getElementById('selectionName').textContent = d[3];
-			document.getElementById('dates').textContent = new Date(d[0]).toLocaleDateString() + ' - ' + new Date(d[1]).toLocaleDateString();
-			document.getElementById('first').textContent = '';
-			document.getElementById('second').textContent = '';
-			document.getElementById('psalm').textContent = '';
-			document.getElementById('gospel').textContent = '';
-		})
-		.on('mouseleave', function(d) {
-			showSunday(currentSunday);
 		});
 
 	yearCircle.selectAll("path").data(seasons).enter();
@@ -178,6 +167,13 @@ function showSunday(aSunday) {
 	document.getElementById('second').textContent = scriptures.second;
 	document.getElementById('psalm').textContent = scriptures.psalm;
 	document.getElementById('gospel').textContent = scriptures.gospel;
+
+	d3.select('#pointer')
+		.transition().duration(1000)
+		.attr('transform', function(d){
+			return 'rotate(' + yearDegreesScale(aSunday.date.getTime()) + ')';
+		});
+
 }
 
 function initializeWeekCircle(face) {
@@ -210,18 +206,12 @@ function initializeWeekCircle(face) {
 		.attr("d", weekArc)
 		.attr('class', 'sunday')
 		.attr('id', function(d) { return d.lectionaryShortName; })
-		.on('mouseover', function(d) {
-			showSunday(d);
-		})
 		.on('click', function(d) {
 			currentSunday = d;
 			showSunday(currentSunday);
 			d3.selectAll('.sunday').classed({selected: false});
 			this.classList.add('selected');
 			console.log('click', this);
-		})
-		.on('mouseleave', function(d) {
-			showSunday(currentSunday);
 		});
 
 	weekCircle.selectAll("path").data(sundays).enter();
@@ -251,7 +241,6 @@ function initializeClock() {
 }
 
 function step(timestamp) {
-
 	document.getElementById('timeView').textContent = new Date().getFullYear();
 
 	d3.select('#pointer')
@@ -260,8 +249,6 @@ function step(timestamp) {
 			var tmp = new Date();
 			return 'rotate(' + yearDegreesScale(tmp.getTime()) + ')';
 		});
-
-	window.setTimeout(step, 10000);
 }
 
 initializeClock();
@@ -278,4 +265,3 @@ for (var elemIndex = 0; elemIndex < scriptureElems.length; elemIndex++) {
 }
 
 step();
-window.setTimeout(step, 10000);
