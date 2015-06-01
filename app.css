@@ -19,6 +19,10 @@ body {
 	stroke: black;
 	opacity: 1.0;
 }
+.selected:hover {
+	stroke: black;
+	opacity: 1.0;
+}
 
 .advent {
 	fill: lightblue;
