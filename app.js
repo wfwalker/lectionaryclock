@@ -135,8 +135,8 @@ function initializeSeasonCircle(face) {
 	getSundays(new Date().getFullYear());
 
 	var seasonArc = d3.svg.arc()
-		.innerRadius(230)
-		.outerRadius(340)
+		.innerRadius(250)
+		.outerRadius(375)
 		.cornerRadius(10)
 		.startAngle(function(d) {
 			return yearScale(d[0]);
@@ -188,17 +188,17 @@ function initializeWeekCircle(face) {
 
 	var weekArc = d3.svg.arc()
 		.innerRadius(function(d) {
-			return 240 + 25 * (d.date.getDay() % 3);
+			return 360 - 35 * (d.date.getDay() % 3);
 		})
 		.outerRadius(function(d) {
-			return 260 + 25 * (d.date.getDay() % 3);
+			return 330 - 35 * (d.date.getDay() % 3);
 		})
 		.cornerRadius(10)
 		.startAngle(function(d) {
-			return yearScale(d.date.getTime() - 2 * oneDay);
+			return yearScale(d.date.getTime() - 2.5 * oneDay);
 		})
 		.endAngle(function(d){ 
-			return yearScale(d.date.getTime() + 2 * oneDay);
+			return yearScale(d.date.getTime() + 2.5 * oneDay);
 		});
 
 	weekCircle.selectAll("path")
@@ -227,7 +227,7 @@ function initializeClock() {
 
 	var face = vis.append('g')
 		.attr('id','clock-face')
-		.attr('transform','translate(400,400)');	
+		.attr('transform','translate(375,375)');	
 
 	// vertical mark showing now
 

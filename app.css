@@ -15,10 +15,6 @@ body {
 	opacity: 0.8;
 }
 
-.season:hover {
-	stroke: black;
-}
-
 .selected {
 	stroke: black;
 	opacity: 1.0;
