@@ -101,17 +101,15 @@ function getSeasonsForYear(Y) {
 function getSundays(year) {
 	var sundays = [];
 
-	for (var month = 0; month < 12; month++) {
-		var lectionaryDates = lectionary(year, month);
-		for (var index in lectionaryDates) {
-			var aSunday = lectionaryDates[index];
-			sundays.push(aSunday);
+	var lectionaryDates = lectionary(year);
+	for (var index in lectionaryDates) {
+		var aSunday = lectionaryDates[index];
+		sundays.push(aSunday);
 
-			var delta = aSunday.date.getTime() - new Date().getTime();
-			if (delta > -1 * oneDay && delta < 6 * oneDay) {
-				currentSunday = aSunday;
-				showSunday(currentSunday);
-			}
+		var delta = aSunday.date.getTime() - new Date().getTime();
+		if (delta > -1 * oneDay && delta < 6 * oneDay) {
+			currentSunday = aSunday;
+			showSunday(currentSunday);
 		}
 	}
 	
@@ -154,23 +152,21 @@ function initializeSeasonCircle(face) {
 	yearCircle.selectAll("path").data(seasons).enter();
 }
 
+function setBibleLink(id, passage) {
+	document.getElementById(id).href = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(passage);
+	document.getElementById(id).textContent = passage;
+}
+
 function showSunday(aSunday) {
 	document.getElementById('selectionName').textContent = aSunday.lectionaryShortName;
 	document.getElementById('dates').textContent = aSunday.date.toLocaleDateString();
 	scriptures = getScriptures(aSunday);
 	if (scriptures.complementary) { scriptures = scriptures.complementary }
 
-	document.getElementById('first').href = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(scriptures.first);
-	document.getElementById('first').textContent = scriptures.first;
-
-	document.getElementById('second').textContent = scriptures.second;
-	document.getElementById('second').href = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(scriptures.second);
-
-	document.getElementById('psalm').textContent = scriptures.psalm;
-	document.getElementById('psalm').href = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(scriptures.psalm);
-
-	document.getElementById('gospel').textContent = scriptures.gospel;
-	document.getElementById('gospel').href = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(scriptures.gospel);
+	setBibleLink('first', scriptures.first);
+	setBibleLink('psalm', scriptures.psalm);
+	setBibleLink('second', scriptures.second);
+	setBibleLink('gospel', scriptures.gospel);
 
 	d3.select('#pointer')
 		.transition().duration(1000)
@@ -225,35 +221,31 @@ function initializeWeekCircle(face) {
 	weekCircle.selectAll("path").data(sundays).enter();
 }
 
+// INITIALIZE
 
-function initializeClock() {
-	var vis = d3.select("#svg_donut");
+var vis = d3.select("#svg_donut");
 
-	var face = vis.append('g')
-		.attr('id','clock-face')
-		.attr('transform','translate(375,375)');	
+var face = vis.append('g')
+	.attr('id','clock-face')
+	.attr('transform','translate(375,375)');	
 
-	// vertical mark showing now
+// vertical mark showing now
 
-	initializeSeasonCircle(face);
+initializeSeasonCircle(face);
 
- 	var pointerArc = d3.svg.arc()
-		.innerRadius(255)
-		.outerRadius(370)
-		.cornerRadius(10)
-		.startAngle(-0.06)
-		.endAngle(0.06);
+	var pointerArc = d3.svg.arc()
+	.innerRadius(255)
+	.outerRadius(370)
+	.cornerRadius(10)
+	.startAngle(-0.06)
+	.endAngle(0.06);
 
-	face.append("path")
-		.attr('id', 'pointer')
-		.attr('stroke-width', 2)
-		.attr('d', pointerArc);
+face.append("path")
+	.attr('id', 'pointer')
+	.attr('stroke-width', 2)
+	.attr('d', pointerArc);
 
-
-	initializeWeekCircle(face);
-}
-
-initializeClock();
+initializeWeekCircle(face);
 
 document.getElementById('timeView').textContent = new Date().getFullYear();
 
