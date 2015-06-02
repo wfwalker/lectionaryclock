@@ -287,9 +287,9 @@
     "Proper 7": {
         "complementary": {
             "first": "Job 38:1-11",
-            "psalm": "or 1 Samuel 17:57—18:5, 10-16",
-            "second": "Psalm 107:1-3, 23-32",
-            "gospel": "2 Corinthians 6:1-13"
+            "psalm": "Psalm 107:1-3, 23-32",
+            "second": "2 Corinthians 6:1-13",
+            "gospel": "Mark 4:35-41"
         },
         "semicontinuous": {
             "first": "1 Samuel 17:[1a, 4-11, 19-23] 32-49 or 1 Samuel 17:57—18:5, 10-16",
@@ -300,14 +300,14 @@
     },
     "Proper 8": {
         "complementary": {
-            "first": "Wisdom 1:13-15; 2:23-24",
-            "psalm": "2 Samuel 1:1, 17-27",
-            "second": "or Lamentations 3:22-33",
-            "gospel": "Psalm 30"
+            "first": "Lamentations 3:22-33 or Wisdom 1:13-15; 2:23-24",
+            "psalm": "Psalm 30 (1)",
+            "second": "2 Corinthians 8:7-15",
+            "gospel": "Mark 5:21-43"
         },
         "semicontinuous": {
-            "first": "2 Samuel 1:1, 17-27 or Lamentations 3:22-33",
-            "psalm": "Psalm 130",
+            "first": "2 Samuel 1:1, 17-27",
+            "psalm": "Psalm 130 (1)",
             "second": "2 Corinthians 8:7-15",
             "gospel": "Mark 5:21-43"
         }
