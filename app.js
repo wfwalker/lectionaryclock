@@ -105,9 +105,7 @@ function getSundays(year) {
 		var lectionaryDates = lectionary(year, month);
 		for (var index in lectionaryDates) {
 			var aSunday = lectionaryDates[index];
-			sundays.push(
-				aSunday
-			);
+			sundays.push(aSunday);
 
 			var delta = aSunday.date.getTime() - new Date().getTime();
 			if (delta > -1 * oneDay && delta < 6 * oneDay) {
@@ -179,7 +177,6 @@ function showSunday(aSunday) {
 		.attr('transform', function(d){
 			return 'rotate(' + yearDegreesScale(aSunday.date.getTime()) + ')';
 		});
-
 }
 
 function initializeWeekCircle(face) {
@@ -192,10 +189,14 @@ function initializeWeekCircle(face) {
 
 	var weekArc = d3.svg.arc()
 		.innerRadius(function(d) {
-			return 360 - 35 * (d.date.getDay() % 3);
+			var counter = d.date.getDay() % 3;
+			if (d.date.getDay() != 0) counter = 1 + (d.date.getDay() % 2);
+			return 365 - 35 * counter;
 		})
 		.outerRadius(function(d) {
-			return 330 - 35 * (d.date.getDay() % 3);
+			var counter = d.date.getDay() % 3;
+			if (d.date.getDay() != 0) counter = 1 + (d.date.getDay() % 2);
+			return 335 - 35 * counter;
 		})
 		.cornerRadius(10)
 		.startAngle(function(d) {
