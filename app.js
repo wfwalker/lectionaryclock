@@ -165,10 +165,18 @@ function showSunday(aSunday) {
 	document.getElementById('dates').textContent = aSunday.date.toLocaleDateString();
 	scriptures = getScriptures(aSunday);
 	if (scriptures.complementary) { scriptures = scriptures.complementary }
+
+	document.getElementById('first').href = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(scriptures.first);
 	document.getElementById('first').textContent = scriptures.first;
+
 	document.getElementById('second').textContent = scriptures.second;
+	document.getElementById('second').href = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(scriptures.second);
+
 	document.getElementById('psalm').textContent = scriptures.psalm;
+	document.getElementById('psalm').href = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(scriptures.psalm);
+
 	document.getElementById('gospel').textContent = scriptures.gospel;
+	document.getElementById('gospel').href = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(scriptures.gospel);
 
 	d3.select('#pointer')
 		.transition().duration(1000)
@@ -213,7 +221,6 @@ function initializeWeekCircle(face) {
 			showSunday(currentSunday);
 			d3.selectAll('.sunday').classed({selected: false});
 			this.classList.add('selected');
-			console.log('click', this);
 		})
 		.append('svg:title')
 		.text(function(d) { return d.lectionaryShortName + ', ' + d.date.toLocaleDateString(); });
@@ -245,18 +252,6 @@ function initializeClock() {
 }
 
 initializeClock();
-
-// event handlers for clicking on scriptures
-var scriptureElems = document.getElementsByClassName('scripture');
-for (var elemIndex = 0; elemIndex < scriptureElems.length; elemIndex++) {
-	var aScriptureElem = scriptureElems[elemIndex];
-	aScriptureElem.addEventListener("click", function(e) {
-	    e.preventDefault(); 
-		var passageURL = 'http://biblegateway.com/passage/?version=NRSV&search=' + encodeURIComponent(this.textContent);
-		window.open(passageURL);
-	});
-}
-
 
 document.getElementById('timeView').textContent = new Date().getFullYear();
 

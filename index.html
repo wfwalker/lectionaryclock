@@ -6,43 +6,20 @@
 </head>
 
 <body>
+	<div id='overlay'>
+		<h1><span id='timeView'>2015</span> Lectionary Calendar</h1>
+		<h2 id='selectionName'>hello, world</h2>
+		<h3 id='dates'>hello, world</h3>
+		<div><a href='#' target='_blank' class='scripture' id='first'>hello, world</a></div>
+		<div><a href='#' target='_blank' class='scripture' id='psalm'>hello, world</a></div>
+		<div><a href='#' target='_blank' class='scripture' id='second'>hello, world</a></div>
+		<div><a href='#' target='_blank' class='scripture' id='gospel'>hello, world</a></div>
+	</div>
 	<svg id="svg_donut" width="750" height="750">
-		<text id="timeView" x="305" y="300" font-size="18">
-		    2015
-		</text>
-		<text id="timeView" x="305" y="320" font-size="18">
-		    Liturgical Calendar
-		</text>
-		<text id="selectionName" x="305" y="350" font-size="18">
-		    sunday
-		</text>
-		<text id="dates" x="305" y="370" font-size="12">
-		    dates
-		</text>
-		<a xlink:href="#">
-			<text class='scripture' id="first" x="305" y="390" font-size="12">
-			    first
-			</text>
-		</a>
-		<a xlink:href="#">
-			<text class='scripture' id="psalm" x="305" y="410" font-size="12">
-			    psalm
-			</text>
-		</a>
-		<a xlink:href="#">
-			<text class='scripture' id="second" x="305" y="430" font-size="12">
-			    second
-			</text>
-		</a>
-		<a xlink:href="#">		
-			<text class='scripture' id="gospel" x="305" y="450" font-size="12">
-			    gospel
-			</text>
-		</a>
 	</svg>
 
-	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-	<script src="bundle.js" charset="utf-8"></script>
+	<script src="./d3.v3.min.js" charset="utf-8"></script>
+	<script src="./bundle.js" charset="utf-8"></script>
 </body>
 
 </html>

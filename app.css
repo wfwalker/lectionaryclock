@@ -1,8 +1,13 @@
 #fullArc {
 }
 
-body {
-	font-family: Verdana;
+#overlay {
+	position: absolute;
+	top: 250px;
+	left: 270px;
+	width: 300px;
+
+	font-family: Helvetica;
 }
 
 .sunday {
