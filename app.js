@@ -1,10 +1,6 @@
 // multiclock app.js
 
-// show date each sunday
-// put advent 1 at the top always
-// have marker slowly move clockwise. you know, like a clock
-// advent is not red, blue!
-// easter is white!
+// TODO: put advent 1 at the top always
 
 var lectionary = require('lectionary');
 
@@ -88,14 +84,14 @@ function getSeasonsForYear(Y) {
     // console.log(days);
 
     var seasons = [
-	    [days.advent.getTime(), days.christmas.getTime(), 'advent', 'Advent'],
-	    [days.christmas.getTime(), days.nye.getTime(), 'epiphany', 'Epiphany'],
-	    [days.nyd.getTime(), days.epiphany.getTime(), 'epiphany', 'Epiphany'],
-	    [days.epiphany.getTime(), days.ashWednesday.getTime(), 'ordinary', 'Ordinary Time'],
-	    [days.ashWednesday.getTime(), days.palmSunday.getTime(), 'lent', 'Lent'],
-	    [days.palmSunday.getTime(), days.easter.getTime(), 'holyWeek', 'Holy Week'],
-	    [days.easter.getTime(), days.pentecost.getTime(), 'easter', 'Season of Easter'],
-	    [days.pentecost.getTime(), days.advent.getTime(), 'ordinary', 'Ordinary Time']
+	    [days.advent, days.christmas, 'advent', 'Advent'],
+	    [days.christmas, days.nye, 'epiphany', 'Epiphany'],
+	    [days.nyd, days.epiphany, 'epiphany', 'Epiphany'],
+	    [days.epiphany, days.ashWednesday, 'ordinary', 'Ordinary Time'],
+	    [days.ashWednesday, days.palmSunday, 'lent', 'Lent'],
+	    [days.palmSunday, days.easter, 'holyWeek', 'Holy Week'],
+	    [days.easter, days.pentecost, 'easter', 'Season of Easter'],
+	    [days.pentecost, days.advent, 'ordinary', 'Ordinary Time']
     ];
 
     // console.log(seasons);
@@ -139,10 +135,10 @@ function initializeSeasonCircle(face) {
 		.outerRadius(375)
 		.cornerRadius(10)
 		.startAngle(function(d) {
-			return yearScale(d[0]);
+			return yearScale(d[0].getTime());
 		})
 		.endAngle(function(d){ 
-			return yearScale(d[1]);
+			return yearScale(d[1].getTime());
 		});
 
 	yearCircle.selectAll("path")
@@ -155,7 +151,7 @@ function initializeSeasonCircle(face) {
 			return 'season ' + d[2];
 		})
 		.append('svg:title')
-		.text(function(d) { return d[3] + ', ' + d[0] + ' - ' + d[1]; });
+		.text(function(d) { return d[3] + ', ' + d[0].toLocaleDateString() + ' - ' + d[1].toLocaleDateString(); });
 
 	yearCircle.selectAll("path").data(seasons).enter();
 }
