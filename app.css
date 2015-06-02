@@ -1,4 +1,6 @@
-#fullArc {
+#pointer {
+	fill: none;
+	stroke: black;
 }
 
 #overlay {

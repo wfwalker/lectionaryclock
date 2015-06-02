@@ -238,15 +238,20 @@ function initializeClock() {
 
 	// vertical mark showing now
 
-	face.append("rect")
-      .attr("class", "bar")
-      .attr("id", "pointer")
-      .attr("x", 0)
-      .attr("width", 10)
-      .attr("y", -340)
-      .attr("height", 190);			
-
 	initializeSeasonCircle(face);
+
+ 	var pointerArc = d3.svg.arc()
+		.innerRadius(255)
+		.outerRadius(370)
+		.cornerRadius(10)
+		.startAngle(-0.06)
+		.endAngle(0.06);
+
+	face.append("path")
+		.attr('id', 'pointer')
+		.attr('stroke-width', 2)
+		.attr('d', pointerArc);
+
 
 	initializeWeekCircle(face);
 }
