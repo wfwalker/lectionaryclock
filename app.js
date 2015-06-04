@@ -4,10 +4,6 @@
 
 var lectionary = require('lectionary');
 
-var yearBScriptures = require('./year-b.json')
-var yearAScriptures = require('./year-a.json')
-var yearCScriptures = require('./year-c.json')
-
 var currentSunday = null;
 
 var currentYear = new Date().getFullYear();
@@ -83,7 +79,7 @@ function getSeasonsForYear(Y) {
 function getSundays(year) {
 	var sundays = [];
 
-	var lectionaryDates = lectionary(year);
+	var lectionaryDates = lectionary.days(year);
 	for (var index in lectionaryDates) {
 		var aSunday = lectionaryDates[index];
 		sundays.push(aSunday);
