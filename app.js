@@ -183,42 +183,29 @@ function initializeWeekCircle(face) {
 
 	var sundays = getSundays(new Date().getFullYear());
 
-	var weekArc = d3.svg.arc()
-		.innerRadius(function(d) {
-			var counter = d.date.getDay() % 3;
-			if (d.date.getDay() != 0) counter = 1 + (d.date.getDay() % 2);
-			return 365 - 35 * counter;
-		})
-		.outerRadius(function(d) {
-			var counter = d.date.getDay() % 3;
-			if (d.date.getDay() != 0) counter = 1 + (d.date.getDay() % 2);
-			return 335 - 35 * counter;
-		})
-		.cornerRadius(10)
-		.startAngle(function(d) {
-			return yearScale(d.date.getTime() - 2.5 * oneDay);
-		})
-		.endAngle(function(d){ 
-			return yearScale(d.date.getTime() + 2.5 * oneDay);
-		});
-
-	weekCircle.selectAll("path")
+	// Add a text label.
+	weekCircle.selectAll("text")
 		.data(sundays)
 		.enter()
-		.append("path")
-		.attr("d", weekArc)
-		.attr('class', 'sunday')
-		.attr('id', function(d) { return d.lectionaryShortName; })
+		.append("text")
+		.attr('class', 'dayLabel')
+		.attr("transform", function(d) {
+			var degrees = yearDegreesScale(d.date.getTime());
+
+			if (degrees > 180) {
+				return 'rotate(' + (degrees + 90) + ') translate(-312,5)';
+			} else {
+				return 'rotate(' + (degrees + 270) + ') translate(312,5)';
+			}
+		})
+		.text(function (d) { return d.lectionaryShortName; })
 		.on('click', function(d) {
 			currentSunday = d;
 			showSunday(currentSunday);
-			d3.selectAll('.sunday').classed({selected: false});
+			d3.selectAll('.dayLabel').classed({selected: false});
 			this.classList.add('selected');
-		})
-		.append('svg:title')
-		.text(function(d) { return d.lectionaryShortName + ', ' + d.date.toLocaleDateString(); });
+		});
 
-	weekCircle.selectAll("path").data(sundays).enter();
 }
 
 // INITIALIZE
@@ -233,12 +220,12 @@ var face = vis.append('g')
 
 initializeSeasonCircle(face);
 
-	var pointerArc = d3.svg.arc()
+var pointerArc = d3.svg.arc()
 	.innerRadius(255)
 	.outerRadius(370)
 	.cornerRadius(10)
-	.startAngle(-0.06)
-	.endAngle(0.06);
+	.startAngle(-0.04)
+	.endAngle(0.04);
 
 face.append("path")
 	.attr('id', 'pointer')

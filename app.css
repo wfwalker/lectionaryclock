@@ -1,5 +1,6 @@
 #pointer {
-	fill: none;
+	fill: white;
+	opacity: 0.5;
 	stroke: black;
 }
 
@@ -10,6 +11,10 @@
 	width: 300px;
 
 	font-family: Helvetica;
+}
+
+.dayLabel {
+	font-family: Helvetica; text-anchor: middle; font-size: 9pt;
 }
 
 .sunday {
