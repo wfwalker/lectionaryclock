@@ -9,6 +9,7 @@ var oneDay = 1000 * 60 * 60 * 24;
 var currentSunday = null;
 
 var currentYear = new Date().getFullYear();
+
 var tmp = window.location.toString();
 if (tmp.indexOf('#') > 0) {
 	currentYear = tmp.substring(tmp.indexOf('#')+1, tmp.indexOf('#')+5)
@@ -138,30 +139,43 @@ var face = vis.append('g')
 	.attr('id','clock-face')
 	.attr('transform','translate(375,375)');	
 
-initializeSeasonCircle(face);
+function showClockForYear(face, inNewYear) {
+	currentYear = inNewYear;
 
-// radial mark showing now
+	initializeSeasonCircle(face);
 
-var pointerArc = d3.svg.arc()
-	.innerRadius(255)
-	.outerRadius(370)
-	.cornerRadius(10)
-	.startAngle(-0.04)
-	.endAngle(0.04);
+	// radial mark showing now
 
-face.append("path")
-	.attr('id', 'pointer')
-	.attr('stroke-width', 2)
-	.attr('d', pointerArc);
+	var pointerArc = d3.svg.arc()
+		.innerRadius(255)
+		.outerRadius(370)
+		.cornerRadius(10)
+		.startAngle(-0.04)
+		.endAngle(0.04);
 
-initializeWeekCircle(face);
+	face.append("path")
+		.attr('id', 'pointer')
+		.attr('stroke-width', 2)
+		.attr('d', pointerArc);
 
-document.getElementById('timeView').textContent = currentYear;
+	initializeWeekCircle(face);
 
-d3.select('#pointer')
-	.transition().duration(1000)
-	.attr('transform', function(d){
-		var tmp = new Date();
-		return 'rotate(' + yearDegreesScale(tmp.getTime()) + ')';
-	});
+	document.getElementById('timeView').textContent = currentYear;
+
+	d3.select('#pointer')
+		.transition().duration(1000)
+		.attr('transform', function(d){
+			var tmp = new Date();
+			return 'rotate(' + yearDegreesScale(tmp.getTime()) + ')';
+		});
+}
+
+showClockForYear(face, currentYear);
+
+d3.selectAll('.yearlink').on('click', function(e) {
+	console.log('click', d3.event.target.href);
+	location = d3.event.target.href;
+	location.reload();
+});
+
 
