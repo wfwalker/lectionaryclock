@@ -10,24 +10,6 @@ var yearCScriptures = require('./year-c.json')
 
 var currentSunday = null;
 
-function getScriptures(lectionaryDate) {
-	if (lectionaryDate.lectionaryYear == 'A' || lectionaryDate.lectionaryYear == 'A-B-C') {			
-		var scriptures = yearAScriptures[lectionaryDate.lectionaryShortName];
-	} else if (lectionaryDate.lectionaryYear == 'B') {			
-		var scriptures = yearBScriptures[lectionaryDate.lectionaryShortName];
-	} else if (lectionaryDate.lectionaryYear == 'C') {			
-		var scriptures = yearCScriptures[lectionaryDate.lectionaryShortName];
-	} else {
-		throw 'unknown lectionary year ' + lectionaryDate.lectionaryYear;
-	}
-
-	if (! scriptures) {
-		throw 'missing scriptures ' + JSON.stringify(lectionaryDate) + ' ' + year;
-	}
-
-	return scriptures;
-}
-
 var currentYear = new Date().getFullYear();
 var endYear = new Date(currentYear, 11, 31, 23, 59, 59);
 var beginYear = new Date(currentYear, 0, 1, 0, 0, 0);
@@ -160,7 +142,7 @@ function setBibleLink(id, passage) {
 function showSunday(aSunday) {
 	document.getElementById('selectionName').textContent = aSunday.lectionaryShortName;
 	document.getElementById('dates').textContent = aSunday.date.toLocaleDateString();
-	scriptures = getScriptures(aSunday);
+	scriptures = aSunday.scriptures;
 	if (scriptures.complementary) { scriptures = scriptures.complementary }
 
 	setBibleLink('first', scriptures.first);

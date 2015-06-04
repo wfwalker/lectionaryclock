@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "circular clock visualization",
   "dependencies": {
-    "lectionary": "^0.1.8"
+    "lectionary": "wfwalker/lectionary"
   },
   "author": "Bill Walker",
   "license": "MPL, v 2.0"
