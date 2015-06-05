@@ -26,6 +26,11 @@
 	font-family: Helvetica; text-anchor: middle; font-size: 9pt;
 }
 
+.monthLabel {
+	font-family: Helvetica; text-anchor: middle; font-size: 9pt;
+}
+
+
 .sunday {
 	stroke: lightgray;
 	fill: white;

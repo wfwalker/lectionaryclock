@@ -64,7 +64,10 @@ function setBibleLink(id, passage) {
 
 function showSunday(aSunday) {
 	document.getElementById('selectionName').textContent = aSunday.lectionaryShortName;
-	document.getElementById('dates').textContent = aSunday.date.toLocaleDateString();
+	document.getElementById('dates').textContent = aSunday.date.toLocaleString('en-US', {weekday:'long'}) + ', ' +
+		aSunday.date.toLocaleString('en-US', {month:'long'}) + ' ' + 
+		aSunday.date.toLocaleString('en-US', {day:'numeric'});
+
 	scriptures = aSunday.scriptures;
 	if (scriptures.complementary) { scriptures = scriptures.complementary }
 
@@ -98,7 +101,7 @@ function initializeWeekCircle(face) {
 		}
 	}
 
-	// Add a text label.
+	// Add a text label for each Sunday
 	weekCircle.selectAll("text")
 		.data(sundays)
 		.enter()
@@ -121,6 +124,35 @@ function initializeWeekCircle(face) {
 			d3.selectAll('.dayLabel').classed({selected: false});
 			this.classList.add('selected');
 		});
+}
+
+function initializeMonthCircle(face) {
+	var monthStarts = [];
+	for (var monthIndex = 0; monthIndex < 12; monthIndex++) {
+		var tmp = new Date(gClock.currentYear, monthIndex, 1);
+		monthStarts.push({ date: tmp, label: tmp.toLocaleString('en-US',{month:'short'})});
+	}
+
+	var monthCircle = face.append('g')
+		.attr('id', 'monthCircle');
+
+	// Add a text label for each Start of Month
+	monthCircle.selectAll("text")
+		.data(monthStarts)
+		.enter()
+		.append("text")
+		.attr('class', 'monthLabel')
+		.attr("transform", function(d) {
+			var degrees = gClock.yearDegreesScale(d.date.getTime());
+
+			// orient the lefthand and righthand labels differently for legibility
+			if (degrees > 180) {
+				return 'rotate(' + (degrees + 90) + ') translate(-250,5)';
+			} else {
+				return 'rotate(' + (degrees + 270) + ') translate(250,5)';
+			}
+		})
+		.text(function (d) { return d.label; });	
 }
 
 // INITIALIZE
@@ -151,6 +183,7 @@ function showClockForYear(face, inNewYear) {
 		.attr('d', pointerArc);
 
 	initializeWeekCircle(face);
+	initializeMonthCircle(face);
 
 	document.getElementById('timeView').textContent = gClock.currentYear;
 
