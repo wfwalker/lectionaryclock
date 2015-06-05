@@ -13,6 +13,11 @@
 	font-family: Helvetica;
 }
 
+.yearLink {
+	font-size: 10pt;
+	text-decoration: none;
+}
+
 .dayLabel {
 	font-family: Helvetica; text-anchor: middle; font-size: 9pt;
 }

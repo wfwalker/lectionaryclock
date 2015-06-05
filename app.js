@@ -6,18 +6,20 @@ var lectionary = require('lectionary');
 
 var oneDay = 1000 * 60 * 60 * 24;
 
-var currentSunday = null;
-
-var currentYear = new Date().getFullYear();
+var gClock = {};
 
 var tmp = window.location.toString();
 if (tmp.indexOf('#') > 0) {
-	currentYear = tmp.substring(tmp.indexOf('#')+1, tmp.indexOf('#')+5)
+	gClock.currentYear = parseInt(tmp.substring(tmp.indexOf('#')+1, tmp.indexOf('#')+5));
+} else {
+	gClock.currentYear = new Date().getFullYear();
 }
 
-var endYear = new Date(currentYear, 11, 31, 23, 59, 59);
-var beginYear = new Date(currentYear, 0, 1, 0, 0, 0);
-var yearDegreesScale = d3.scale.linear().domain([beginYear.getTime(), endYear.getTime()]).range([0, 360]);
+gClock.currentSunday = null;
+
+gClock.endYear = new Date(gClock.currentYear, 11, 31, 23, 59, 59);
+gClock.beginYear = new Date(gClock.currentYear, 0, 1, 0, 0, 0);
+gClock.yearDegreesScale = d3.scale.linear().domain([gClock.beginYear.getTime(), gClock.endYear.getTime()]).range([0, 360]);
 
 function getSundays(year) {
 	var sundays = [];
@@ -31,8 +33,8 @@ function getSundays(year) {
 
 		var delta = aSunday.date.getTime() - new Date().getTime();
 		if (delta > -1 * oneDay && delta < 6 * oneDay) {
-			currentSunday = aSunday;
-			showSunday(currentSunday);
+			gClock.currentSunday = aSunday;
+			showSunday(gClock.currentSunday);
 		}
 	}
 	
@@ -40,14 +42,14 @@ function getSundays(year) {
 }
 
 function initializeSeasonCircle(face) {
-	var yearScale = d3.scale.linear().domain([beginYear.getTime(), endYear.getTime()]).range([0, 2 * Math.PI]);
+	var yearScale = d3.scale.linear().domain([gClock.beginYear.getTime(), gClock.endYear.getTime()]).range([0, 2 * Math.PI]);
 	
 	// set of arcs representing a year, showing liturgical calendar
 
 	var yearCircle = face.append('g')
 		.attr('id', 'yearCircle');
 
-	var seasons = lectionary.seasons(currentYear);
+	var seasons = lectionary.seasons(gClock.currentYear);
 
 	var seasonArc = d3.svg.arc()
 		.innerRadius(250)
@@ -92,9 +94,8 @@ function showSunday(aSunday) {
 	setBibleLink('gospel', scriptures.gospel);
 
 	d3.select('#pointer')
-		.transition().duration(1000)
 		.attr('transform', function(d){
-			return 'rotate(' + yearDegreesScale(aSunday.date.getTime()) + ')';
+			return 'rotate(' + gClock.yearDegreesScale(aSunday.date.getTime()) + ')';
 		});
 }
 
@@ -104,7 +105,18 @@ function initializeWeekCircle(face) {
 	var weekCircle = face.append('g')
 		.attr('id', 'weekCircle');
 
-	var sundays = getSundays(currentYear);
+	var sundays = lectionary.days(gClock.currentYear);
+
+	// initialize currentSunday
+	for (var index in sundays) {
+		var aSunday = sundays[index];
+
+		var delta = aSunday.date.getTime() - new Date().getTime();
+		if (delta > -1 * oneDay && delta < 6 * oneDay) {
+			gClock.currentSunday = aSunday;
+			showSunday(gClock.currentSunday);
+		}
+	}
 
 	// Add a text label.
 	weekCircle.selectAll("text")
@@ -113,7 +125,7 @@ function initializeWeekCircle(face) {
 		.append("text")
 		.attr('class', 'dayLabel')
 		.attr("transform", function(d) {
-			var degrees = yearDegreesScale(d.date.getTime());
+			var degrees = gClock.yearDegreesScale(d.date.getTime());
 
 			if (degrees > 180) {
 				return 'rotate(' + (degrees + 90) + ') translate(-312,5)';
@@ -123,12 +135,11 @@ function initializeWeekCircle(face) {
 		})
 		.text(function (d) { return d.lectionaryShortName; })
 		.on('click', function(d) {
-			currentSunday = d;
-			showSunday(currentSunday);
+			gClock.currentSunday = d;
+			showSunday(gClock.currentSunday);
 			d3.selectAll('.dayLabel').classed({selected: false});
 			this.classList.add('selected');
 		});
-
 }
 
 // INITIALIZE
@@ -140,7 +151,7 @@ var face = vis.append('g')
 	.attr('transform','translate(375,375)');	
 
 function showClockForYear(face, inNewYear) {
-	currentYear = inNewYear;
+	gClock.currentYear = inNewYear;
 
 	initializeSeasonCircle(face);
 
@@ -160,17 +171,19 @@ function showClockForYear(face, inNewYear) {
 
 	initializeWeekCircle(face);
 
-	document.getElementById('timeView').textContent = currentYear;
+	document.getElementById('timeView').textContent = gClock.currentYear;
+
+	document.getElementById('prevYear').href = './index.html#' + (gClock.currentYear - 1);
+	document.getElementById('nextYear').href = './index.html#' + (gClock.currentYear + 1);
 
 	d3.select('#pointer')
-		.transition().duration(1000)
 		.attr('transform', function(d){
 			var tmp = new Date();
-			return 'rotate(' + yearDegreesScale(tmp.getTime()) + ')';
+			return 'rotate(' + gClock.yearDegreesScale(tmp.getTime()) + ')';
 		});
 }
 
-showClockForYear(face, currentYear);
+showClockForYear(face, gClock.currentYear);
 
 d3.selectAll('.yearlink').on('click', function(e) {
 	console.log('click', d3.event.target.href);
