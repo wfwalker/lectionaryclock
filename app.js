@@ -21,26 +21,6 @@ gClock.endYear = new Date(gClock.currentYear, 11, 31, 23, 59, 59);
 gClock.beginYear = new Date(gClock.currentYear, 0, 1, 0, 0, 0);
 gClock.yearDegreesScale = d3.scale.linear().domain([gClock.beginYear.getTime(), gClock.endYear.getTime()]).range([0, 360]);
 
-function getSundays(year) {
-	var sundays = [];
-
-	// TODO: this does nothing except find the next sunday.
-
-	var lectionaryDates = lectionary.days(year);
-	for (var index in lectionaryDates) {
-		var aSunday = lectionaryDates[index];
-		sundays.push(aSunday);
-
-		var delta = aSunday.date.getTime() - new Date().getTime();
-		if (delta > -1 * oneDay && delta < 6 * oneDay) {
-			gClock.currentSunday = aSunday;
-			showSunday(gClock.currentSunday);
-		}
-	}
-	
-	return sundays;
-}
-
 function initializeSeasonCircle(face) {
 	var yearScale = d3.scale.linear().domain([gClock.beginYear.getTime(), gClock.endYear.getTime()]).range([0, 2 * Math.PI]);
 	
@@ -127,6 +107,7 @@ function initializeWeekCircle(face) {
 		.attr("transform", function(d) {
 			var degrees = gClock.yearDegreesScale(d.date.getTime());
 
+			// orient the lefthand and righthand labels differently for legibility
 			if (degrees > 180) {
 				return 'rotate(' + (degrees + 90) + ') translate(-312,5)';
 			} else {
