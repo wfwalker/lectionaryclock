@@ -1,7 +1,7 @@
 #pointer {
 	fill: white;
 	opacity: 0.5;
-	stroke: black;
+	stroke: none;
 }
 
 #overlay {
@@ -11,6 +11,10 @@
 	width: 300px;
 
 	font-family: Helvetica;
+}
+
+.scripture {
+	text-decoration: none;
 }
 
 .yearLink {
@@ -50,11 +54,11 @@
 }
 
 .lent {
-	fill: purple;
+	fill: #D9ABD4;
 }
 
 .holyWeek {
-	fill: red;
+	fill: #FA7578;
 }
 
 .easter {
@@ -62,5 +66,5 @@
 }
 
 .ordinarytime {
-	fill: green;
+	fill: #ABD9BA;
 }
