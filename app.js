@@ -186,8 +186,8 @@ function showClockForYear(face, inNewYear) {
 
 	document.getElementById('timeView').textContent = gClock.currentYear;
 
-	document.getElementById('prevYear').href = './index.html#' + (gClock.currentYear - 1);
-	document.getElementById('nextYear').href = './index.html#' + (gClock.currentYear + 1);
+	document.getElementById('prevYear').href = '#' + (gClock.currentYear - 1);
+	document.getElementById('nextYear').href = '#' + (gClock.currentYear + 1);
 
 	d3.select('#pointer')
 		.attr('transform', function(d){
@@ -197,3 +197,10 @@ function showClockForYear(face, inNewYear) {
 }
 
 showClockForYear(face, gClock.currentYear);
+
+d3.selectAll('.yearlink').on('click', function(e) {
+	console.log('click', d3.event.target.href);
+	location = d3.event.target.href;
+	location.reload();
+});
+ 
