@@ -199,8 +199,8 @@ function showClockForYear(face, inNewYear) {
 showClockForYear(face, gClock.currentYear);
 
 d3.selectAll('.yearlink').on('click', function(e) {
-	console.log('click', d3.event.target.href);
-	location = d3.event.target.href;
+	console.log(this.href);
+	location = this.href;
 	location.reload();
 });
  
