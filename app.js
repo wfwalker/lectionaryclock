@@ -3,6 +3,7 @@
 // TODO: put advent 1 at the top always
 
 var lectionary = require('lectionary');
+var dateformat = require('dateformat');
 
 var oneDay = 1000 * 60 * 60 * 24;
 
@@ -64,9 +65,7 @@ function setBibleLink(id, passage) {
 
 function showSunday(aSunday) {
 	document.getElementById('selectionName').textContent = aSunday.lectionaryShortName;
-	document.getElementById('dates').textContent = aSunday.date.toLocaleString('en-US', {weekday:'long'}) + ', ' +
-		aSunday.date.toLocaleString('en-US', {month:'long'}) + ' ' + 
-		aSunday.date.toLocaleString('en-US', {day:'numeric'});
+	document.getElementById('dates').textContent = dateformat(aSunday.date, "dddd, mmmm dS");
 
 	scriptures = aSunday.scriptures;
 	if (scriptures.complementary) { scriptures = scriptures.complementary }
@@ -130,7 +129,7 @@ function initializeMonthCircle(face) {
 	var monthStarts = [];
 	for (var monthIndex = 0; monthIndex < 12; monthIndex++) {
 		var tmp = new Date(gClock.currentYear, monthIndex, 1);
-		monthStarts.push({ date: tmp, label: tmp.toLocaleString('en-US',{month:'short'})});
+		monthStarts.push({ date: tmp, label: dateformat(tmp, "mmm") });
 	}
 
 	var monthCircle = face.append('g')
