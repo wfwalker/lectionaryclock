@@ -18,10 +18,6 @@ if (tmp.indexOf('#') > 0) {
 
 gClock.currentSunday = null;
 
-gClock.endYear = new Date(gClock.currentYear, 11, 31, 23, 59, 59);
-gClock.beginYear = new Date(gClock.currentYear, 0, 1, 0, 0, 0);
-gClock.yearDegreesScale = d3.scale.linear().domain([gClock.beginYear.getTime(), gClock.endYear.getTime()]).range([0, 360]);
-
 function initializeSeasonCircle(face) {
 	var yearScale = d3.scale.linear().domain([gClock.beginYear.getTime(), gClock.endYear.getTime()]).range([0, 2 * Math.PI]);
 	
@@ -146,9 +142,9 @@ function initializeMonthCircle(face) {
 
 			// orient the lefthand and righthand labels differently for legibility
 			if (degrees > 180) {
-				return 'rotate(' + (degrees + 90) + ') translate(-250,5)';
+				return 'rotate(' + (degrees + 90) + ') translate(-235,5)';
 			} else {
-				return 'rotate(' + (degrees + 270) + ') translate(250,5)';
+				return 'rotate(' + (degrees + 270) + ') translate(235,5)';
 			}
 		})
 		.text(function (d) { return d.label; });	
@@ -158,14 +154,17 @@ function initializeMonthCircle(face) {
 
 var vis = d3.select("#svg_donut");
 
-var face = vis.append('g')
+gClock.face = vis.append('g')
 	.attr('id','clock-face')
 	.attr('transform','translate(375,375)');	
 
 function showClockForYear(face, inNewYear) {
 	gClock.currentYear = inNewYear;
+	gClock.endYear = new Date(gClock.currentYear, 11, 31, 23, 59, 59);
+	gClock.beginYear = new Date(gClock.currentYear, 0, 1, 0, 0, 0);
+	gClock.yearDegreesScale = d3.scale.linear().domain([gClock.beginYear.getTime(), gClock.endYear.getTime()]).range([0, 360]);
 
-	initializeSeasonCircle(face);
+	initializeSeasonCircle(gClock.face);
 
 	// radial mark showing now
 
@@ -176,18 +175,18 @@ function showClockForYear(face, inNewYear) {
 		.startAngle(-0.04)
 		.endAngle(0.04);
 
-	face.append("path")
+	gClock.face.append("path")
 		.attr('id', 'pointer')
 		.attr('stroke-width', 2)
 		.attr('d', pointerArc);
 
-	initializeWeekCircle(face);
-	initializeMonthCircle(face);
+	initializeWeekCircle(gClock.face);
+	initializeMonthCircle(gClock.face);
 
 	document.getElementById('timeView').textContent = gClock.currentYear;
 
-	document.getElementById('prevYear').href = '#' + (gClock.currentYear - 1);
-	document.getElementById('nextYear').href = '#' + (gClock.currentYear + 1);
+	document.getElementById('prevYear').setAttribute('data-year', gClock.currentYear - 1);
+	document.getElementById('nextYear').setAttribute('data-year', gClock.currentYear + 1);
 
 	d3.select('#pointer')
 		.attr('transform', function(d){
@@ -196,11 +195,16 @@ function showClockForYear(face, inNewYear) {
 		});
 }
 
-showClockForYear(face, gClock.currentYear);
+showClockForYear(gClock.face, gClock.currentYear);
 
-d3.selectAll('.yearlink').on('click', function(e) {
-	console.log(this.href);
-	location = this.href;
-	location.reload();
-});
- 
+var yearlinks = document.getElementsByClassName('yearlink');
+for (var index = 0; index < yearlinks.length; index++) {
+	var yearlink = yearlinks[index];
+
+	yearlink.addEventListener('click', function (e) {
+		e.preventDefault();
+		var tmp = parseInt(this.getAttribute('data-year'));
+		showClockForYear(gClock.face, tmp);
+		history.pushState(null, '', '#' + tmp);
+	});
+}

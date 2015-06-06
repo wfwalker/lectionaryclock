@@ -20,6 +20,7 @@
 .yearLink {
 	font-size: 10pt;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .dayLabel {
@@ -30,7 +31,7 @@
 }
 
 .monthLabel {
-	font-family: Helvetica; text-anchor: middle; font-size: 9pt;
+	font-family: Courier; text-anchor: middle; font-size: 9pt; stroke: gray;
 }
 
 .selected {
