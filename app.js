@@ -159,6 +159,9 @@ gClock.face = vis.append('g')
 	.attr('transform','translate(375,375)');	
 
 function showClockForYear(face, inNewYear) {
+	// remove everything
+	face.selectAll("*").remove();
+
 	gClock.currentYear = inNewYear;
 	gClock.endYear = new Date(gClock.currentYear, 11, 31, 23, 59, 59);
 	gClock.beginYear = new Date(gClock.currentYear, 0, 1, 0, 0, 0);
