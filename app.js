@@ -1,22 +1,20 @@
 // multiclock app.js
 
-// TODO: put advent 1 at the top always
-
+// dependencies
 var lectionary = require('lectionary');
 var dateformat = require('dateformat');
 
 var oneDay = 1000 * 60 * 60 * 24;
 
-var gClock = {};
+var gClock = { currentSunday: null};
 
+// parse initial year from fragment
 var tmp = window.location.toString();
 if (tmp.indexOf('#') > 0) {
 	gClock.currentYear = parseInt(tmp.substring(tmp.indexOf('#')+1, tmp.indexOf('#')+5));
 } else {
 	gClock.currentYear = new Date().getFullYear();
 }
-
-gClock.currentSunday = null;
 
 function initializeSeasonCircle(face) {
 	var yearScale = d3.scale.linear().domain([gClock.beginYear.getTime(), gClock.endYear.getTime()]).range([0, 2 * Math.PI]);
