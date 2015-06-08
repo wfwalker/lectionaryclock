@@ -64,7 +64,11 @@ function showSunday(aSunday) {
 	document.getElementById('dates').textContent = dateformat(aSunday.date, "dddd, mmmm dS");
 
 	scriptures = aSunday.scriptures;
-	if (scriptures.complementary) { scriptures = scriptures.complementary }
+	if (scriptures.complementary && document.getElementById('scriptures_1').checked) {
+		scriptures = scriptures.complementary
+	} else if (scriptures.semicontinuous && document.getElementById('scriptures_2').checked) {
+		scriptures = scriptures.semicontinuous
+	}
 
 	setBibleLink('first', scriptures.first);
 	setBibleLink('psalm', scriptures.psalm);
