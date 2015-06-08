@@ -64,11 +64,19 @@ function showSunday(aSunday) {
 	document.getElementById('dates').textContent = dateformat(aSunday.date, "dddd, mmmm dS");
 
 	scriptures = aSunday.scriptures;
-	if (scriptures.complementary && document.getElementById('scriptures_1').checked) {
-		scriptures = scriptures.complementary
-	} else if (scriptures.semicontinuous && document.getElementById('scriptures_2').checked) {
-		scriptures = scriptures.semicontinuous
+
+	if (scriptures.complementary || scriptures.semicontinuous) {
+		document.getElementById('scriptureRadio').hidden = false;
+
+		if (scriptures.complementary && document.getElementById('scriptures_1').checked) {
+			scriptures = scriptures.complementary
+		} else if (scriptures.semicontinuous && document.getElementById('scriptures_2').checked) {
+			scriptures = scriptures.semicontinuous
+		}
+	} else {
+		document.getElementById('scriptureRadio').hidden = true;
 	}
+
 
 	setBibleLink('first', scriptures.first);
 	setBibleLink('psalm', scriptures.psalm);
@@ -132,13 +140,10 @@ function initializeMonthCircle(face) {
 		monthStarts.push({ date: tmp, label: dateformat(tmp, "mmm") });
 	}
 
-    // zero-based month index
-    var firstOfMarch = new Date(gClock.currentYear, 2, 0);
-    //the day of week (0=Sunday, 6 = Saturday)
-    var daysUntilFirstSunday =  (7 - firstOfMarch.getDay()) % 7;
-    var secondSunday = 7 + daysUntilFirstSunday;
- 	secondSunday = new Date(gClock.currentYear, 2, secondSunday);
-    monthStarts.push({ date: new Date(secondSunday), label: 'DST' });
+    var firstOfMarch = new Date(gClock.currentYear, 2, 0); // zero-based month index
+    var daysUntilFirstSunday =  (7 - firstOfMarch.getDay()) % 7; //the day of week (0=Sunday, 6 = Saturday)
+ 	var secondSundayOfMarch = new Date(gClock.currentYear, 2, 7 + daysUntilFirstSunday);
+    monthStarts.push({ date: secondSundayOfMarch, label: 'DST' });
 
 	var monthCircle = face.append('g')
 		.attr('id', 'monthCircle');
@@ -210,8 +215,10 @@ function showClockForYear(face, inNewYear) {
 		});
 }
 
+// INITIALIZE
 showClockForYear(gClock.face, gClock.currentYear);
 
+// wire up links to next year, previous year buttons
 var yearlinks = document.getElementsByClassName('yearlink');
 for (var index = 0; index < yearlinks.length; index++) {
 	var yearlink = yearlinks[index];
@@ -223,3 +230,14 @@ for (var index = 0; index < yearlinks.length; index++) {
 		history.pushState(null, '', '#' + tmp);
 	});
 }
+
+// get events when complementary / semicontinuous changes
+document.getElementById('scriptures_1').addEventListener('change', function (e){
+	showSunday(gClock.currentSunday);
+});
+document.getElementById('scriptures_2').addEventListener('change', function (e){
+	showSunday(gClock.currentSunday);
+});
+
+
+
