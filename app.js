@@ -132,6 +132,14 @@ function initializeMonthCircle(face) {
 		monthStarts.push({ date: tmp, label: dateformat(tmp, "mmm") });
 	}
 
+    // zero-based month index
+    var firstOfMarch = new Date(gClock.currentYear, 2, 0);
+    //the day of week (0=Sunday, 6 = Saturday)
+    var daysUntilFirstSunday =  (7 - firstOfMarch.getDay()) % 7;
+    var secondSunday = 7 + daysUntilFirstSunday;
+ 	secondSunday = new Date(gClock.currentYear, 2, secondSunday);
+    monthStarts.push({ date: new Date(secondSunday), label: 'DST' });
+
 	var monthCircle = face.append('g')
 		.attr('id', 'monthCircle');
 
