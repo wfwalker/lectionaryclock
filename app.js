@@ -75,7 +75,6 @@ function showSunday(aSunday) {
 		document.getElementById('scriptureRadio').hidden = true;
 	}
 
-
 	setBibleLink('first', scriptures.first);
 	setBibleLink('psalm', scriptures.psalm);
 	setBibleLink('second', scriptures.second);
@@ -138,10 +137,17 @@ function initializeMonthCircle(face) {
 		monthStarts.push({ date: tmp, label: dateformat(tmp, "mmm") });
 	}
 
+	// START of DST
     var firstOfMarch = new Date(gClock.currentYear, 2, 0); // zero-based month index
     var daysUntilFirstSunday =  (7 - firstOfMarch.getDay()) % 7; //the day of week (0=Sunday, 6 = Saturday)
  	var secondSundayOfMarch = new Date(gClock.currentYear, 2, 7 + daysUntilFirstSunday);
     monthStarts.push({ date: secondSundayOfMarch, label: 'DST' });
+
+    // END of DST
+    var firstOfNovember = new Date(gClock.currentYear, 10, 0); // zero-based month index
+    var daysUntilFirstSunday =  (7 - firstOfNovember.getDay()) % 7; //the day of week (0=Sunday, 6 = Saturday)
+ 	var firstSundayOfNovember = new Date(gClock.currentYear, 10, daysUntilFirstSunday);
+    monthStarts.push({ date: firstSundayOfNovember, label: 'DST' });
 
 	var monthCircle = face.append('g')
 		.attr('id', 'monthCircle');
