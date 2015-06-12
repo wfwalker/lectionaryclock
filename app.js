@@ -57,6 +57,17 @@ function setBibleLink(id, passage) {
 	document.getElementById(id).textContent = passage;
 }
 
+function clearSunday() {
+	document.getElementById('selectionName').textContent = '';
+	document.getElementById('dates').textContent = '';
+	document.getElementById('scriptureRadio').hidden = true;
+
+	document.getElementById('first').textContent = '';
+	document.getElementById('psalm').textContent = '';
+	document.getElementById('second').textContent = '';
+	document.getElementById('gospel').textContent = '';
+}
+
 function showSunday(aSunday) {
 	document.getElementById('selectionName').textContent = aSunday.lectionaryShortName;
 	document.getElementById('dates').textContent = dateformat(aSunday.date, "dddd, mmmm dS");
@@ -182,6 +193,7 @@ gClock.face = vis.append('g')
 function showClockForYear(face, inNewYear) {
 	// remove everything
 	face.selectAll("*").remove();
+	clearSunday();
 
 	gClock.currentYear = inNewYear;
 	gClock.endYear = new Date(gClock.currentYear, 11, 31, 23, 59, 59);
@@ -193,7 +205,7 @@ function showClockForYear(face, inNewYear) {
 	// radial mark showing now
 
 	var pointerArc = d3.svg.arc()
-		.innerRadius(255)
+		.innerRadius(10)
 		.outerRadius(370)
 		.cornerRadius(10)
 		.startAngle(-0.04)

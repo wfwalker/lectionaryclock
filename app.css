@@ -1,16 +1,23 @@
+body {
+	background-color: white;
+	font-family: Helvetica;
+}
+
 #pointer {
-	fill: white;
+	fill: #efefef;
 	opacity: 0.5;
-	stroke: none;
+	stroke: #dedede;
 }
 
 #overlay {
+	background-color: #efefef;
 	position: absolute;
-	top: 250px;
-	left: 270px;
-	width: 300px;
-
-	font-family: Helvetica;
+	top: 300px;
+	left: 260px;
+	height: 180px;
+	width: 230px;
+	padding: 30px 10px 10px 10px;
+	border-radius: 50px;
 }
 
 .scripture {
