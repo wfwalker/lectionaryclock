@@ -207,14 +207,28 @@ function showClockForYear(face, inNewYear) {
 	var pointerArc = d3.svg.arc()
 		.innerRadius(10)
 		.outerRadius(370)
-		.cornerRadius(10)
+		.cornerRadius(3)
 		.startAngle(-0.04)
 		.endAngle(0.04);
 
 	gClock.face.append("path")
 		.attr('id', 'pointer')
-		.attr('stroke-width', 2)
+		.attr('stroke-width', 5)
 		.attr('d', pointerArc);
+
+	// circular overlay
+
+	var overlayArc = d3.svg.arc()
+		.innerRadius(0)
+		.outerRadius(150)
+		.cornerRadius(0)
+		.startAngle(0)
+		.endAngle(Math.PI * 2);
+
+	gClock.face.append("path")
+		.attr('id', 'circleOverlay')
+		.attr('stroke-width', 5)
+		.attr('d', overlayArc);
 
 	initializeWeekCircle(gClock.face);
 	initializeMonthCircle(gClock.face);
