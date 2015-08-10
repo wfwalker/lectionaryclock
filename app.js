@@ -1,5 +1,8 @@
 // multiclock app.js
 
+// NOTA BENE: do this command
+// browserify app.js > bundle.js
+
 // dependencies
 var lectionary = require('lectionary');
 var dateformat = require('dateformat');
@@ -68,8 +71,10 @@ function clearSunday() {
 	document.getElementById('gospel').textContent = '';
 }
 
+// link to http://www.elca.org/Our-Work/Congregations-and-Synods/Worship/Lectionary/YearB
+
 function showSunday(aSunday) {
-	document.getElementById('selectionName').textContent = aSunday.lectionaryShortName;
+	document.getElementById('selectionName').textContent = aSunday.lectionaryShortName + ', Year ' + aSunday.lectionaryYear;
 	document.getElementById('dates').textContent = dateformat(aSunday.date, "dddd, mmmm dS");
 
 	scriptures = aSunday.scriptures;
