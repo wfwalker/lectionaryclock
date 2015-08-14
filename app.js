@@ -114,6 +114,23 @@ function initializeWeekCircle(face) {
 	for (var index in sundays) {
 		var aSunday = sundays[index];
 
+		var tmp = aSunday.scriptures;
+		if (tmp.complementary) {
+			tmp = tmp.complementary;
+		}
+
+		document.getElementById('csv').innerHTML += [
+			aSunday.date.toLocaleDateString(),
+			aSunday.lectionaryShortName,
+			tmp.first,
+			tmp.psalm,
+			tmp.second,
+			tmp.gospel,
+			'\n'
+		].join('>');
+
+		console.log(aSunday);
+
 		var delta = aSunday.date.getTime() - new Date().getTime();
 		if (delta > -1 * oneDay && delta < 6 * oneDay) {
 			gClock.currentSunday = aSunday;
