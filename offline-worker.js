@@ -37,7 +37,7 @@
 
     // This is the unique name for the cache controlled by this version of the worker.
     get CACHE_NAME() {
-      return this.CACHE_PREFIX + 'b6ea62a3547d18a8b850f17bd73cc107c9dda305';
+      return this.CACHE_PREFIX + 'e384ab200513e452de327540d1282f7d8e6e8d17';
     },
 
     // This is a list of resources that will be cached.
@@ -51,11 +51,9 @@
       './images/apple-touch-icon-60x60.png', // 6e19dde744cb62d4ec7b402ef5822a60f94390de
       './images/apple-touch-icon-72x72.png', // 357e78f8ea62af3a9dc9869ac797871799277b16
       './images/apple-touch-icon-76x76.png', // 8c81f23bd12150e31723405cb261aec8bb882961
-      './images/favicon-128x128.png', // c058f85521d02ca09dc4428fa27bc0750abb2e74
-      './images/favicon-16x16.png', // f159e70f0c1d2819d768e37b4999fb355d3bc2aa
-      './images/favicon-196x196.png', // 49f477e377bf66df6a5c939d4a8a016982dfb675
-      './images/favicon-32x32.png', // 07422f1e20069d66f825e794f2c6f54f0ee80d51
-      './images/favicon-96x96.png', // 0f621a46f7ce959046c1a781a8cabccdf36a6dd7
+      './images/favicon-128x128.png', // 5ab189c4e3a7091fb0588020e93ded3c146a7ecf
+      './images/favicon-196x196.png', // 524d3c8e68cc7de2b8cf1ee293780758a9444ec7
+      './images/favicon-96x96.png', // 7589187bf561d0ebb8fe12074c0d95d20d826bfd
       './images/mstile-144x144.png', // 1143726c60ee73b882af65e408745782282d618c
       './images/mstile-150x150.png', // 70afb464b27eb37de2af5ed8c9e6857444eb0895
       './images/mstile-310x150.png', // a8476b8ba5ea497c6acbc506ce416c616fe4f5da
@@ -63,7 +61,7 @@
       './images/mstile-70x70.png', // 6f75379a90f9615b823d57537ffa8eb1a0887702
       './images/next.png', // 942f3f721cc137fce5cc81cafa4e17119cc00100
       './images/prev.png', // edf7f52c4498b1effb7694f3df8faed4fac37f81
-      './index.html', // 2bdcc28973180bcca4529d3eb1f613c45171acce
+      './index.html', // 61607f30f9adc521865b0a51ba566678fc89a3b4
       './scripts/app.js', // 2aff630504592cb2dad031d9228366bce05ee300
       './scripts/bundle.js', // 405dd5c8b15fe7f99a2a0d5f4bcdf50d275e1cf2
       './scripts/d3.v3.min.js', // 751927cc0f71697c6b6f680192ac84a6d7ff3787
