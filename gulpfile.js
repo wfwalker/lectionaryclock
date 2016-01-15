@@ -5,11 +5,22 @@
 
 var connect = require('gulp-connect');
 var gulp = require('gulp');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
 var oghliner = require('oghliner');
+
+gulp.task('browserify', function() {
+    return browserify('app/scripts/app.js')
+        .bundle()
+        //Pass desired output filename to vinyl-source-stream
+        .pipe(source('bundle.js'))
+        // Start piping stream to tasks!
+        .pipe(gulp.dest('app/scripts/'));
+});
 
 gulp.task('default', ['build', 'offline']);
 
-gulp.task('build', function(callback) {
+gulp.task('build', ['browserify'], function(callback) {
   return gulp.src('app/**').pipe(gulp.dest('dist'));
 });
 
