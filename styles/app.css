@@ -1,0 +1,77 @@
+body {
+	background-color: white;
+	font-family: Helvetica;
+}
+
+#pointer {
+	fill: #efefef;
+	opacity: 0.5;
+	stroke: #dedede;
+}
+
+#circleOverlay {
+	fill: #efefef;
+}
+
+#overlay {
+	position: absolute;
+	top: 300px;
+	left: 260px;
+	height: 180px;
+	width: 230px;
+	padding: 30px 10px 10px 10px;
+}
+
+.scripture {
+	text-decoration: none;
+}
+
+.yearLink {
+	font-size: 10pt;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dayLabel {
+	font-family: Helvetica;
+	text-anchor: middle;
+	font-size: 9pt;
+	cursor: pointer;
+}
+
+.monthLabel {
+	font-family: Courier; text-anchor: middle; font-size: 9pt; stroke: gray;
+}
+
+.selected {
+	stroke: black;
+	opacity: 1.0;
+}
+.selected:hover {
+	stroke: black;
+	opacity: 1.0;
+}
+
+.advent {
+	fill: lightblue;
+}
+
+.christmas {
+	fill: #EEEEEE;
+}
+
+.lent {
+	fill: #D9ABD4;
+}
+
+.holyweek {
+	fill: #FA7578;
+}
+
+.easter {
+	fill: #EEEEEE;
+}
+
+.ordinarytime {
+	fill: #ABD9BA;
+}
