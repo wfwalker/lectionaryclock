@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - '0.12'
+install: npm install
+script: 'gulp build && gulp offline'
+env:
+  global:
+    - secure: WNjwlyJzdyuFBbPVdH4CQ0hjwKClS6pmbUvozC/oSPnj6lS/pf4hL4w5mA1ENLr5l7ryBq1CxYNiGQS2F83mHBRToMUDds9OZjfyTneqDIao1uHXO2zqti84eQCim/jEk6ZQUukVZewsRSvrVpzkmL5yTk+hILFza9oEwRhVQgTPd/E5dP/Xot8BhQM0+nlsnu1HFKJj4gH9UX9nNdDPt943wnBVTfx2UAfaAvnczLlhjxK1Ba/pyO+g6I9GpKI2FM1NYOOeN8lw+nFw62HxDP3+4ywnZ5r56YIOPjgp+kkfwa2674Y2gDscCLaXWtogMfIjrYbWinj6keQfsOibzwJgPnS7LqeKLwf0sd0DAEzvYZ4fmP3bJ+ESQZWxbHXqZQLlaFGPx2qfUH85jwGgTrQX6Yl6DQj5ozcHEgeQN+THp8Qz9yBPx/tApLLsbEx2jdzvWiUiWQWVSW53UgW/VctaCNa1QjQHtpQ1sBm/0mql48IAjydCgS5FtOnAAZDy6RfN5Pwsoj2KQiPVkM0Gh8x4iT7qbLwQuZUbKYSobaR8B6jdnzdu05Yooh0Oy6l3ka/+LrIBY8X74I9pFvp8DedzS2f+BhpCRR0Bai4FKKfbelK/SLVF+8u0jyPjxlpbMC/fCLhrt7y3oamq1oVnbh3LnYRDfjmRCh8kHMgqqi0=
+before_script:
+  - 'git config --global user.name "Travis CI"'
+  - 'git config --global user.email "bwalker@mozilla.com"'
+after_success:
+  - 'echo "travis_fold:end:after_success" && [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "${TRAVIS_BRANCH}" = "master" ] && echo "Deploying…" && gulp deploy'
