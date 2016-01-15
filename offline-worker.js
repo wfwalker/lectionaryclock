@@ -37,16 +37,16 @@
 
     // This is the unique name for the cache controlled by this version of the worker.
     get CACHE_NAME() {
-      return this.CACHE_PREFIX + 'e384ab200513e452de327540d1282f7d8e6e8d17';
+      return this.CACHE_PREFIX + 'abe7a0c614ef39435e4fff7483914f8dee122981';
     },
 
     // This is a list of resources that will be cached.
     RESOURCES: [
       './', // cache always the current root to make the default page available
       './images/apple-touch-icon-114x114.png', // d18039f8fea99e40a95174ef9e9b1535bb31b19b
-      './images/apple-touch-icon-120x120.png', // 77fc407482f21d8a504b67a402ec24460e5cc178
-      './images/apple-touch-icon-144x144.png', // 088b71de4d4086c5f7e536beb1732b37d996a252
-      './images/apple-touch-icon-152x152.png', // 0da99f5359d8ed5d289f692f8df10b8472da4abc
+      './images/apple-touch-icon-120x120.png', // 2896b0be6873f681ecd2f340e7cf8291f3f8a4df
+      './images/apple-touch-icon-144x144.png', // 05417d5990eff50a96104bf1c4d3120c9dd97b29
+      './images/apple-touch-icon-152x152.png', // 4da31383950131aa91670eb896d47086044bdb13
       './images/apple-touch-icon-57x57.png', // 05d01de8b368c72fddf4e7586d231ca0b43868af
       './images/apple-touch-icon-60x60.png', // 6e19dde744cb62d4ec7b402ef5822a60f94390de
       './images/apple-touch-icon-72x72.png', // 357e78f8ea62af3a9dc9869ac797871799277b16
@@ -57,11 +57,11 @@
       './images/mstile-144x144.png', // 1143726c60ee73b882af65e408745782282d618c
       './images/mstile-150x150.png', // 70afb464b27eb37de2af5ed8c9e6857444eb0895
       './images/mstile-310x150.png', // a8476b8ba5ea497c6acbc506ce416c616fe4f5da
-      './images/mstile-310x310.png', // 6cd3f41d4a135d5ec5695ade20845f40cefb34a4
+      './images/mstile-310x310.png', // 1ead02d81c778d9162e7c51f479f4528c47c3d7c
       './images/mstile-70x70.png', // 6f75379a90f9615b823d57537ffa8eb1a0887702
       './images/next.png', // 942f3f721cc137fce5cc81cafa4e17119cc00100
       './images/prev.png', // edf7f52c4498b1effb7694f3df8faed4fac37f81
-      './index.html', // 61607f30f9adc521865b0a51ba566678fc89a3b4
+      './index.html', // f91f539c26450b6bfd758f0508cbbf4cd6383fae
       './scripts/app.js', // 2aff630504592cb2dad031d9228366bce05ee300
       './scripts/bundle.js', // 405dd5c8b15fe7f99a2a0d5f4bcdf50d275e1cf2
       './scripts/d3.v3.min.js', // 751927cc0f71697c6b6f680192ac84a6d7ff3787
