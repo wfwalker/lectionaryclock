@@ -44,7 +44,7 @@ gulp.task('offline', ['build'], function() {
   });
 });
 
-gulp.task('serve', function () {
+gulp.task('serve', ['build'], function () {
   connect.server({
     root: 'dist',
   });
