@@ -10,6 +10,8 @@ var dateformat = require('dateformat');
 
 var oneDay = 1000 * 60 * 60 * 24;
 
+var gOuterRadius = 700;
+
 var gClock = { currentSunday: null};
 
 // parse initial year from fragment
@@ -31,8 +33,8 @@ function initializeSeasonCircle(face) {
 	var seasons = lectionary.seasons(gClock.currentYear);
 
 	var seasonArc = d3.svg.arc()
-		.innerRadius(250)
-		.outerRadius(375)
+		.innerRadius(gOuterRadius / 3)
+		.outerRadius(gOuterRadius / 2)
 		.cornerRadius(10)
 		.startAngle(function(d) {
 			return yearScale(d.start.getTime());
@@ -150,9 +152,10 @@ function initializeWeekCircle(face) {
 
 			// orient the lefthand and righthand labels differently for legibility
 			if (degrees > 180) {
-				return 'rotate(' + (degrees + 90) + ') translate(-312,5)';
+				console.log(gOuterRadius*0.4);
+				return 'rotate(' + (degrees + 90) + ') translate(-' + gOuterRadius*0.41 + ',5)';
 			} else {
-				return 'rotate(' + (degrees + 270) + ') translate(312,5)';
+				return 'rotate(' + (degrees + 270) + ') translate(' + gOuterRadius*0.41 + ',5)';
 			}
 		})
 		.text(function (d) { return d.lectionaryShortName; })
@@ -197,9 +200,9 @@ function initializeMonthCircle(face) {
 
 			// orient the lefthand and righthand labels differently for legibility
 			if (degrees > 180) {
-				return 'rotate(' + (degrees + 90) + ') translate(-235,5)';
+				return 'rotate(' + (degrees + 90) + ') translate(-' + gOuterRadius*0.31 + ',5)';
 			} else {
-				return 'rotate(' + (degrees + 270) + ') translate(235,5)';
+				return 'rotate(' + (degrees + 270) + ') translate(' + gOuterRadius*0.31 + ',5)';
 			}
 		})
 		.text(function (d) { return d.label; });	
@@ -211,7 +214,7 @@ var vis = d3.select("#svg_donut");
 
 gClock.face = vis.append('g')
 	.attr('id','clock-face')
-	.attr('transform','translate(375,375)');	
+	.attr('transform','translate('+ gOuterRadius/2 + ',' + gOuterRadius/2 +')');	
 
 function showClockForYear(face, inNewYear) {
 	// remove everything
@@ -229,7 +232,7 @@ function showClockForYear(face, inNewYear) {
 
 	var pointerArc = d3.svg.arc()
 		.innerRadius(10)
-		.outerRadius(370)
+		.outerRadius(gOuterRadius/2)
 		.cornerRadius(3)
 		.startAngle(-0.04)
 		.endAngle(0.04);
