@@ -76,8 +76,9 @@ function clearSunday() {
 // link to http://www.elca.org/Our-Work/Congregations-and-Synods/Worship/Lectionary/YearB
 
 function showSunday(aSunday) {
-	document.getElementById('selectionName').textContent = aSunday.lectionaryShortName + ', Year ' + aSunday.lectionaryYear;
-	document.getElementById('dates').textContent = dateformat(aSunday.date, "dddd, mmmm dS");
+	document.getElementById('selectionName').textContent = aSunday.lectionaryLongName;
+	document.getElementById('year').textContent = 'Year ' + aSunday.lectionaryYear;
+	document.getElementById('dates').textContent = dateformat(aSunday.date, 'mmmm dS');
 
 	scriptures = aSunday.scriptures;
 
@@ -245,7 +246,7 @@ function showClockForYear(face, inNewYear) {
 
 	var overlayArc = d3.svg.arc()
 		.innerRadius(0)
-		.outerRadius(150)
+		.outerRadius(180)
 		.cornerRadius(0)
 		.startAngle(0)
 		.endAngle(Math.PI * 2);

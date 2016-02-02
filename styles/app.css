@@ -15,10 +15,10 @@ body {
 
 #overlay {
 	position: absolute;
-	top: 280px;
-	left: 240px;
+	top: 260px;
+	left: 230px;
 	height: 180px;
-	width: 230px;
+	width: 250px;
 	padding: 30px 10px 10px 10px;
 }
 
