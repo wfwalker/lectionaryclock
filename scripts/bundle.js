@@ -650,7 +650,7 @@ module.exports = function (year) {
     seasonList.push({
       date: date,
       lectionaryYear: 'A-B-C',
-      lectionaryShortName: 'Epiphany Day',
+      lectionaryShortName: 'Epiphany Sunday',
       lectionaryLongName: "Sunday of Epiphany"
     });
 
@@ -678,7 +678,7 @@ module.exports = function (year) {
         date: date,
         lectionaryYear: liturgicalYear,
         lectionaryShortName: 'Epiphany ' + i,
-        lectionaryLongName: utils.ordinalize(i) + ' Sunday of Epiphany'
+        lectionaryLongName: utils.ordinalize(i) + ' Sunday after Epiphany'
       });
       date = utils.offsetDays(date, 7);
     }
@@ -1022,6 +1022,12 @@ module.exports={
         "psalm": "Psalm 148",
         "second": "Galatians 4:4-7",
         "gospel": "Luke 2:22-40"
+    },
+    "Epiphany Sunday": {
+        "first": "Isaiah 60:1-6",
+        "psalm": "Psalm 72:1-7, 10-14",
+        "second": "Ephesians 3:1-12",
+        "gospel": "Matthew 2:1-12"
     },
     "Epiphany Day": {
         "first": "Isaiah 60:1-6",
@@ -1637,6 +1643,12 @@ module.exports={
         "second": "Galatians 4:4-7",
         "gospel": "Luke 2:22-40"
     },
+    "Epiphany Sunday": {
+        "first": "Isaiah 60:1-6",
+        "psalm": "Psalm 72:1-7, 10-14",
+        "second": "Ephesians 3:1-12",
+        "gospel": "Matthew 2:1-12"
+    },
     "Epiphany Day": {
         "first": "Isaiah 60:1-6",
         "psalm": "Psalm 72:1-7, 10-14",
@@ -2250,6 +2262,12 @@ module.exports={
         "psalm": "Psalm 148",
         "second": "Galatians 4:4-7",
         "gospel": "Luke 2:22-40"
+    },
+    "Epiphany Sunday": {
+        "first": "Isaiah 60:1-6",
+        "psalm": "Psalm 72:1-7, 10-14",
+        "second": "Ephesians 3:1-12",
+        "gospel": "Matthew 2:1-12"
     },
     "Epiphany Day": {
         "first": "Isaiah 60:1-6",
