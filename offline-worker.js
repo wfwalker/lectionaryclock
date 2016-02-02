@@ -37,7 +37,7 @@
 
     // This is the unique name for the cache controlled by this version of the worker.
     get CACHE_NAME() {
-      return this.CACHE_PREFIX + 'a3f6c73ba6d53d5d80653526dd50406c711036e3';
+      return this.CACHE_PREFIX + '9174ac593f4aa8a6cd5d30df21034b3898874f56';
     },
 
     // This is a list of resources that will be cached.
@@ -52,9 +52,7 @@
       './images/apple-touch-icon-72x72.png', // 357e78f8ea62af3a9dc9869ac797871799277b16
       './images/apple-touch-icon-76x76.png', // 8c81f23bd12150e31723405cb261aec8bb882961
       './images/favicon-128x128.png', // 5ab189c4e3a7091fb0588020e93ded3c146a7ecf
-      './images/favicon-16x16.png', // f159e70f0c1d2819d768e37b4999fb355d3bc2aa
       './images/favicon-196x196.png', // 524d3c8e68cc7de2b8cf1ee293780758a9444ec7
-      './images/favicon-32x32.png', // 07422f1e20069d66f825e794f2c6f54f0ee80d51
       './images/favicon-96x96.png', // 7589187bf561d0ebb8fe12074c0d95d20d826bfd
       './images/mstile-144x144.png', // 1143726c60ee73b882af65e408745782282d618c
       './images/mstile-150x150.png', // 70afb464b27eb37de2af5ed8c9e6857444eb0895
