@@ -888,7 +888,7 @@ module.exports = function (year) {
         seasonList.push({
           date: date,
           lectionaryYear: liturgicalYear,
-          lectionaryShortName: 'Proper ' + i,
+          lectionaryShortName: 'Pentecost ' + sundayName,
           lectionaryLongName: utils.ordinalize(sundayName) + ' Sunday after Pentecost'
         });
         sundayName += 1;
@@ -1209,13 +1209,13 @@ module.exports={
         "second": "2 Corinthians 13:11-13",
         "gospel": "Matthew 28:16-20"
     },
-    "Proper 3": {
+    "Pentecost 2": {
         "first": "Isaiah 49:8-16a",
         "psalm": "Psalm 131",
         "second": "1 Corinthians 4:1-5",
         "gospel": "Matthew 6:24-34"
     },
-    "Proper 4": {
+    "Pentecost 3": {
         "complementary": {
             "first": "Deuteronomy 11:18-21, 26-28",
             "psalm": "Psalm 31:1-5, 19-24",
@@ -1229,7 +1229,7 @@ module.exports={
             "gospel": "Matthew 7:21-29"
         }
     },
-    "Proper 5": {
+    "Pentecost 4": {
         "complementary": {
             "first": "Hosea 5:15—6:6",
             "psalm": "Psalm 50:7-15",
@@ -1243,7 +1243,7 @@ module.exports={
             "gospel": "Matthew 9:9-13, 18-26"
         }
     },
-    "Proper 6": {
+    "Pentecost 5": {
         "complementary": {
             "first": "Exodus 19:2-8a",
             "psalm": "Psalm 100",
@@ -1257,7 +1257,7 @@ module.exports={
             "gospel": "Matthew 9:35—10:8 [9-23]"
         }
     },
-    "Proper 7": {
+    "Pentecost 6": {
         "complementary": {
             "first": "Jeremiah 20:7-13",
             "psalm": "Psalm 69:7-10 [11-15] 16-18",
@@ -1271,7 +1271,7 @@ module.exports={
             "gospel": "Matthew 10:24-39"
         }
     },
-    "Proper 8": {
+    "Pentecost 7": {
         "complementary": {
             "first": "Jeremiah 28:5-9",
             "psalm": "Psalm 89:1-4, 15-18",
@@ -1285,7 +1285,7 @@ module.exports={
             "gospel": "Matthew 10:40-42"
         }
     },
-    "Proper 9": {
+    "Pentecost 8": {
         "complementary": {
             "first": "Zechariah 9:9-12",
             "psalm": "Psalm 145:8-14",
@@ -1299,7 +1299,7 @@ module.exports={
             "gospel": "Matthew 11:16-19, 25-30"
         }
     },
-    "Proper 10": {
+    "Pentecost 9": {
         "complementary": {
             "first": "Isaiah 55:10-13",
             "psalm": "Psalm 65:[1-8] 9-13",
@@ -1313,7 +1313,7 @@ module.exports={
             "gospel": "Matthew 13:1-9, 18-23"
         }
     },
-    "Proper 11": {
+    "Pentecost 10": {
         "complementary": {
             "first": "Wisdom 12:13, 16-19 or Isaiah 44:6-8",
             "psalm": "Psalm 86:11-17",
@@ -1327,7 +1327,7 @@ module.exports={
             "gospel": "Matthew 13:24-30, 36-43"
         }
     },
-    "Proper 12": {
+    "Pentecost 11": {
         "complementary": {
             "first": "1 Kings 3:5-12",
             "psalm": "Psalm 119:129-136",
@@ -1341,7 +1341,7 @@ module.exports={
             "gospel": "Matthew 13:31-33, 44-52"
         }
     },
-    "Proper 13": {
+    "Pentecost 12": {
         "complementary": {
             "first": "Isaiah 55:1-5",
             "psalm": "Psalm 145:8-9, 14-21",
@@ -1355,7 +1355,7 @@ module.exports={
             "gospel": "Matthew 14:13-21"
         }
     },
-    "Proper 14": {
+    "Pentecost 13": {
         "complementary": {
             "first": "1 Kings 19:9-18",
             "psalm": "Psalm 85:8-13",
@@ -1369,7 +1369,7 @@ module.exports={
             "gospel": "Matthew 14:22-33"
         }
     },
-    "Proper 15": {
+    "Pentecost 14": {
         "complementary": {
             "first": "Isaiah 56:1, 6-8",
             "psalm": "Psalm 67",
@@ -1383,7 +1383,7 @@ module.exports={
             "gospel": "Matthew 15:[10-20] 21-28"
         }
     },
-    "Proper 16": {
+    "Pentecost 15": {
         "complementary": {
             "first": "Isaiah 51:1-6",
             "psalm": "Psalm 138",
@@ -1397,7 +1397,7 @@ module.exports={
             "gospel": "Matthew 16:13-20"
         }
     },
-    "Proper 17": {
+    "Pentecost 16": {
         "complementary": {
             "first": "Jeremiah 15:15-21",
             "psalm": "Psalm 26:1-8",
@@ -1411,7 +1411,7 @@ module.exports={
             "gospel": "Matthew 16:21-28"
         }
     },
-    "Proper 18": {
+    "Pentecost 17": {
         "complementary": {
             "first": "Ezekiel 33:7-11",
             "psalm": "Psalm 119:33-40",
@@ -1425,7 +1425,7 @@ module.exports={
             "gospel": "Matthew 18:15-20"
         }
     },
-    "Proper 19": {
+    "Pentecost 18": {
         "complementary": {
             "first": "Genesis 50:15-21",
             "psalm": "Psalm 103:[1-7] 8-13",
@@ -1439,7 +1439,7 @@ module.exports={
             "gospel": "Matthew 18:21-35"
         }
     },
-    "Proper 20": {
+    "Pentecost 19": {
         "complementary": {
             "first": "Jonah 3:10—4:11",
             "psalm": "Psalm 145:1-8",
@@ -1453,7 +1453,7 @@ module.exports={
             "gospel": "Matthew 20:1-16"
         }
     },
-    "Proper 21": {
+    "Pentecost 20": {
         "complementary": {
             "first": "Ezekiel 18:1-4, 25-32",
             "psalm": "Psalm 25:1-9",
@@ -1467,7 +1467,7 @@ module.exports={
             "gospel": "Matthew 21:23-32"
         }
     },
-    "Proper 22": {
+    "Pentecost 21": {
         "complementary": {
             "first": "Isaiah 5:1-7",
             "psalm": "Psalm 80:7-15",
@@ -1481,7 +1481,7 @@ module.exports={
             "gospel": "Matthew 21:33-46"
         }
     },
-    "Proper 23": {
+    "Pentecost 22": {
         "complementary": {
             "first": "Isaiah 25:1-9",
             "psalm": "Psalm 23",
@@ -1495,7 +1495,7 @@ module.exports={
             "gospel": "Matthew 22:1-14"
         }
     },
-    "Proper 24": {
+    "Pentecost 23": {
         "complementary": {
             "first": "Isaiah 45:1-7",
             "psalm": "Psalm 96:1-9 [10-13]",
@@ -1515,7 +1515,7 @@ module.exports={
         "second": "Revelation 21:1-6a",
         "gospel": "John 11:32-44"
     },
-    "Proper 25": {
+    "Pentecost 24": {
         "complementary": {
             "first": "Leviticus 19:1-2, 15-18",
             "psalm": "Psalm 1",
@@ -1529,7 +1529,7 @@ module.exports={
             "gospel": "Matthew 22:34-46"
         }
     },
-    "Proper 26": {
+    "Pentecost 25": {
         "complementary": {
             "first": "Micah 3:5-12",
             "psalm": "Psalm 43",
@@ -1543,7 +1543,7 @@ module.exports={
             "gospel": "Matthew 23:1-12"
         }
     },
-    "Proper 27": {
+    "Pentecost 26": {
         "complementary": {
             "first": "Wisdom 6:12-16 or Amos 5:18-24",
             "psalm": "Wisdom 6:17-20 or Psalm 70",
@@ -1557,7 +1557,7 @@ module.exports={
             "gospel": "Matthew 25:1-13"
         }
     },
-    "Proper 28": {
+    "Pentecost 27": {
         "complementary": {
             "first": "Zephaniah 1:7, 12-18",
             "psalm": "Psalm 90:1-8 [9-11] 12",
@@ -1571,7 +1571,7 @@ module.exports={
             "gospel": "Matthew 25:14-30"
         }
     },
-    "Proper 29": {
+    "Pentecost 28": {
         "complementary": {
             "first": "Ezekiel 34:11-16, 20-24",
             "psalm": "Psalm 95:1-7a",
@@ -1823,13 +1823,13 @@ module.exports={
         "second": "Romans 8:12-17",
         "gospel": "John 3:1-17"
     },
-    "Proper 3": {
+    "Pentecost 2": {
         "first": "Hosea 2:14-20",
         "psalm": "Psalm 103:1-13, 22",
         "second": "2 Corinthians 3:1-6",
         "gospel": "Mark 2:13-22"
     },
-    "Proper 4": {
+    "Pentecost 3": {
         "complementary": {
             "first": "Deuteronomy 5:12-15",
             "psalm": "Psalm 81:1-10",
@@ -1843,7 +1843,7 @@ module.exports={
             "gospel": "Mark 2:23—3:6"
         }
     },
-    "Proper 5": {
+    "Pentecost 4": {
         "complementary": {
             "first": "Genesis 3:8-15",
             "psalm": "Psalm 130",
@@ -1857,7 +1857,7 @@ module.exports={
             "gospel": "Mark 3:20-35"
         }
     },
-    "Proper 6": {
+    "Pentecost 5": {
         "complementary": {
             "first": "Ezekiel 17:22-24",
             "psalm": "Psalm 92:1-4, 12-15",
@@ -1871,7 +1871,7 @@ module.exports={
             "gospel": "Mark 4:26-34"
         }
     },
-    "Proper 7": {
+    "Pentecost 6": {
         "complementary": {
             "first": "Job 38:1-11",
             "psalm": "Psalm 107:1-3, 23-32",
@@ -1885,7 +1885,7 @@ module.exports={
             "gospel": "Mark 4:35-41"
         }
     },
-    "Proper 8": {
+    "Pentecost 7": {
         "complementary": {
             "first": "Lamentations 3:22-33",
             "psalm": "Psalm 30 (1)",
@@ -1899,7 +1899,7 @@ module.exports={
             "gospel": "Mark 5:21-43"
         }
     },
-    "Proper 9": {
+    "Pentecost 8": {
         "complementary": {
             "first": "Ezekiel 2:1-5",
             "psalm": "Psalm 123",
@@ -1913,7 +1913,7 @@ module.exports={
             "gospel": "Mark 6:1-13"
         }
     },
-    "Proper 10": {
+    "Pentecost 9": {
         "complementary": {
             "first": "Amos 7:7-15",
             "psalm": "Psalm 85:8-13",
@@ -1927,7 +1927,7 @@ module.exports={
             "gospel": "Mark 6:14-29"
         }
     },
-    "Proper 11": {
+    "Pentecost 10": {
         "complementary": {
             "first": "Jeremiah 23:1-6",
             "psalm": "Psalm 23",
@@ -1941,7 +1941,7 @@ module.exports={
             "gospel": "Mark 6:30-34, 53-56"
         }
     },
-    "Proper 12": {
+    "Pentecost 11": {
         "complementary": {
             "first": "2 Kings 4:42-44",
             "psalm": "Psalm 145:10-18",
@@ -1955,7 +1955,7 @@ module.exports={
             "gospel": "John 6:1-21"
         }
     },
-    "Proper 13": {
+    "Pentecost 12": {
         "complementary": {
             "first": "Exodus 16:2-4, 9-15",
             "psalm": "Psalm 78:23-29",
@@ -1969,7 +1969,7 @@ module.exports={
             "gospel": "John 6:24-35"
         }
     },
-    "Proper 14": {
+    "Pentecost 13": {
         "complementary": {
             "first": "1 Kings 19:4-8",
             "psalm": "Psalm 34:1-8",
@@ -1983,7 +1983,7 @@ module.exports={
             "gospel": "John 6:35, 41-51"
         }
     },
-    "Proper 15": {
+    "Pentecost 14": {
         "complementary": {
             "first": "Proverbs 9:1-6",
             "psalm": "Psalm 34:9-14",
@@ -1997,7 +1997,7 @@ module.exports={
             "gospel": "John 6:51-58"
         }
     },
-    "Proper 16": {
+    "Pentecost 15": {
         "complementary": {
             "first": "Joshua 24:1-2a, 14-18",
             "psalm": "Psalm 34:15-22",
@@ -2011,7 +2011,7 @@ module.exports={
             "gospel": "John  6:56-69"
         }
     },
-    "Proper 17": {
+    "Pentecost 16": {
         "complementary": {
             "first": "Deuteronomy 4:1-2, 6-9",
             "psalm": "Psalm 15",
@@ -2025,7 +2025,7 @@ module.exports={
             "gospel": "Mark 7:1-8, 14-15, 21-23"
         }
     },
-    "Proper 18": {
+    "Pentecost 17": {
         "complementary": {
             "first": "Isaiah 35:4-7a",
             "psalm": "Psalm 146",
@@ -2039,7 +2039,7 @@ module.exports={
             "gospel": "Mark 7:24-37"
         }
     },
-    "Proper 19": {
+    "Pentecost 18": {
         "complementary": {
             "first": "Isaiah 50:4-9a",
             "psalm": "Psalm 116:1-9",
@@ -2053,7 +2053,7 @@ module.exports={
             "gospel": "Mark 8:27-38"
         }
     },
-    "Proper 20": {
+    "Pentecost 19": {
         "complementary": {
             "first": "Jeremiah 11:18-20",
             "psalm": "Psalm 54",
@@ -2067,7 +2067,7 @@ module.exports={
             "gospel": "Mark 9:30-37"
         }
     },
-    "Proper 21": {
+    "Pentecost 20": {
         "complementary": {
             "first": "Numbers 11:4-6, 10-16, 24-29",
             "psalm": "Psalm 19:7-14",
@@ -2081,7 +2081,7 @@ module.exports={
             "gospel": "Mark 9:38-50"
         }
     },
-    "Proper 22": {
+    "Pentecost 21": {
         "complementary": {
             "first": "Genesis 2:18-24",
             "psalm": "Psalm 8",
@@ -2095,7 +2095,7 @@ module.exports={
             "gospel": "Mark 10:2-16"
         }
     },
-    "Proper 23": {
+    "Pentecost 22": {
         "complementary": {
             "first": "Amos 5:6-7, 10-15",
             "psalm": "Psalm 90:12-17",
@@ -2115,7 +2115,7 @@ module.exports={
         "second": "Revelation 21:1-6a",
         "gospel": "John 11:32-44"
     },
-    "Proper 24": {
+    "Pentecost 23": {
         "complementary": {
             "first": "Isaiah 53:4-12",
             "psalm": "Psalm 91:9-16",
@@ -2129,7 +2129,7 @@ module.exports={
             "gospel": "Mark 10:35-45"
         }
     },
-    "Proper 25": {
+    "Pentecost 24": {
         "complementary": {
             "first": "Jeremiah 31:7-9",
             "psalm": "Psalm 126",
@@ -2143,7 +2143,7 @@ module.exports={
             "gospel": "Mark 10:46-52"
         }
     },
-    "Proper 26": {
+    "Pentecost 25": {
         "complementary": {
             "first": "Deuteronomy 6:1-9",
             "psalm": "Psalm 119:1-8",
@@ -2157,7 +2157,7 @@ module.exports={
             "gospel": "Mark 12:28-34"
         }
     },
-    "Proper 27": {
+    "Pentecost 26": {
         "complementary": {
             "first": "1 Kings 17:8-16",
             "psalm": "Psalm 146",
@@ -2171,7 +2171,7 @@ module.exports={
             "gospel": "Mark 12:38-44"
         }
     },
-    "Proper 28": {
+    "Pentecost 27": {
         "complementary": {
             "first": "Daniel 12:1-3",
             "psalm": "Psalm 16",
@@ -2185,7 +2185,7 @@ module.exports={
             "gospel": "Mark 13:1-8"
         }
     },
-    "Proper 29": {
+    "Pentecost 28": {
         "complementary": {
             "first": "Daniel 7:9-10, 13-14",
             "psalm": "Psalm 93",
@@ -2425,13 +2425,13 @@ module.exports={
         "second": "Romans 5:1-5",
         "gospel": "John 16:12-15"
     },
-    "Proper 3": {
+    "Pentecost 2": {
         "first": "Sirach 27:4-7 or Isaiah 55:10-13",
         "psalm": "Psalm 92:1-4, 12-15",
         "second": "1 Corinthians 15:51-58",
         "gospel": "Luke 6:39-49"
     },
-    "Proper 4": {
+    "Pentecost 3": {
         "complementary": {
             "first": "1 Kings 8:22-23, 41-43",
             "psalm": "Psalm 96:1-9",
@@ -2445,7 +2445,7 @@ module.exports={
             "gospel": "Luke 7:1-10"
         }
     },
-    "Proper 5": {
+    "Pentecost 4": {
         "complementary": {
             "first": "1 Kings 17:17-24",
             "psalm": "Psalm 30",
@@ -2459,7 +2459,7 @@ module.exports={
             "gospel": "Luke 7:11-17"
         }
     },
-    "Proper 6": {
+    "Pentecost 5": {
         "complementary": {
             "first": "2 Samuel 11:26—12:10, 13-15",
             "psalm": "Psalm 32",
@@ -2473,7 +2473,7 @@ module.exports={
             "gospel": "Luke 7:36—8:3"
         }
     },
-    "Proper 7": {
+    "Pentecost 6": {
         "complementary": {
             "first": "Isaiah 65:1-9",
             "psalm": "Psalm 22:19-28",
@@ -2487,7 +2487,7 @@ module.exports={
             "gospel": "Luke 8:26-39"
         }
     },
-    "Proper 8": {
+    "Pentecost 7": {
         "complementary": {
             "first": "1 Kings 19:15-16, 19-21",
             "psalm": "Psalm 16",
@@ -2501,7 +2501,7 @@ module.exports={
             "gospel": "Luke 9:51-62"
         }
     },
-    "Proper 9": {
+    "Pentecost 8": {
         "complementary": {
             "first": "Isaiah 66:10-14",
             "psalm": "Psalm 66:1-9",
@@ -2515,7 +2515,7 @@ module.exports={
             "gospel": "Luke 10:1-11, 16-20"
         }
     },
-    "Proper 10": {
+    "Pentecost 9": {
         "complementary": {
             "first": "Deuteronomy 30:9-14",
             "psalm": "Psalm 25:1-10",
@@ -2529,7 +2529,7 @@ module.exports={
             "gospel": "Luke 10:25-37"
         }
     },
-    "Proper 11": {
+    "Pentecost 10": {
         "complementary": {
             "first": "Genesis 18:1-10a",
             "psalm": "Psalm 15",
@@ -2543,7 +2543,7 @@ module.exports={
             "gospel": "Luke 10:38-42"
         }
     },
-    "Proper 12": {
+    "Pentecost 11": {
         "complementary": {
             "first": "Genesis 18:20-32",
             "psalm": "Psalm 138",
@@ -2557,7 +2557,7 @@ module.exports={
             "gospel": "Luke 11:1-13"
         }
     },
-    "Proper 13": {
+    "Pentecost 12": {
         "complementary": {
             "first": "Ecclesiastes 1:2, 12-14; 2:18-23",
             "psalm": "Psalm 49:1-12",
@@ -2571,7 +2571,7 @@ module.exports={
             "gospel": "Luke 12:13-21"
         }
     },
-    "Proper 14": {
+    "Pentecost 13": {
         "complementary": {
             "first": "Genesis 15:1-6",
             "psalm": "Psalm 33:12-22",
@@ -2585,7 +2585,7 @@ module.exports={
             "gospel": "Luke 12:32-40"
         }
     },
-    "Proper 15": {
+    "Pentecost 14": {
         "complementary": {
             "first": "Jeremiah 23:23-29",
             "psalm": "Psalm 82",
@@ -2599,7 +2599,7 @@ module.exports={
             "gospel": "Luke 12:49-56"
         }
     },
-    "Proper 16": {
+    "Pentecost 15": {
         "complementary": {
             "first": "Isaiah 58:9b-14",
             "psalm": "Psalm 103:1-8",
@@ -2613,7 +2613,7 @@ module.exports={
             "gospel": "Luke 13:10-17"
         }
     },
-    "Proper 17": {
+    "Pentecost 16": {
         "complementary": {
             "first": "Sirach 10:12-18 or Proverbs 25:6-7",
             "psalm": "Psalm 112",
@@ -2627,7 +2627,7 @@ module.exports={
             "gospel": "Luke 14:1, 7-14"
         }
     },
-    "Proper 18": {
+    "Pentecost 17": {
         "complementary": {
             "first": "Deuteronomy 30:15-20",
             "psalm": "Psalm 1",
@@ -2641,7 +2641,7 @@ module.exports={
             "gospel": "Luke 14:25-33"
         }
     },
-    "Proper 19": {
+    "Pentecost 18": {
         "complementary": {
             "first": "Exodus 32:7-14",
             "psalm": "Psalm 51:1-10",
@@ -2655,7 +2655,7 @@ module.exports={
             "gospel": "Luke 15:1-10"
         }
     },
-    "Proper 20": {
+    "Pentecost 19": {
         "complementary": {
             "first": "Amos 8:4-7",
             "psalm": "Psalm 113",
@@ -2669,7 +2669,7 @@ module.exports={
             "gospel": "Luke 16:1-13"
         }
     },
-    "Proper 21": {
+    "Pentecost 20": {
         "complementary": {
             "first": "Amos 6:1a, 4-7",
             "psalm": "Psalm 146",
@@ -2683,7 +2683,7 @@ module.exports={
             "gospel": "Luke 16:19-31"
         }
     },
-    "Proper 22": {
+    "Pentecost 21": {
         "complementary": {
             "first": "Habakkuk 1:1-4; 2:1-4",
             "psalm": "Psalm 37:1-9",
@@ -2697,7 +2697,7 @@ module.exports={
             "gospel": "Luke 17:5-10"
         }
     },
-    "Proper 23": {
+    "Pentecost 22": {
         "complementary": {
             "first": "2 Kings 5:1-3, 7-15c",
             "psalm": "Psalm 111",
@@ -2717,7 +2717,7 @@ module.exports={
         "second": "Revelation 21:1-6a",
         "gospel": "John 11:32-44"
     },
-    "Proper 24": {
+    "Pentecost 23": {
         "complementary": {
             "first": "Genesis 32:22-31",
             "psalm": "Psalm 121",
@@ -2731,7 +2731,7 @@ module.exports={
             "gospel": "Luke 18:1-8"
         }
     },
-    "Proper 25": {
+    "Pentecost 24": {
         "complementary": {
             "first": "Jeremiah 14:7-10, 19-22 or Sirach 35:12-17",
             "psalm": "Psalm 84:1-7",
@@ -2745,7 +2745,7 @@ module.exports={
             "gospel": "Luke 18:9-14"
         }
     },
-    "Proper 26": {
+    "Pentecost 25": {
         "complementary": {
             "first": "Isaiah 1:10-18",
             "psalm": "Psalm 32:1-7",
@@ -2759,7 +2759,7 @@ module.exports={
             "gospel": "Luke 19:1-10"
         }
     },
-    "Proper 27": {
+    "Pentecost 26": {
         "complementary": {
             "first": "Job 19:23-27a",
             "psalm": "Psalm 17:1-9",
@@ -2773,7 +2773,7 @@ module.exports={
             "gospel": "Luke 20:27-38"
         }
     },
-    "Proper 28": {
+    "Pentecost 27": {
         "complementary": {
             "first": "Malachi 4:1-2a",
             "psalm": "Psalm 98",
@@ -2787,7 +2787,7 @@ module.exports={
             "gospel": "Luke 21:5-19"
         }
     },
-    "Proper 29": {
+    "Pentecost 28": {
         "complementary": {
             "first": "Jeremiah 23:1-6",
             "psalm": "Psalm 46",
