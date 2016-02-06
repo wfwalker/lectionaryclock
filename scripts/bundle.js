@@ -113,6 +113,9 @@ function initializeWeekCircle(face) {
 		.attr('id', 'weekCircle');
 
 	var sundays = lectionary.days(gClock.currentYear);
+	var tmpNow = new Date().getTime();
+
+	gClock.currentSunday = null;
 
 	// initialize currentSunday
 	for (var index in sundays) {
@@ -133,12 +136,15 @@ function initializeWeekCircle(face) {
 			'\n'
 		].join('>');
 
-		console.log(aSunday);
+		var delta = aSunday.date.getTime() - tmpNow;
 
-		var delta = aSunday.date.getTime() - new Date().getTime();
 		if (delta > -1 * oneDay && delta < 6 * oneDay) {
-			gClock.currentSunday = aSunday;
-			showSunday(gClock.currentSunday);
+			console.log('nearby aSunday', aSunday, 'now', tmpNow, 'delta', delta);
+			if (! gClock.currentSunday) {
+				gClock.currentSunday = aSunday;
+				showSunday(gClock.currentSunday);
+				console.log('SET TO', gClock.currentSunday);
+			}
 		}
 	}
 
@@ -153,7 +159,6 @@ function initializeWeekCircle(face) {
 
 			// orient the lefthand and righthand labels differently for legibility
 			if (degrees > 180) {
-				console.log(gOuterRadius*0.4);
 				return 'rotate(' + (degrees + 90) + ') translate(-' + gOuterRadius*0.41 + ',5)';
 			} else {
 				return 'rotate(' + (degrees + 270) + ') translate(' + gOuterRadius*0.41 + ',5)';
@@ -268,6 +273,7 @@ function showClockForYear(face, inNewYear) {
 	d3.select('#pointer')
 		.attr('transform', function(d){
 			var tmp = new Date();
+			console.log('set pointer to', tmp);
 			return 'rotate(' + gClock.yearDegreesScale(tmp.getTime()) + ')';
 		});
 }
