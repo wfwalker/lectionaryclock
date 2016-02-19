@@ -982,619 +982,619 @@ module.exports = {
 },{}],11:[function(require,module,exports){
 module.exports={
     "Advent 1": {
-        "first": "Isaiah 2:1-5",
-        "psalm": "Psalm 122",
-        "second": "Romans 13:11-14",
-        "gospel": "Matthew 24:36-44"
+        "first": ["Isaiah 2:1-5"],
+        "psalm": ["Psalm 122"],
+        "second": ["Romans 13:11-14"],
+        "gospel": ["Matthew 24:36-44"]
     },
     "Advent 2": {
-        "first": "Isaiah 11:1-10",
-        "psalm": "Psalm 72:1-7, 18-19",
-        "second": "Romans 15:4-13",
-        "gospel": "Matthew 3:1-12"
+        "first": ["Isaiah 11:1-10"],
+        "psalm": ["Psalm 72:1-7, 18-19"],
+        "second": ["Romans 15:4-13"],
+        "gospel": ["Matthew 3:1-12"]
     },
     "Thanksgiving": {
-        "first": "Deuteronomy 8:7-18",
-        "psalm": "Psalm 65",
-        "second": "2 Corinthians 9:6-15",
-        "gospel": "Luke 17:11-19"
+        "first": ["Deuteronomy 8:7-18"],
+        "psalm": ["Psalm 65"],
+        "second": ["2 Corinthians 9:6-15"],
+        "gospel": ["Luke 17:11-19"]
     },
     "Advent 3": {
-        "first": "Isaiah35:1-10",
-        "psalm": "Psalm 146:5-10 or Luke 1:46b-55",
-        "second": "James 5:7-10",
-        "gospel": "Matthew 11:2-11"
+        "first": ["Isaiah35:1-10"],
+        "psalm": ["Psalm 146:5-10", "Luke 1:46b-55"],
+        "second": ["James 5:7-10"],
+        "gospel": ["Matthew 11:2-11"]
     },
     "Advent 4": {
-        "first": "Isaiah 7:10-16",
-        "psalm": "Psalm 80:1-7, 17-19",
-        "second": "Romans 1:1-7",
-        "gospel": "Matthew 1:18-25"
+        "first": ["Isaiah 7:10-16"],
+        "psalm": ["Psalm 80:1-7, 17-19"],
+        "second": ["Romans 1:1-7"],
+        "gospel": ["Matthew 1:18-25"]
     },
     "Christmas Eve": {
-        "first": "Isaiah 9:2-7",
-        "psalm": "Psalm 96",
-        "second": "Titus 2:11-14",
-        "gospel": "Luke 2:1-14 [15-20]"
+        "first": ["Isaiah 9:2-7"],
+        "psalm": ["Psalm 96"],
+        "second": ["Titus 2:11-14"],
+        "gospel": ["Luke 2:1-14 [15-20]"]
     },
     "Christmas Day": {
-        "first": "Isaiah 62:6-12",
-        "psalm": "Psalm 97",
-        "second": "Titus 3:4-7",
-        "gospel": "Luke 2:[1-7] 8-20"
+        "first": ["Isaiah 62:6-12"],
+        "psalm": ["Psalm 97"],
+        "second": ["Titus 3:4-7"],
+        "gospel": ["Luke 2:[1-7] 8-20"]
     },
     "Christmas 1": {
-        "first": "Isaiah 61:10—62:3",
-        "psalm": "Psalm 148",
-        "second": "Galatians 4:4-7",
-        "gospel": "Luke 2:22-40"
+        "first": ["Isaiah 61:10—62:3"],
+        "psalm": ["Psalm 148"],
+        "second": ["Galatians 4:4-7"],
+        "gospel": ["Luke 2:22-40"]
     },
     "Epiphany Sunday": {
-        "first": "Isaiah 60:1-6",
-        "psalm": "Psalm 72:1-7, 10-14",
-        "second": "Ephesians 3:1-12",
-        "gospel": "Matthew 2:1-12"
+        "first": ["Isaiah 60:1-6"],
+        "psalm": ["Psalm 72:1-7, 10-14"],
+        "second": ["Ephesians 3:1-12"],
+        "gospel": ["Matthew 2:1-12"]
     },
     "Epiphany Day": {
-        "first": "Isaiah 60:1-6",
-        "psalm": "Psalm 72:1-7, 10-14",
-        "second": "Ephesians 3:1-12",
-        "gospel": "Matthew 2:1-12"
+        "first": ["Isaiah 60:1-6"],
+        "psalm": ["Psalm 72:1-7, 10-14"],
+        "second": ["Ephesians 3:1-12"],
+        "gospel": ["Matthew 2:1-12"]
     },
     "Baptism": {
-        "first": "Isaiah 42:1-9",
-        "psalm": "Psalm 29",
-        "second": "Acts 10:34-43",
-        "gospel": "Matthew 3:13-17"
+        "first": ["Isaiah 42:1-9"],
+        "psalm": ["Psalm 29"],
+        "second": ["Acts 10:34-43"],
+        "gospel": ["Matthew 3:13-17"]
     },
     "Epiphany 2": {
-        "first": "Isaiah 49:1-7",
-        "psalm": "Psalm 40:1-11",
-        "second": "1 Corinthians 1:1-9",
-        "gospel": "John 1:29-42"
+        "first": ["Isaiah 49:1-7"],
+        "psalm": ["Psalm 40:1-11"],
+        "second": ["1 Corinthians 1:1-9"],
+        "gospel": ["John 1:29-42"]
     },
     "Epiphany 3": {
-        "first": "Isaiah 9:1-4",
-        "psalm": "Psalm 27:1, 4-9",
-        "second": "1 Corinthians 1:10-18",
-        "gospel": "Matthew 4:12-23"
+        "first": ["Isaiah 9:1-4"],
+        "psalm": ["Psalm 27:1, 4-9"],
+        "second": ["1 Corinthians 1:10-18"],
+        "gospel": ["Matthew 4:12-23"]
     },
     "Epiphany 4": {
-        "first": "Micah 6:1-8",
-        "psalm": "Psalm 15",
-        "second": "1 Corinthians 1:18-31",
-        "gospel": "Matthew 5:1-12"
+        "first": ["Micah 6:1-8"],
+        "psalm": ["Psalm 15"],
+        "second": ["1 Corinthians 1:18-31"],
+        "gospel": ["Matthew 5:1-12"]
     },
     "Epiphany 5": {
-        "first": "Isaiah 58:1-9a [9b-12]",
-        "psalm": "Psalm 112:1-9 [10]",
-        "second": "1 Corinthians 2:1-12 [13-16]",
-        "gospel": "Matthew 5:13-20"
+        "first": ["Isaiah 58:1-9a [9b-12]"],
+        "psalm": ["Psalm 112:1-9 [10]"],
+        "second": ["1 Corinthians 2:1-12 [13-16]"],
+        "gospel": ["Matthew 5:13-20"]
     },
     "Epiphany 6": {
-        "first": "Deuteronomy 30:15-20 or Sirach 15:15-20",
-        "psalm": "Psalm 119:1-8",
-        "second": "1 Corinthians 3:1-9",
-        "gospel": "Matthew 5:21-37"
+        "first": ["Deuteronomy 30:15-20", "Sirach 15:15-20"],
+        "psalm": ["Psalm 119:1-8"],
+        "second": ["1 Corinthians 3:1-9"],
+        "gospel": ["Matthew 5:21-37"]
     },
     "Epiphany 7": {
-        "first": "Leviticus 19:1-2, 9-18",
-        "psalm": "Psalm 119:33-40",
-        "second": "1 Corinthians 3:10-11, 16-23",
-        "gospel": "Matthew 5:38-48"
+        "first": ["Leviticus 19:1-2, 9-18"],
+        "psalm": ["Psalm 119:33-40"],
+        "second": ["1 Corinthians 3:10-11, 16-23"],
+        "gospel": ["Matthew 5:38-48"]
     },
     "Epiphany 8": {
-        "first": "Isaiah 49:8-16a",
-        "psalm": "Psalm 131",
-        "second": "1 Corinthians 4:1-5",
-        "gospel": "Matthew 6:24-34"
+        "first": ["Isaiah 49:8-16a"],
+        "psalm": ["Psalm 131"],
+        "second": ["1 Corinthians 4:1-5"],
+        "gospel": ["Matthew 6:24-34"]
     },
     "Epiphany 9": {
-        "first": "Deuteronomy 11:18-21, 26-28",
-        "psalm": "Psalm 31:1-5, 19-24",
-        "second": "Romans 1:16-17; 3:22b-28 [29-31]",
-        "gospel": "Matthew 7:21-29"
+        "first": ["Deuteronomy 11:18-21, 26-28"],
+        "psalm": ["Psalm 31:1-5, 19-24"],
+        "second": ["Romans 1:16-17; 3:22b-28 [29-31]"],
+        "gospel": ["Matthew 7:21-29"]
     },
     "Transfiguration": {
-        "first": "Exodus 24:12-18",
-        "psalm": "Psalm 2 or Psalm 99",
-        "second": "2 Peter 1:16-21",
-        "gospel": "Matthew 17:1-9"
+        "first": ["Exodus 24:12-18"],
+        "psalm": ["Psalm 2", "Psalm 99"],
+        "second": ["2 Peter 1:16-21"],
+        "gospel": ["Matthew 17:1-9"]
     },
     "Ash Wednesday": {
-        "first": "Joel 2:1-2, 12-17 or Isaiah 58:1-12",
-        "psalm": "Psalm 51:1-17",
-        "second": "2 Corinthians 5:20b—6:10",
-        "gospel": "Matthew 6:1-6, 16-21"
+        "first": ["Joel 2:1-2, 12-17", "Isaiah 58:1-12"],
+        "psalm": ["Psalm 51:1-17"],
+        "second": ["2 Corinthians 5:20b—6:10"],
+        "gospel": ["Matthew 6:1-6, 16-21"]
     },
     "Lent 1": {
-        "first": "Genesis 2:15-17; 3:1-7",
-        "psalm": "Psalm 32",
-        "second": "Romans 5:12-19",
-        "gospel": "Matthew 4:1-11"
+        "first": ["Genesis 2:15-17; 3:1-7"],
+        "psalm": ["Psalm 32"],
+        "second": ["Romans 5:12-19"],
+        "gospel": ["Matthew 4:1-11"]
     },
     "Lent 2": {
-        "first": "Genesis 12:1-4a",
-        "psalm": "Psalm 121",
-        "second": "Romans 4:1-5, 13-17",
-        "gospel": "John 3:1-17 or Matthew 17:1-9"
+        "first": ["Genesis 12:1-4a"],
+        "psalm": ["Psalm 121"],
+        "second": ["Romans 4:1-5, 13-17"],
+        "gospel": ["John 3:1-17", "Matthew 17:1-9"]
     },
     "Lent 3": {
-        "first": "Exodus 17:1-7",
-        "psalm": "Psalm 95",
-        "second": "Romans 5:1-11",
-        "gospel": "John 4:5-42"
+        "first": ["Exodus 17:1-7"],
+        "psalm": ["Psalm 95"],
+        "second": ["Romans 5:1-11"],
+        "gospel": ["John 4:5-42"]
     },
     "Lent 4": {
-        "first": "1 Samuel 16:1-13",
-        "psalm": "Psalm 23",
-        "second": "Ephesians 5:8-14",
-        "gospel": "John 9:1-41"
+        "first": ["1 Samuel 16:1-13"],
+        "psalm": ["Psalm 23"],
+        "second": ["Ephesians 5:8-14"],
+        "gospel": ["John 9:1-41"]
     },
     "Lent 5": {
-        "first": "Ezekiel 37:1-14",
-        "psalm": "Psalm 130",
-        "second": "Romans 8:6-11",
-        "gospel": "John 11:1-45"
+        "first": ["Ezekiel 37:1-14"],
+        "psalm": ["Psalm 130"],
+        "second": ["Romans 8:6-11"],
+        "gospel": ["John 11:1-45"]
     },
     "Palms": {
-        "first": "Isaiah 50:4-9a",
-        "psalm": "Psalm 31:9-16",
-        "second": "Philippians 2:5-11",
-        "gospel": "Matthew 21:1-11"
+        "first": ["Isaiah 50:4-9a"],
+        "psalm": ["Psalm 31:9-16"],
+        "second": ["Philippians 2:5-11"],
+        "gospel": ["Matthew 21:1-11"]
     },
     "Passion": {
-        "first": "Isaiah 50:4-9a",
-        "psalm": "Psalm 31:9-16",
-        "second": "Philippians 2:5-11",
-        "gospel": "Matthew 26:14-27:66 or Matthew 27:11-54"
+        "first": ["Isaiah 50:4-9a"],
+        "psalm": ["Psalm 31:9-16"],
+        "second": ["Philippians 2:5-11"],
+        "gospel": ["Matthew 26:14-27:66", "Matthew 27:11-54"]
     },
     "Holy Thursday": {
-        "first": "Exodus 12:1-4 [5-10] 11-14",
-        "psalm": "Psalm 116:1-2, 12-19",
-        "second": "1 Corinthians 11:23-26",
-        "gospel": "John 13:1-17, 31b-35"
+        "first": ["Exodus 12:1-4 [5-10] 11-14"],
+        "psalm": ["Psalm 116:1-2, 12-19"],
+        "second": ["1 Corinthians 11:23-26"],
+        "gospel": ["John 13:1-17, 31b-35"]
     },
     "Good Friday": {
-        "first": "Isaiah 52:13—53:12",
-        "psalm": "Psalm 22",
-        "second": "Hebrews 10:16-25 or Hebrews 4:14-16; 5:7-9",
-        "gospel": "John 18:1—19:42"
+        "first": ["Isaiah 52:13—53:12"],
+        "psalm": ["Psalm 22"],
+        "second": ["Hebrews 10:16-25", "Hebrews 4:14-16; 5:7-9"],
+        "gospel": ["John 18:1—19:42"]
     },
     "Easter Day": {
-        "first": "Acts 10:34-43 or Isaiah 25:6-9",
-        "psalm": "Psalm 118:1-2, 14-24",
-        "second": "1 Corinthians 15:1-11 or Acts 10:34-43",
-        "gospel": "John 20:1-18 or Mark 16:1-8"
+        "first": ["Acts 10:34-43", "Isaiah 25:6-9"],
+        "psalm": ["Psalm 118:1-2, 14-24"],
+        "second": ["1 Corinthians 15:1-11", "Acts 10:34-43"],
+        "gospel": ["John 20:1-18", "Mark 16:1-8"]
     },
     "Easter 2": {
-        "first": "Acts 2:14a, 22-32",
-        "psalm": "Psalm 16",
-        "second": "1 Peter 1:3-9",
-        "gospel": "John 20:19-31"
+        "first": ["Acts 2:14a, 22-32"],
+        "psalm": ["Psalm 16"],
+        "second": ["1 Peter 1:3-9"],
+        "gospel": ["John 20:19-31"]
     },
     "Easter 3": {
-        "first": "Acts 2:14a, 36-41",
-        "psalm": "Psalm 116:1-4, 12-19",
-        "second": "1 Peter 1:17-23",
-        "gospel": "Luke 24:13-35"
+        "first": ["Acts 2:14a, 36-41"],
+        "psalm": ["Psalm 116:1-4, 12-19"],
+        "second": ["1 Peter 1:17-23"],
+        "gospel": ["Luke 24:13-35"]
     },
     "Easter 4": {
-        "first": "Acts 2:42-47",
-        "psalm": "Psalm 23",
-        "second": "1 Peter 2:19-25",
-        "gospel": "John 10:1-10"
+        "first": ["Acts 2:42-47"],
+        "psalm": ["Psalm 23"],
+        "second": ["1 Peter 2:19-25"],
+        "gospel": ["John 10:1-10"]
     },
     "Easter 5": {
-        "first": "Acts 7:55-60",
-        "psalm": "Psalm 31:1-5, 15-16",
-        "second": "1 Peter 2:2-10",
-        "gospel": "John 14:1-14"
+        "first": ["Acts 7:55-60"],
+        "psalm": ["Psalm 31:1-5, 15-16"],
+        "second": ["1 Peter 2:2-10"],
+        "gospel": ["John 14:1-14"]
     },
     "Easter 6": {
-        "first": "Acts 17:22-31",
-        "psalm": "Psalm 66:8-20",
-        "second": "1 Peter 3:13-22",
-        "gospel": "John 14:15-21"
+        "first": ["Acts 17:22-31"],
+        "psalm": ["Psalm 66:8-20"],
+        "second": ["1 Peter 3:13-22"],
+        "gospel": ["John 14:15-21"]
     },
     "Easter 7": {
-        "first": "Acts 1:6-14",
-        "psalm": "Psalm 68:1-10, 32-35",
-        "second": "1 Peter 4:12-14; 5:6-11",
-        "gospel": "John 17:1-11"
+        "first": ["Acts 1:6-14"],
+        "psalm": ["Psalm 68:1-10, 32-35"],
+        "second": ["1 Peter 4:12-14; 5:6-11"],
+        "gospel": ["John 17:1-11"]
     },
     "Ascension": {
-        "first": "Acts 1:1-11",
-        "psalm": "Psalm 47 or Psalm 93",
-        "second": "Ephesians 1:15-23",
-        "gospel": "Luke 24:44-53"
+        "first": ["Acts 1:1-11"],
+        "psalm": ["Psalm 47", "Psalm 93"],
+        "second": ["Ephesians 1:15-23"],
+        "gospel": ["Luke 24:44-53"]
     },
     "Pentecost Day": {
-        "first": "Acts 2:1-21 or Numbers 11:24-30",
-        "psalm": "Psalm 104:24-34, 35b",
-        "second": "1 Corinthians 12:3b-13 or Acts 2:1-21",
-        "gospel": "John 20:19-23 or John 7:37-39"
+        "first": ["Acts 2:1-21", "Numbers 11:24-30"],
+        "psalm": ["Psalm 104:24-34, 35b"],
+        "second": ["1 Corinthians 12:3b-13", "Acts 2:1-21"],
+        "gospel": ["John 20:19-23", "John 7:37-39"]
     },
     "Trinity": {
-        "first": "Genesis 1:1—2:4a",
-        "psalm": "Psalm 8",
-        "second": "2 Corinthians 13:11-13",
-        "gospel": "Matthew 28:16-20"
+        "first": ["Genesis 1:1—2:4a"],
+        "psalm": ["Psalm 8"],
+        "second": ["2 Corinthians 13:11-13"],
+        "gospel": ["Matthew 28:16-20"]
     },
     "Pentecost 2": {
-        "first": "Isaiah 49:8-16a",
-        "psalm": "Psalm 131",
-        "second": "1 Corinthians 4:1-5",
-        "gospel": "Matthew 6:24-34"
+        "first": ["Isaiah 49:8-16a"],
+        "psalm": ["Psalm 131"],
+        "second": ["1 Corinthians 4:1-5"],
+        "gospel": ["Matthew 6:24-34"]
     },
     "Pentecost 3": {
         "complementary": {
-            "first": "Deuteronomy 11:18-21, 26-28",
-            "psalm": "Psalm 31:1-5, 19-24",
-            "second": "Romans 1:16-17; 3:22b-28 [29-31]",
-            "gospel": "Matthew 7:21-29"
+            "first": ["Deuteronomy 11:18-21, 26-28"],
+            "psalm": ["Psalm 31:1-5, 19-24"],
+            "second": ["Romans 1:16-17; 3:22b-28 [29-31]"],
+            "gospel": ["Matthew 7:21-29"]
         },
         "semicontinuous": {
-            "first": "Genesis 6:9-22; 7:24; 8:14-19",
-            "psalm": "Psalm 46",
-            "second": "Romans 1:16-17; 3:22b-28 [29-31]",
-            "gospel": "Matthew 7:21-29"
+            "first": ["Genesis 6:9-22; 7:24; 8:14-19"],
+            "psalm": ["Psalm 46"],
+            "second": ["Romans 1:16-17; 3:22b-28 [29-31]"],
+            "gospel": ["Matthew 7:21-29"]
         }
     },
     "Pentecost 4": {
         "complementary": {
-            "first": "Hosea 5:15—6:6",
-            "psalm": "Psalm 50:7-15",
-            "second": "Romans 4:13-25",
-            "gospel": "Matthew 9:9-13, 18-26"
+            "first": ["Hosea 5:15—6:6"],
+            "psalm": ["Psalm 50:7-15"],
+            "second": ["Romans 4:13-25"],
+            "gospel": ["Matthew 9:9-13, 18-26"]
         },
         "semicontinuous": {
-            "first": "Genesis 12:1-9",
-            "psalm": "Psalm 33:1-12",
-            "second": "Romans 4:13-25",
-            "gospel": "Matthew 9:9-13, 18-26"
+            "first": ["Genesis 12:1-9"],
+            "psalm": ["Psalm 33:1-12"],
+            "second": ["Romans 4:13-25"],
+            "gospel": ["Matthew 9:9-13, 18-26"]
         }
     },
     "Pentecost 5": {
         "complementary": {
-            "first": "Exodus 19:2-8a",
-            "psalm": "Psalm 100",
-            "second": "Romans 5:1-8",
-            "gospel": "Matthew 9:35—10:8 [9-23]"
+            "first": ["Exodus 19:2-8a"],
+            "psalm": ["Psalm 100"],
+            "second": ["Romans 5:1-8"],
+            "gospel": ["Matthew 9:35—10:8 [9-23]"]
         },
         "semicontinuous": {
-            "first": "Genesis 18:1-15 [21:1-7]",
-            "psalm": "Psalm 116:1-2, 12-19",
-            "second": "Romans 5:1-8",
-            "gospel": "Matthew 9:35—10:8 [9-23]"
+            "first": ["Genesis 18:1-15 [21:1-7]"],
+            "psalm": ["Psalm 116:1-2, 12-19"],
+            "second": ["Romans 5:1-8"],
+            "gospel": ["Matthew 9:35—10:8 [9-23]"]
         }
     },
     "Pentecost 6": {
         "complementary": {
-            "first": "Jeremiah 20:7-13",
-            "psalm": "Psalm 69:7-10 [11-15] 16-18",
-            "second": "Romans 6:1b-11",
-            "gospel": "Matthew 10:24-39"
+            "first": ["Jeremiah 20:7-13"],
+            "psalm": ["Psalm 69:7-10 [11-15] 16-18"],
+            "second": ["Romans 6:1b-11"],
+            "gospel": ["Matthew 10:24-39"]
         },
         "semicontinuous": {
-            "first": "Genesis 21:8-21",
-            "psalm": "Psalm 86:1-10, 16-17",
-            "second": "Romans 6:1b-11",
-            "gospel": "Matthew 10:24-39"
+            "first": ["Genesis 21:8-21"],
+            "psalm": ["Psalm 86:1-10, 16-17"],
+            "second": ["Romans 6:1b-11"],
+            "gospel": ["Matthew 10:24-39"]
         }
     },
     "Pentecost 7": {
         "complementary": {
-            "first": "Jeremiah 28:5-9",
-            "psalm": "Psalm 89:1-4, 15-18",
-            "second": "Romans 6:12-23",
-            "gospel": "Matthew 10:40-42"
+            "first": ["Jeremiah 28:5-9"],
+            "psalm": ["Psalm 89:1-4, 15-18"],
+            "second": ["Romans 6:12-23"],
+            "gospel": ["Matthew 10:40-42"]
         },
         "semicontinuous": {
-            "first": "Genesis 22:1-14",
-            "psalm": "Psalm 13",
-            "second": "Romans 6:12-23",
-            "gospel": "Matthew 10:40-42"
+            "first": ["Genesis 22:1-14"],
+            "psalm": ["Psalm 13"],
+            "second": ["Romans 6:12-23"],
+            "gospel": ["Matthew 10:40-42"]
         }
     },
     "Pentecost 8": {
         "complementary": {
-            "first": "Zechariah 9:9-12",
-            "psalm": "Psalm 145:8-14",
-            "second": "Romans 7:15-25a",
-            "gospel": "Matthew 11:16-19, 25-30"
+            "first": ["Zechariah 9:9-12"],
+            "psalm": ["Psalm 145:8-14"],
+            "second": ["Romans 7:15-25a"],
+            "gospel": ["Matthew 11:16-19, 25-30"]
         },
         "semicontinuous": {
-            "first": "Genesis 24:34-38, 42-49, 58-67",
-            "psalm": "Psalm 45:10-17 or Song of Solomon 2:8-13",
-            "second": "Romans 7:15-25a",
-            "gospel": "Matthew 11:16-19, 25-30"
+            "first": ["Genesis 24:34-38, 42-49, 58-67"],
+            "psalm": ["Psalm 45:10-17", "Song of Solomon 2:8-13"],
+            "second": ["Romans 7:15-25a"],
+            "gospel": ["Matthew 11:16-19, 25-30"]
         }
     },
     "Pentecost 9": {
         "complementary": {
-            "first": "Isaiah 55:10-13",
-            "psalm": "Psalm 65:[1-8] 9-13",
-            "second": "Romans 8:1-11",
-            "gospel": "Matthew 13:1-9, 18-23"
+            "first": ["Isaiah 55:10-13"],
+            "psalm": ["Psalm 65:[1-8] 9-13"],
+            "second": ["Romans 8:1-11"],
+            "gospel": ["Matthew 13:1-9, 18-23"]
         },
         "semicontinuous": {
-            "first": "Genesis 25:19-34",
-            "psalm": "Psalm 119:105-112",
-            "second": "Romans 8:1-11",
-            "gospel": "Matthew 13:1-9, 18-23"
+            "first": ["Genesis 25:19-34"],
+            "psalm": ["Psalm 119:105-112"],
+            "second": ["Romans 8:1-11"],
+            "gospel": ["Matthew 13:1-9, 18-23"]
         }
     },
     "Pentecost 10": {
         "complementary": {
-            "first": "Wisdom 12:13, 16-19 or Isaiah 44:6-8",
-            "psalm": "Psalm 86:11-17",
-            "second": "Romans 8:12-25",
-            "gospel": "Matthew 13:24-30, 36-43"
+            "first": ["Wisdom 12:13, 16-19", "Isaiah 44:6-8"],
+            "psalm": ["Psalm 86:11-17"],
+            "second": ["Romans 8:12-25"],
+            "gospel": ["Matthew 13:24-30, 36-43"]
         },
         "semicontinuous": {
-            "first": "Genesis 28:10-19a",
-            "psalm": "Psalm 139:1-12, 23-24",
-            "second": "Romans 8:12-25",
-            "gospel": "Matthew 13:24-30, 36-43"
+            "first": ["Genesis 28:10-19a"],
+            "psalm": ["Psalm 139:1-12, 23-24"],
+            "second": ["Romans 8:12-25"],
+            "gospel": ["Matthew 13:24-30, 36-43"]
         }
     },
     "Pentecost 11": {
         "complementary": {
-            "first": "1 Kings 3:5-12",
-            "psalm": "Psalm 119:129-136",
-            "second": "Romans 8:26-39",
-            "gospel": "Matthew 13:31-33, 44-52"
+            "first": ["1 Kings 3:5-12"],
+            "psalm": ["Psalm 119:129-136"],
+            "second": ["Romans 8:26-39"],
+            "gospel": ["Matthew 13:31-33, 44-52"]
         },
         "semicontinuous": {
-            "first": "Genesis 29:15-28",
-            "psalm": "Psalm 105:1-11, 45b or Psalm 128",
-            "second": "Romans 8:26-39",
-            "gospel": "Matthew 13:31-33, 44-52"
+            "first": ["Genesis 29:15-28"],
+            "psalm": ["Psalm 105:1-11, 45b", "Psalm 128"],
+            "second": ["Romans 8:26-39"],
+            "gospel": ["Matthew 13:31-33, 44-52"]
         }
     },
     "Pentecost 12": {
         "complementary": {
-            "first": "Isaiah 55:1-5",
-            "psalm": "Psalm 145:8-9, 14-21",
-            "second": "Romans 9:1-5",
-            "gospel": "Matthew 14:13-21"
+            "first": ["Isaiah 55:1-5"],
+            "psalm": ["Psalm 145:8-9, 14-21"],
+            "second": ["Romans 9:1-5"],
+            "gospel": ["Matthew 14:13-21"]
         },
         "semicontinuous": {
-            "first": "Genesis 32:22-31",
-            "psalm": "Psalm 17:1-7, 15",
-            "second": "Romans 9:1-5",
-            "gospel": "Matthew 14:13-21"
+            "first": ["Genesis 32:22-31"],
+            "psalm": ["Psalm 17:1-7, 15"],
+            "second": ["Romans 9:1-5"],
+            "gospel": ["Matthew 14:13-21"]
         }
     },
     "Pentecost 13": {
         "complementary": {
-            "first": "1 Kings 19:9-18",
-            "psalm": "Psalm 85:8-13",
-            "second": "Romans 10:5-15",
-            "gospel": "Matthew 14:22-33"
+            "first": ["1 Kings 19:9-18"],
+            "psalm": ["Psalm 85:8-13"],
+            "second": ["Romans 10:5-15"],
+            "gospel": ["Matthew 14:22-33"]
         },
         "semicontinuous": {
-            "first": "Genesis 37:1-4, 12-28",
-            "psalm": "Psalm 105:1-6, 16-22, 45b",
-            "second": "Romans 10:5-15",
-            "gospel": "Matthew 14:22-33"
+            "first": ["Genesis 37:1-4, 12-28"],
+            "psalm": ["Psalm 105:1-6, 16-22, 45b"],
+            "second": ["Romans 10:5-15"],
+            "gospel": ["Matthew 14:22-33"]
         }
     },
     "Pentecost 14": {
         "complementary": {
-            "first": "Isaiah 56:1, 6-8",
-            "psalm": "Psalm 67",
-            "second": "Romans 11:1-2a, 29-32",
-            "gospel": "Matthew 15:[10-20] 21-28"
+            "first": ["Isaiah 56:1, 6-8"],
+            "psalm": ["Psalm 67"],
+            "second": ["Romans 11:1-2a, 29-32"],
+            "gospel": ["Matthew 15:[10-20] 21-28"]
         },
         "semicontinuous": {
-            "first": "Genesis 45:1-15",
-            "psalm": "Psalm 133",
-            "second": "Romans 11:1-2a, 29-32",
-            "gospel": "Matthew 15:[10-20] 21-28"
+            "first": ["Genesis 45:1-15"],
+            "psalm": ["Psalm 133"],
+            "second": ["Romans 11:1-2a, 29-32"],
+            "gospel": ["Matthew 15:[10-20] 21-28"]
         }
     },
     "Pentecost 15": {
         "complementary": {
-            "first": "Isaiah 51:1-6",
-            "psalm": "Psalm 138",
-            "second": "Romans 12:1-8",
-            "gospel": "Matthew 16:13-20"
+            "first": ["Isaiah 51:1-6"],
+            "psalm": ["Psalm 138"],
+            "second": ["Romans 12:1-8"],
+            "gospel": ["Matthew 16:13-20"]
         },
         "semicontinuous": {
-            "first": "Exodus 1:8—2:10",
-            "psalm": "Psalm 124",
-            "second": "Romans 12:1-8",
-            "gospel": "Matthew 16:13-20"
+            "first": ["Exodus 1:8—2:10"],
+            "psalm": ["Psalm 124"],
+            "second": ["Romans 12:1-8"],
+            "gospel": ["Matthew 16:13-20"]
         }
     },
     "Pentecost 16": {
         "complementary": {
-            "first": "Jeremiah 15:15-21",
-            "psalm": "Psalm 26:1-8",
-            "second": "Romans 12:9-21",
-            "gospel": "Matthew 16:21-28"
+            "first": ["Jeremiah 15:15-21"],
+            "psalm": ["Psalm 26:1-8"],
+            "second": ["Romans 12:9-21"],
+            "gospel": ["Matthew 16:21-28"]
         },
         "semicontinuous": {
-            "first": "Exodus 3:1-15",
-            "psalm": "Psalm 105:1-6, 23-26, 45b",
-            "second": "Romans 12:9-21",
-            "gospel": "Matthew 16:21-28"
+            "first": ["Exodus 3:1-15"],
+            "psalm": ["Psalm 105:1-6, 23-26, 45b"],
+            "second": ["Romans 12:9-21"],
+            "gospel": ["Matthew 16:21-28"]
         }
     },
     "Pentecost 17": {
         "complementary": {
-            "first": "Ezekiel 33:7-11",
-            "psalm": "Psalm 119:33-40",
-            "second": "Romans 13:8-14",
-            "gospel": "Matthew 18:15-20"
+            "first": ["Ezekiel 33:7-11"],
+            "psalm": ["Psalm 119:33-40"],
+            "second": ["Romans 13:8-14"],
+            "gospel": ["Matthew 18:15-20"]
         },
         "semicontinuous": {
-            "first": "Exodus 12:1-14",
-            "psalm": "Psalm 149",
-            "second": "Romans 13:8-14",
-            "gospel": "Matthew 18:15-20"
+            "first": ["Exodus 12:1-14"],
+            "psalm": ["Psalm 149"],
+            "second": ["Romans 13:8-14"],
+            "gospel": ["Matthew 18:15-20"]
         }
     },
     "Pentecost 18": {
         "complementary": {
-            "first": "Genesis 50:15-21",
-            "psalm": "Psalm 103:[1-7] 8-13",
-            "second": "Romans 14:1-12",
-            "gospel": "Matthew 18:21-35"
+            "first": ["Genesis 50:15-21"],
+            "psalm": ["Psalm 103:[1-7] 8-13"],
+            "second": ["Romans 14:1-12"],
+            "gospel": ["Matthew 18:21-35"]
         },
         "semicontinuous": {
-            "first": "Exodus 14:19-31",
-            "psalm": "Psalm 114 or Exodus 15:1b-11, 20-21",
-            "second": "Romans 14:1-12",
-            "gospel": "Matthew 18:21-35"
+            "first": ["Exodus 14:19-31"],
+            "psalm": ["Psalm 114", "Exodus 15:1b-11, 20-21"],
+            "second": ["Romans 14:1-12"],
+            "gospel": ["Matthew 18:21-35"]
         }
     },
     "Pentecost 19": {
         "complementary": {
-            "first": "Jonah 3:10—4:11",
-            "psalm": "Psalm 145:1-8",
-            "second": "Philippians 1:21-30",
-            "gospel": "Matthew 20:1-16"
+            "first": ["Jonah 3:10—4:11"],
+            "psalm": ["Psalm 145:1-8"],
+            "second": ["Philippians 1:21-30"],
+            "gospel": ["Matthew 20:1-16"]
         },
         "semicontinuous": {
-            "first": "Exodus 16:2-15",
-            "psalm": "Psalm 105:1-6, 37-45",
-            "second": "Philippians 1:21-30",
-            "gospel": "Matthew 20:1-16"
+            "first": ["Exodus 16:2-15"],
+            "psalm": ["Psalm 105:1-6, 37-45"],
+            "second": ["Philippians 1:21-30"],
+            "gospel": ["Matthew 20:1-16"]
         }
     },
     "Pentecost 20": {
         "complementary": {
-            "first": "Ezekiel 18:1-4, 25-32",
-            "psalm": "Psalm 25:1-9",
-            "second": "Philippians 2:1-13",
-            "gospel": "Matthew 21:23-32"
+            "first": ["Ezekiel 18:1-4, 25-32"],
+            "psalm": ["Psalm 25:1-9"],
+            "second": ["Philippians 2:1-13"],
+            "gospel": ["Matthew 21:23-32"]
         },
         "semicontinuous": {
-            "first": "Exodus 17:1-7",
-            "psalm": "Psalm 78:1-4, 12-16",
-            "second": "Philippians 2:1-13",
-            "gospel": "Matthew 21:23-32"
+            "first": ["Exodus 17:1-7"],
+            "psalm": ["Psalm 78:1-4, 12-16"],
+            "second": ["Philippians 2:1-13"],
+            "gospel": ["Matthew 21:23-32"]
         }
     },
     "Pentecost 21": {
         "complementary": {
-            "first": "Isaiah 5:1-7",
-            "psalm": "Psalm 80:7-15",
-            "second": "Philippians 3:4b-14",
-            "gospel": "Matthew 21:33-46"
+            "first": ["Isaiah 5:1-7"],
+            "psalm": ["Psalm 80:7-15"],
+            "second": ["Philippians 3:4b-14"],
+            "gospel": ["Matthew 21:33-46"]
         },
         "semicontinuous": {
-            "first": "Exodus 20:1-4, 7-9, 12-20",
-            "psalm": "Psalm 19",
-            "second": "Philippians 3:4b-14",
-            "gospel": "Matthew 21:33-46"
+            "first": ["Exodus 20:1-4, 7-9, 12-20"],
+            "psalm": ["Psalm 19"],
+            "second": ["Philippians 3:4b-14"],
+            "gospel": ["Matthew 21:33-46"]
         }
     },
     "Pentecost 22": {
         "complementary": {
-            "first": "Isaiah 25:1-9",
-            "psalm": "Psalm 23",
-            "second": "Philippians 4:1-9",
-            "gospel": "Matthew 22:1-14"
+            "first": ["Isaiah 25:1-9"],
+            "psalm": ["Psalm 23"],
+            "second": ["Philippians 4:1-9"],
+            "gospel": ["Matthew 22:1-14"]
         },
         "semicontinuous": {
-            "first": "Exodus 32:1-14",
-            "psalm": "Psalm 106:1-6, 19-23",
-            "second": "Philippians 4:1-9",
-            "gospel": "Matthew 22:1-14"
+            "first": ["Exodus 32:1-14"],
+            "psalm": ["Psalm 106:1-6, 19-23"],
+            "second": ["Philippians 4:1-9"],
+            "gospel": ["Matthew 22:1-14"]
         }
     },
     "Pentecost 23": {
         "complementary": {
-            "first": "Isaiah 45:1-7",
-            "psalm": "Psalm 96:1-9 [10-13]",
-            "second": "1 Thessalonians 1:1-10",
-            "gospel": "Matthew 22:15-22"
+            "first": ["Isaiah 45:1-7"],
+            "psalm": ["Psalm 96:1-9 [10-13]"],
+            "second": ["1 Thessalonians 1:1-10"],
+            "gospel": ["Matthew 22:15-22"]
         },
         "semicontinuous": {
-            "first": "Exodus 33:12-23",
-            "psalm": "Psalm 99",
-            "second": "1 Thessalonians 1:1-10",
-            "gospel": "Matthew 22:15-22"
+            "first": ["Exodus 33:12-23"],
+            "psalm": ["Psalm 99"],
+            "second": ["1 Thessalonians 1:1-10"],
+            "gospel": ["Matthew 22:15-22"]
         }
     },
     "All Saints": {
-        "first": "Isaiah 25:6-9",
-        "psalm": "Psalm 24 (5)",
-        "second": "Revelation 21:1-6a",
-        "gospel": "John 11:32-44"
+        "first": ["Isaiah 25:6-9"],
+        "psalm": ["Psalm 24 (5)"],
+        "second": ["Revelation 21:1-6a"],
+        "gospel": ["John 11:32-44"]
     },
     "Pentecost 24": {
         "complementary": {
-            "first": "Leviticus 19:1-2, 15-18",
-            "psalm": "Psalm 1",
-            "second": "1 Thessalonians 2:1-8",
-            "gospel": "Matthew 22:34-46"
+            "first": ["Leviticus 19:1-2, 15-18"],
+            "psalm": ["Psalm 1"],
+            "second": ["1 Thessalonians 2:1-8"],
+            "gospel": ["Matthew 22:34-46"]
         },
         "semicontinuous": {
-            "first": "Deuteronomy 34:1-12",
-            "psalm": "Psalm 90:1-6, 13-17",
-            "second": "1 Thessalonians 2:1-8",
-            "gospel": "Matthew 22:34-46"
+            "first": ["Deuteronomy 34:1-12"],
+            "psalm": ["Psalm 90:1-6, 13-17"],
+            "second": ["1 Thessalonians 2:1-8"],
+            "gospel": ["Matthew 22:34-46"]
         }
     },
     "Pentecost 25": {
         "complementary": {
-            "first": "Micah 3:5-12",
-            "psalm": "Psalm 43",
-            "second": "1 Thessalonians 2:9-13",
-            "gospel": "Matthew 23:1-12"
+            "first": ["Micah 3:5-12"],
+            "psalm": ["Psalm 43"],
+            "second": ["1 Thessalonians 2:9-13"],
+            "gospel": ["Matthew 23:1-12"]
         },
         "semicontinuous": {
-            "first": "Joshua 3:7-17",
-            "psalm": "Psalm 107:1-7, 33-37",
-            "second": "1 Thessalonians 2:9-13",
-            "gospel": "Matthew 23:1-12"
+            "first": ["Joshua 3:7-17"],
+            "psalm": ["Psalm 107:1-7, 33-37"],
+            "second": ["1 Thessalonians 2:9-13"],
+            "gospel": ["Matthew 23:1-12"]
         }
     },
     "Pentecost 26": {
         "complementary": {
-            "first": "Wisdom 6:12-16 or Amos 5:18-24",
-            "psalm": "Wisdom 6:17-20 or Psalm 70",
-            "second": "1 Thessalonians 4:13-18",
-            "gospel": "Matthew 25:1-13"
+            "first": ["Wisdom 6:12-16", "Amos 5:18-24"],
+            "psalm": ["Wisdom 6:17-20", "Psalm 70"],
+            "second": ["1 Thessalonians 4:13-18"],
+            "gospel": ["Matthew 25:1-13"]
         },
         "semicontinuous": {
-            "first": "Joshua 24:1-3a, 14-25",
-            "psalm": "Psalm 78:1-7",
-            "second": "1 Thessalonians 4:13-18",
-            "gospel": "Matthew 25:1-13"
+            "first": ["Joshua 24:1-3a, 14-25"],
+            "psalm": ["Psalm 78:1-7"],
+            "second": ["1 Thessalonians 4:13-18"],
+            "gospel": ["Matthew 25:1-13"]
         }
     },
     "Pentecost 27": {
         "complementary": {
-            "first": "Zephaniah 1:7, 12-18",
-            "psalm": "Psalm 90:1-8 [9-11] 12",
-            "second": "1 Thessalonians 5:1-11",
-            "gospel": "Matthew 25:14-30"
+            "first": ["Zephaniah 1:7, 12-18"],
+            "psalm": ["Psalm 90:1-8 [9-11] 12"],
+            "second": ["1 Thessalonians 5:1-11"],
+            "gospel": ["Matthew 25:14-30"]
         },
         "semicontinuous": {
-            "first": "Judges 4:1-7",
-            "psalm": "Psalm 123",
-            "second": "1 Thessalonians 5:1-11",
-            "gospel": "Matthew 25:14-30"
+            "first": ["Judges 4:1-7"],
+            "psalm": ["Psalm 123"],
+            "second": ["1 Thessalonians 5:1-11"],
+            "gospel": ["Matthew 25:14-30"]
         }
     },
     "Pentecost 28": {
         "complementary": {
-            "first": "Ezekiel 34:11-16, 20-24",
-            "psalm": "Psalm 95:1-7a",
-            "second": "Ephesians 1:15-23",
-            "gospel": "Matthew 25:31-46"
+            "first": ["Ezekiel 34:11-16, 20-24"],
+            "psalm": ["Psalm 95:1-7a"],
+            "second": ["Ephesians 1:15-23"],
+            "gospel": ["Matthew 25:31-46"]
         },
         "semicontinuous": {
-            "first": "Ezekiel 34:11-16, 20-24",
-            "psalm": "Psalm 100",
-            "second": "Ephesians 1:15-23",
-            "gospel": "Matthew 25:31-46"
+            "first": ["Ezekiel 34:11-16, 20-24"],
+            "psalm": ["Psalm 100"],
+            "second": ["Ephesians 1:15-23"],
+            "gospel": ["Matthew 25:31-46"]
         }
     }
 }
@@ -1602,619 +1602,619 @@ module.exports={
 },{}],12:[function(require,module,exports){
 module.exports={
     "Advent 1": {
-        "first": "Isaiah 64:1-9",
-        "psalm": "Psalm 80:1-7, 17-19",
-        "second": "1 Corinthians 1:3-9",
-        "gospel": "Mark 13:24-37"
+        "first": ["Isaiah 64:1-9"],
+        "psalm": ["Psalm 80:1-7, 17-19"],
+        "second": ["1 Corinthians 1:3-9"],
+        "gospel": ["Mark 13:24-37"]
     },
     "Advent 2": {
-        "first": "Isaiah 40:1-11",
-        "psalm": "Psalm 85:1-2, 8-13",
-        "second": "2 Peter 3:8-15a",
-        "gospel": "Mark 1:1-8"
+        "first": ["Isaiah 40:1-11"],
+        "psalm": ["Psalm 85:1-2, 8-13"],
+        "second": ["2 Peter 3:8-15a"],
+        "gospel": ["Mark 1:1-8"]
     },
     "Thanksgiving": {
-        "first": "Deuteronomy 8:7-18",
-        "psalm": "Psalm 65",
-        "second": "2 Corinthians 9:6-15",
-        "gospel": "Luke 17:11-19"
+        "first": ["Deuteronomy 8:7-18"],
+        "psalm": ["Psalm 65"],
+        "second": ["2 Corinthians 9:6-15"],
+        "gospel": ["Luke 17:11-19"]
     },
     "Advent 3": {
-        "first": "Isaiah 61:1-4, 8-11",
-        "psalm": "Psalm 126 or Luke 1:46b-55",
-        "second": "1 Thessalonians 5:16-24",
-        "gospel": "John 1:6-8, 19-28"
+        "first": ["Isaiah 61:1-4, 8-11"],
+        "psalm": ["Psalm 126", "Luke 1:46b-55"],
+        "second": ["1 Thessalonians 5:16-24"],
+        "gospel": ["John 1:6-8, 19-28"]
     },
     "Advent 4": {
-        "first": "2 Samuel 7:1-11, 16",
-        "psalm": "Luke 1:46b-55 or Psalm 89:1-4, 19-26",
-        "second": "Romans 16:25-27",
-        "gospel": "Luke 1:26-38"
+        "first": ["2 Samuel 7:1-11, 16"],
+        "psalm": ["Luke 1:46b-55", "Psalm 89:1-4, 19-26"],
+        "second": ["Romans 16:25-27"],
+        "gospel": ["Luke 1:26-38"]
     },
     "Christmas Eve": {
-        "first": "Isaiah 9:2-7",
-        "psalm": "Psalm 96",
-        "second": "Titus 2:11-14",
-        "gospel": "Luke 2:1-14 [15-20]"
+        "first": ["Isaiah 9:2-7"],
+        "psalm": ["Psalm 96"],
+        "second": ["Titus 2:11-14"],
+        "gospel": ["Luke 2:1-14 [15-20]"]
     },
     "Christmas Day": {
-        "first": "Isaiah 62:6-12",
-        "psalm": "Psalm 97",
-        "second": "Titus 3:4-7",
-        "gospel": "Luke 2:[1-7] 8-20"
+        "first": ["Isaiah 62:6-12"],
+        "psalm": ["Psalm 97"],
+        "second": ["Titus 3:4-7"],
+        "gospel": ["Luke 2:[1-7] 8-20"]
     },
     "Christmas 1": {
-        "first": "Isaiah 61:10—62:3",
-        "psalm": "Psalm 148",
-        "second": "Galatians 4:4-7",
-        "gospel": "Luke 2:22-40"
+        "first": ["Isaiah 61:10—62:3"],
+        "psalm": ["Psalm 148"],
+        "second": ["Galatians 4:4-7"],
+        "gospel": ["Luke 2:22-40"]
     },
     "Epiphany Sunday": {
-        "first": "Isaiah 60:1-6",
-        "psalm": "Psalm 72:1-7, 10-14",
-        "second": "Ephesians 3:1-12",
-        "gospel": "Matthew 2:1-12"
+        "first": ["Isaiah 60:1-6"],
+        "psalm": ["Psalm 72:1-7, 10-14"],
+        "second": ["Ephesians 3:1-12"],
+        "gospel": ["Matthew 2:1-12"]
     },
     "Epiphany Day": {
-        "first": "Isaiah 60:1-6",
-        "psalm": "Psalm 72:1-7, 10-14",
-        "second": "Ephesians 3:1-12",
-        "gospel": "Matthew 2:1-12"
+        "first": ["Isaiah 60:1-6"],
+        "psalm": ["Psalm 72:1-7, 10-14"],
+        "second": ["Ephesians 3:1-12"],
+        "gospel": ["Matthew 2:1-12"]
     },
     "Baptism": {
-        "first": "Genesis 1:1-5",
-        "psalm": "Psalm 29",
-        "second": "Acts 19:1-7",
-        "gospel": "Mark 1:4-11"
+        "first": ["Genesis 1:1-5"],
+        "psalm": ["Psalm 29"],
+        "second": ["Acts 19:1-7"],
+        "gospel": ["Mark 1:4-11"]
     },
     "Epiphany 2": {
-        "first": "1 Samuel 3:1-10 [11-20",
-        "psalm": "Psalm 139:1-6, 13-18",
-        "second": "1 Corinthians 6:12-20",
-        "gospel": "John 1:43-51"
+        "first": ["1 Samuel 3:1-10 [11-20"],
+        "psalm": ["Psalm 139:1-6, 13-18"],
+        "second": ["1 Corinthians 6:12-20"],
+        "gospel": ["John 1:43-51"]
     },
     "Epiphany 3": {
-        "first": "Jonah 3:1-5, 10",
-        "psalm": "Psalm 62:5-12",
-        "second": "1 Corinthians 7:29-31",
-        "gospel": "Mark 1:14-20"
+        "first": ["Jonah 3:1-5, 10"],
+        "psalm": ["Psalm 62:5-12"],
+        "second": ["1 Corinthians 7:29-31"],
+        "gospel": ["Mark 1:14-20"]
     },
     "Epiphany 4": {
-        "first": "Deuteronomy 18:15-20",
-        "psalm": "Psalm 111",
-        "second": "1 Corinthians 8:1-13",
-        "gospel": "Mark 1:21-28"
+        "first": ["Deuteronomy 18:15-20"],
+        "psalm": ["Psalm 111"],
+        "second": ["1 Corinthians 8:1-13"],
+        "gospel": ["Mark 1:21-28"]
     },
     "Epiphany 5": {
-        "first": "Isaiah 40:21-31",
-        "psalm": "Psalm 147:1-11, 20c",
-        "second": "1 Corinthians 9:16-23",
-        "gospel": "Mark 1:29-39"
+        "first": ["Isaiah 40:21-31"],
+        "psalm": ["Psalm 147:1-11, 20c"],
+        "second": ["1 Corinthians 9:16-23"],
+        "gospel": ["Mark 1:29-39"]
     },
     "Epiphany 6": {
-        "first": "2 Kings 5:1-14",
-        "psalm": "Psalm 30",
-        "second": "1 Corinthians 9:24-27",
-        "gospel": "Mark 1:40-45"
+        "first": ["2 Kings 5:1-14"],
+        "psalm": ["Psalm 30"],
+        "second": ["1 Corinthians 9:24-27"],
+        "gospel": ["Mark 1:40-45"]
     },
     "Epiphany 7": {
-        "first": "Isaiah 43:18-25",
-        "psalm": "Psalm 41",
-        "second": "2 Corinthians 1:18-22",
-        "gospel": "Mark 2:1-12"
+        "first": ["Isaiah 43:18-25"],
+        "psalm": ["Psalm 41"],
+        "second": ["2 Corinthians 1:18-22"],
+        "gospel": ["Mark 2:1-12"]
     },
     "Epiphany 8": {
-        "first": "Hosea 2:14-20",
-        "psalm": "Psalm 103:1-13, 22",
-        "second": "2 Corinthians 3:1-6",
-        "gospel": "Mark 2:13-22"
+        "first": ["Hosea 2:14-20"],
+        "psalm": ["Psalm 103:1-13, 22"],
+        "second": ["2 Corinthians 3:1-6"],
+        "gospel": ["Mark 2:13-22"]
     },
     "Epiphany 9": {
-        "first": "Deuteronomy 5:12-15",
-        "psalm": "Psalm 81:1-10",
-        "second": "2 Corinthians 4:5-12",
-        "gospel": "Mark 2:23—3:6"
+        "first": ["Deuteronomy 5:12-15"],
+        "psalm": ["Psalm 81:1-10"],
+        "second": ["2 Corinthians 4:5-12"],
+        "gospel": ["Mark 2:23—3:6"]
     },
     "Transfiguration": {
-        "first": "2 Kings 2:1-12",
-        "psalm": "Psalm 50:1-6",
-        "second": "2 Corinthians 4:3-6",
-        "gospel": "Mark 9:2-9"
+        "first": ["2 Kings 2:1-12"],
+        "psalm": ["Psalm 50:1-6"],
+        "second": ["2 Corinthians 4:3-6"],
+        "gospel": ["Mark 9:2-9"]
     },
     "Ash Wednesday": {
-        "first": "Joel 2:1-2, 12-17 or Isaiah 58:1-12",
-        "psalm": "Psalm 51:1-17",
-        "second": "2 Corinthians 5:20b—6:10",
-        "gospel": "Matthew 6:1-6, 16-21"
+        "first": ["Joel 2:1-2, 12-17", "Isaiah 58:1-12"],
+        "psalm": ["Psalm 51:1-17"],
+        "second": ["2 Corinthians 5:20b—6:10"],
+        "gospel": ["Matthew 6:1-6, 16-21"]
     },
     "Lent 1": {
-        "first": "Genesis 9:8-17",
-        "psalm": "Psalm 25:1-10",
-        "second": "1 Peter 3:18-22",
-        "gospel": "Mark 1:9-15"
+        "first": ["Genesis 9:8-17"],
+        "psalm": ["Psalm 25:1-10"],
+        "second": ["1 Peter 3:18-22"],
+        "gospel": ["Mark 1:9-15"]
     },
     "Lent 2": {
-        "first": "Genesis 17:1-7, 15-16",
-        "psalm": "Psalm 22:23-31",
-        "second": "Romans 4:13-25",
-        "gospel": "Mark 8:31-38 or Mark 9:2-9"
+        "first": ["Genesis 17:1-7, 15-16"],
+        "psalm": ["Psalm 22:23-31"],
+        "second": ["Romans 4:13-25"],
+        "gospel": ["Mark 8:31-38", "Mark 9:2-9"]
     },
     "Lent 3": {
-        "first": "Exodus 20:1-17",
-        "psalm": "Psalm 19",
-        "second": "1 Corinthians 1:18-25",
-        "gospel": "John 2:13-22"
+        "first": ["Exodus 20:1-17"],
+        "psalm": ["Psalm 19"],
+        "second": ["1 Corinthians 1:18-25"],
+        "gospel": ["John 2:13-22"]
     },
     "Lent 4": {
-        "first": "Numbers 21:4-9",
-        "psalm": "Psalm 107:1-3, 17-22",
-        "second": "Ephesians 2:1-10",
-        "gospel": "John 3:14-21"
+        "first": ["Numbers 21:4-9"],
+        "psalm": ["Psalm 107:1-3, 17-22"],
+        "second": ["Ephesians 2:1-10"],
+        "gospel": ["John 3:14-21"]
     },
     "Lent 5": {
-        "first": "Jeremiah 31:31-34",
-        "psalm": "Psalm 51:1-12 or Psalm 119:9-16",
-        "second": "Hebrews 5:5-10",
-        "gospel": "John 12:20-33"
+        "first": ["Jeremiah 31:31-34"],
+        "psalm": ["Psalm 51:1-12", "Psalm 119:9-16"],
+        "second": ["Hebrews 5:5-10"],
+        "gospel": ["John 12:20-33"]
     },
     "Palms": {
-        "first": "Isaiah 50:4-9a",
-        "psalm": "Psalm 31:9-16",
-        "second": "Philippians 2:5-11",
-        "gospel": "Mark 11:1-11 or John 12:12-16"
+        "first": ["Isaiah 50:4-9a"],
+        "psalm": ["Psalm 31:9-16"],
+        "second": ["Philippians 2:5-11"],
+        "gospel": ["Mark 11:1-11", "John 12:12-16"]
     },
     "Passion": {
-        "first": "Isaiah 50:4-9a",
-        "psalm": "Psalm 31:9-16",
-        "second": "Philippians 2:5-11",
-        "gospel": "Mark 14:1—15:47 or Mark 15:1-39 [40-47]"
+        "first": ["Isaiah 50:4-9a"],
+        "psalm": ["Psalm 31:9-16"],
+        "second": ["Philippians 2:5-11"],
+        "gospel": ["Mark 14:1—15:47", "Mark 15:1-39 [40-47]"]
     },
     "Holy Thursday": {
-        "first": "Exodus 12:1-4 [5-10] 11-14",
-        "psalm": "Psalm 116:1-2, 12-19",
-        "second": "1 Corinthians 11:23-26",
-        "gospel": "John 13:1-17, 31b-35"
+        "first": ["Exodus 12:1-4 [5-10] 11-14"],
+        "psalm": ["Psalm 116:1-2, 12-19"],
+        "second": ["1 Corinthians 11:23-26"],
+        "gospel": ["John 13:1-17, 31b-35"]
     },
     "Good Friday": {
-        "first": "Isaiah 52:13—53:12",
-        "psalm": "Psalm 22",
-        "second": "Hebrews 10:16-25 or Hebrews 4:14-16; 5:7-9",
-        "gospel": "John 18:1—19:42"
+        "first": ["Isaiah 52:13—53:12"],
+        "psalm": ["Psalm 22"],
+        "second": ["Hebrews 10:16-25", "Hebrews 4:14-16; 5:7-9"],
+        "gospel": ["John 18:1—19:42"]
     },
     "Easter Day": {
-        "first": "Acts 10:34-43 or Isaiah 25:6-9",
-        "psalm": "Psalm 118:1-2, 14-24",
-        "second": "1 Corinthians 15:1-11 or Acts 10:34-43",
-        "gospel": "John 20:1-18 or Mark 16:1-8"
+        "first": ["Acts 10:34-43", "Isaiah 25:6-9"],
+        "psalm": ["Psalm 118:1-2, 14-24"],
+        "second": ["1 Corinthians 15:1-11", "Acts 10:34-43"],
+        "gospel": ["John 20:1-18", "Mark 16:1-8"]
     },
     "Easter 2": {
-        "first": "Acts 4:32-35",
-        "psalm": "Psalm 133",
-        "second": "1 John 1:1—2:2",
-        "gospel": "John 20:19-31"
+        "first": ["Acts 4:32-35"],
+        "psalm": ["Psalm 133"],
+        "second": ["1 John 1:1—2:2"],
+        "gospel": ["John 20:19-31"]
     },
     "Easter 3": {
-        "first": "Acts 3:12-19",
-        "psalm": "Psalm 4",
-        "second": "1 John 3:1-7",
-        "gospel": "Luke 24:36b-48"
+        "first": ["Acts 3:12-19"],
+        "psalm": ["Psalm 4"],
+        "second": ["1 John 3:1-7"],
+        "gospel": ["Luke 24:36b-48"]
     },
     "Easter 4": {
-        "first": "Acts 4:5-12",
-        "psalm": "Psalm 23",
-        "second": "1 John 3:16-24",
-        "gospel": "John 10:11-18"
+        "first": ["Acts 4:5-12"],
+        "psalm": ["Psalm 23"],
+        "second": ["1 John 3:16-24"],
+        "gospel": ["John 10:11-18"]
     },
     "Easter 5": {
-        "first": "Acts 8:26-40",
-        "psalm": "Psalm 22:25-31",
-        "second": "1 John 4:7-21",
-        "gospel": "John 15:1-8"
+        "first": ["Acts 8:26-40"],
+        "psalm": ["Psalm 22:25-31"],
+        "second": ["1 John 4:7-21"],
+        "gospel": ["John 15:1-8"]
     },
     "Easter 6": {
-        "first": "Acts 10:44-48",
-        "psalm": "Psalm 98",
-        "second": "1 John 5:1-6",
-        "gospel": "John 15:9-17"
+        "first": ["Acts 10:44-48"],
+        "psalm": ["Psalm 98"],
+        "second": ["1 John 5:1-6"],
+        "gospel": ["John 15:9-17"]
     },
     "Easter 7": {
-        "first": "Acts 1:15-17, 21-26",
-        "psalm": "Psalm 1",
-        "second": "1 John 5:9-13",
-        "gospel": "John 17:6-19"
+        "first": ["Acts 1:15-17, 21-26"],
+        "psalm": ["Psalm 1"],
+        "second": ["1 John 5:9-13"],
+        "gospel": ["John 17:6-19"]
     },
     "Ascension": {
-        "first": "Acts 1:1-11",
-        "psalm": "Psalm 47 or Psalm 93",
-        "second": "Ephesians 1:15-23",
-        "gospel": "Luke 24:44-53"
+        "first": ["Acts 1:1-11"],
+        "psalm": ["Psalm 47", "Psalm 93"],
+        "second": ["Ephesians 1:15-23"],
+        "gospel": ["Luke 24:44-53"]
     },
     "Pentecost Day": {
-        "first": "Acts 2:1-21 or Ezekiel 37:1-14",
-        "psalm": "Psalm 104:24-34, 35b",
-        "second": "Romans 8:22-27 or Acts 2:1-21",
-        "gospel": "John 15:26-27; 16:4b-15"
+        "first": ["Acts 2:1-21", "Ezekiel 37:1-14"],
+        "psalm": ["Psalm 104:24-34, 35b"],
+        "second": ["Romans 8:22-27", "Acts 2:1-21"],
+        "gospel": ["John 15:26-27; 16:4b-15"]
     },
     "Trinity": {
-        "first": "Isaiah 6:1-8",
-        "psalm": "Psalm 29",
-        "second": "Romans 8:12-17",
-        "gospel": "John 3:1-17"
+        "first": ["Isaiah 6:1-8"],
+        "psalm": ["Psalm 29"],
+        "second": ["Romans 8:12-17"],
+        "gospel": ["John 3:1-17"]
     },
     "Pentecost 2": {
-        "first": "Hosea 2:14-20",
-        "psalm": "Psalm 103:1-13, 22",
-        "second": "2 Corinthians 3:1-6",
-        "gospel": "Mark 2:13-22"
+        "first": ["Hosea 2:14-20"],
+        "psalm": ["Psalm 103:1-13, 22"],
+        "second": ["2 Corinthians 3:1-6"],
+        "gospel": ["Mark 2:13-22"]
     },
     "Pentecost 3": {
         "complementary": {
-            "first": "Deuteronomy 5:12-15",
-            "psalm": "Psalm 81:1-10",
-            "second": "2 Corinthians 4:5-12",
-            "gospel": "Mark 2:23—3:6"
+            "first": ["Deuteronomy 5:12-15"],
+            "psalm": ["Psalm 81:1-10"],
+            "second": ["2 Corinthians 4:5-12"],
+            "gospel": ["Mark 2:23—3:6"]
         },
         "semicontinuous": {
-            "first": "1 Samuel 3:1-10 [11-20]",
-            "psalm": "Psalm 139:1-6, 13-18",
-            "second": "2 Corinthians 4:5-12",
-            "gospel": "Mark 2:23—3:6"
+            "first": ["1 Samuel 3:1-10 [11-20]"],
+            "psalm": ["Psalm 139:1-6, 13-18"],
+            "second": ["2 Corinthians 4:5-12"],
+            "gospel": ["Mark 2:23—3:6"]
         }
     },
     "Pentecost 4": {
         "complementary": {
-            "first": "Genesis 3:8-15",
-            "psalm": "Psalm 130",
-            "second": "2 Corinthians 4:13—5:1",
-            "gospel": "Mark 3:20-35"
+            "first": ["Genesis 3:8-15"],
+            "psalm": ["Psalm 130"],
+            "second": ["2 Corinthians 4:13—5:1"],
+            "gospel": ["Mark 3:20-35"]
         },
         "semicontinuous": {
-            "first": "1 Samuel 8:4-11 [12-15] 16-20 [11:14-15]",
-            "psalm": "Psalm 138",
-            "second": "2 Corinthians 4:13—5:1",
-            "gospel": "Mark 3:20-35"
+            "first": ["1 Samuel 8:4-11 [12-15] 16-20 [11:14-15]"],
+            "psalm": ["Psalm 138"],
+            "second": ["2 Corinthians 4:13—5:1"],
+            "gospel": ["Mark 3:20-35"]
         }
     },
     "Pentecost 5": {
         "complementary": {
-            "first": "Ezekiel 17:22-24",
-            "psalm": "Psalm 92:1-4, 12-15",
-            "second": "2 Corinthians 5:6-10 [11-13] 14-17",
-            "gospel": "Mark 4:26-34"
+            "first": ["Ezekiel 17:22-24"],
+            "psalm": ["Psalm 92:1-4, 12-15"],
+            "second": ["2 Corinthians 5:6-10 [11-13] 14-17"],
+            "gospel": ["Mark 4:26-34"]
         },
         "semicontinuous": {
-            "first": "1 Samuel 15:34—16:13",
-            "psalm": "Psalm 20",
-            "second": "2 Corinthians 5:6-10 [11-13] 14-17",
-            "gospel": "Mark 4:26-34"
+            "first": ["1 Samuel 15:34—16:13"],
+            "psalm": ["Psalm 20"],
+            "second": ["2 Corinthians 5:6-10 [11-13] 14-17"],
+            "gospel": ["Mark 4:26-34"]
         }
     },
     "Pentecost 6": {
         "complementary": {
-            "first": "Job 38:1-11",
-            "psalm": "Psalm 107:1-3, 23-32",
-            "second": "2 Corinthians 6:1-13",
-            "gospel": "Mark 4:35-41"
+            "first": ["Job 38:1-11"],
+            "psalm": ["Psalm 107:1-3, 23-32"],
+            "second": ["2 Corinthians 6:1-13"],
+            "gospel": ["Mark 4:35-41"]
         },
         "semicontinuous": {
-            "first": "1 Samuel 17:[1a, 4-11, 19-23] 32-49 or 1 Samuel 17:57—18:5, 10-16",
-            "psalm": "Psalm 9:9-20 or Psalm 133",
-            "second": "2 Corinthians 6:1-13",
-            "gospel": "Mark 4:35-41"
+            "first": ["1 Samuel 17:[1a, 4-11, 19-23] 32-49", "1 Samuel 17:57—18:5, 10-16"],
+            "psalm": ["Psalm 9:9-20", "Psalm 133"],
+            "second": ["2 Corinthians 6:1-13"],
+            "gospel": ["Mark 4:35-41"]
         }
     },
     "Pentecost 7": {
         "complementary": {
-            "first": "Lamentations 3:22-33",
-            "psalm": "Psalm 30 (1)",
-            "second": "2 Corinthians 8:7-15",
-            "gospel": "Mark 5:21-43"
+            "first": ["Lamentations 3:22-33"],
+            "psalm": ["Psalm 30 (1)"],
+            "second": ["2 Corinthians 8:7-15"],
+            "gospel": ["Mark 5:21-43"]
         },
         "semicontinuous": {
-            "first": "2 Samuel 1:1, 17-27",
-            "psalm": "Psalm 130 (1)",
-            "second": "2 Corinthians 8:7-15",
-            "gospel": "Mark 5:21-43"
+            "first": ["2 Samuel 1:1, 17-27"],
+            "psalm": ["Psalm 130 (1)"],
+            "second": ["2 Corinthians 8:7-15"],
+            "gospel": ["Mark 5:21-43"]
         }
     },
     "Pentecost 8": {
         "complementary": {
-            "first": "Ezekiel 2:1-5",
-            "psalm": "Psalm 123",
-            "second": "2 Corinthians 12:2-10",
-            "gospel": "Mark 6:1-13"
+            "first": ["Ezekiel 2:1-5"],
+            "psalm": ["Psalm 123"],
+            "second": ["2 Corinthians 12:2-10"],
+            "gospel": ["Mark 6:1-13"]
         },
         "semicontinuous": {
-            "first": "2 Samuel 5:1-5, 9-10",
-            "psalm": "Psalm 48",
-            "second": "2 Corinthians 12:2-10",
-            "gospel": "Mark 6:1-13"
+            "first": ["2 Samuel 5:1-5, 9-10"],
+            "psalm": ["Psalm 48"],
+            "second": ["2 Corinthians 12:2-10"],
+            "gospel": ["Mark 6:1-13"]
         }
     },
     "Pentecost 9": {
         "complementary": {
-            "first": "Amos 7:7-15",
-            "psalm": "Psalm 85:8-13",
-            "second": "Ephesians 1:3-14",
-            "gospel": "Mark 6:14-29"
+            "first": ["Amos 7:7-15"],
+            "psalm": ["Psalm 85:8-13"],
+            "second": ["Ephesians 1:3-14"],
+            "gospel": ["Mark 6:14-29"]
         },
         "semicontinuous": {
-            "first": "2 Samuel 6:1-5, 12b-19",
-            "psalm": "Psalm 24",
-            "second": "Ephesians 1:3-14",
-            "gospel": "Mark 6:14-29"
+            "first": ["2 Samuel 6:1-5, 12b-19"],
+            "psalm": ["Psalm 24"],
+            "second": ["Ephesians 1:3-14"],
+            "gospel": ["Mark 6:14-29"]
         }
     },
     "Pentecost 10": {
         "complementary": {
-            "first": "Jeremiah 23:1-6",
-            "psalm": "Psalm 23",
-            "second": "Ephesians 2:11-22",
-            "gospel": "Mark 6:30-34, 53-56"
+            "first": ["Jeremiah 23:1-6"],
+            "psalm": ["Psalm 23"],
+            "second": ["Ephesians 2:11-22"],
+            "gospel": ["Mark 6:30-34, 53-56"]
         },
         "semicontinuous": {
-            "first": "2 Samuel 7:1-14a",
-            "psalm": "Psalm 89:20-37",
-            "second": "Ephesians 2:11-22",
-            "gospel": "Mark 6:30-34, 53-56"
+            "first": ["2 Samuel 7:1-14a"],
+            "psalm": ["Psalm 89:20-37"],
+            "second": ["Ephesians 2:11-22"],
+            "gospel": ["Mark 6:30-34, 53-56"]
         }
     },
     "Pentecost 11": {
         "complementary": {
-            "first": "2 Kings 4:42-44",
-            "psalm": "Psalm 145:10-18",
-            "second": "Ephesians 3:14-21",
-            "gospel": "John 6:1-21"
+            "first": ["2 Kings 4:42-44"],
+            "psalm": ["Psalm 145:10-18"],
+            "second": ["Ephesians 3:14-21"],
+            "gospel": ["John 6:1-21"]
         },
         "semicontinuous": {
-            "first": "2 Samuel 11:1-15",
-            "psalm": "Psalm 14",
-            "second": "Ephesians 3:14-21",
-            "gospel": "John 6:1-21"
+            "first": ["2 Samuel 11:1-15"],
+            "psalm": ["Psalm 14"],
+            "second": ["Ephesians 3:14-21"],
+            "gospel": ["John 6:1-21"]
         }
     },
     "Pentecost 12": {
         "complementary": {
-            "first": "Exodus 16:2-4, 9-15",
-            "psalm": "Psalm 78:23-29",
-            "second": "Ephesians 4:1-16",
-            "gospel": "John 6:24-35"
+            "first": ["Exodus 16:2-4, 9-15"],
+            "psalm": ["Psalm 78:23-29"],
+            "second": ["Ephesians 4:1-16"],
+            "gospel": ["John 6:24-35"]
         },
         "semicontinuous": {
-            "first": "2 Samuel 11:26—12:13a",
-            "psalm": "Psalm 51:1-12",
-            "second": "Ephesians 4:1-16",
-            "gospel": "John 6:24-35"
+            "first": ["2 Samuel 11:26—12:13a"],
+            "psalm": ["Psalm 51:1-12"],
+            "second": ["Ephesians 4:1-16"],
+            "gospel": ["John 6:24-35"]
         }
     },
     "Pentecost 13": {
         "complementary": {
-            "first": "1 Kings 19:4-8",
-            "psalm": "Psalm 34:1-8",
-            "second": "Ephesians 4:25—5:2",
-            "gospel": "John 6:35, 41-51"
+            "first": ["1 Kings 19:4-8"],
+            "psalm": ["Psalm 34:1-8"],
+            "second": ["Ephesians 4:25—5:2"],
+            "gospel": ["John 6:35, 41-51"]
         },
         "semicontinuous": {
-            "first": "2 Samuel 18:5-9, 15, 31-33",
-            "psalm": "Psalm 130",
-            "second": "Ephesians 4:25—5:2",
-            "gospel": "John 6:35, 41-51"
+            "first": ["2 Samuel 18:5-9, 15, 31-33"],
+            "psalm": ["Psalm 130"],
+            "second": ["Ephesians 4:25—5:2"],
+            "gospel": ["John 6:35, 41-51"]
         }
     },
     "Pentecost 14": {
         "complementary": {
-            "first": "Proverbs 9:1-6",
-            "psalm": "Psalm 34:9-14",
-            "second": "Ephesians 5:15-20",
-            "gospel": "John 6:51-58"
+            "first": ["Proverbs 9:1-6"],
+            "psalm": ["Psalm 34:9-14"],
+            "second": ["Ephesians 5:15-20"],
+            "gospel": ["John 6:51-58"]
         },
         "semicontinuous": {
-            "first": "1 Kings 2:10-12; 3:3-14",
-            "psalm": "Psalm 111",
-            "second": "Ephesians 5:15-20",
-            "gospel": "John 6:51-58"
+            "first": ["1 Kings 2:10-12; 3:3-14"],
+            "psalm": ["Psalm 111"],
+            "second": ["Ephesians 5:15-20"],
+            "gospel": ["John 6:51-58"]
         }
     },
     "Pentecost 15": {
         "complementary": {
-            "first": "Joshua 24:1-2a, 14-18",
-            "psalm": "Psalm 34:15-22",
-            "second": "Ephesians 6:10-20",
-            "gospel": "John  6:56-69"
+            "first": ["Joshua 24:1-2a, 14-18"],
+            "psalm": ["Psalm 34:15-22"],
+            "second": ["Ephesians 6:10-20"],
+            "gospel": ["John  6:56-69"]
         },
         "semicontinuous": {
-            "first": "1 Kings 8:[1, 6, 10-11] 22-30, 41-43",
-            "psalm": "Psalm 84",
-            "second": "Ephesians 6:10-20",
-            "gospel": "John  6:56-69"
+            "first": ["1 Kings 8:[1, 6, 10-11] 22-30, 41-43"],
+            "psalm": ["Psalm 84"],
+            "second": ["Ephesians 6:10-20"],
+            "gospel": ["John  6:56-69"]
         }
     },
     "Pentecost 16": {
         "complementary": {
-            "first": "Deuteronomy 4:1-2, 6-9",
-            "psalm": "Psalm 15",
-            "second": "James 1:17-27",
-            "gospel": "Mark 7:1-8, 14-15, 21-23"
+            "first": ["Deuteronomy 4:1-2, 6-9"],
+            "psalm": ["Psalm 15"],
+            "second": ["James 1:17-27"],
+            "gospel": ["Mark 7:1-8, 14-15, 21-23"]
         },
         "semicontinuous": {
-            "first": "Song of Solomon 2:8-13",
-            "psalm": "Psalm 45:1-2, 6-9",
-            "second": "James 1:17-27",
-            "gospel": "Mark 7:1-8, 14-15, 21-23"
+            "first": ["Song of Solomon 2:8-13"],
+            "psalm": ["Psalm 45:1-2, 6-9"],
+            "second": ["James 1:17-27"],
+            "gospel": ["Mark 7:1-8, 14-15, 21-23"]
         }
     },
     "Pentecost 17": {
         "complementary": {
-            "first": "Isaiah 35:4-7a",
-            "psalm": "Psalm 146",
-            "second": "James 2:1-10 [11-13] 14-17",
-            "gospel": "Mark 7:24-37"
+            "first": ["Isaiah 35:4-7a"],
+            "psalm": ["Psalm 146"],
+            "second": ["James 2:1-10 [11-13] 14-17"],
+            "gospel": ["Mark 7:24-37"]
         },
         "semicontinuous": {
-            "first": "Proverbs 22:1-2, 8-9, 22-23",
-            "psalm": "Psalm 125",
-            "second": "James 2:1-10 [11-13] 14-17",
-            "gospel": "Mark 7:24-37"
+            "first": ["Proverbs 22:1-2, 8-9, 22-23"],
+            "psalm": ["Psalm 125"],
+            "second": ["James 2:1-10 [11-13] 14-17"],
+            "gospel": ["Mark 7:24-37"]
         }
     },
     "Pentecost 18": {
         "complementary": {
-            "first": "Isaiah 50:4-9a",
-            "psalm": "Psalm 116:1-9",
-            "second": "James 3:1-12",
-            "gospel": "Mark 8:27-38"
+            "first": ["Isaiah 50:4-9a"],
+            "psalm": ["Psalm 116:1-9"],
+            "second": ["James 3:1-12"],
+            "gospel": ["Mark 8:27-38"]
         },
         "semicontinuous": {
-            "first": "Proverbs 1:20-33",
-            "psalm": "Psalm 19",
-            "second": "James 3:1-12",
-            "gospel": "Mark 8:27-38"
+            "first": ["Proverbs 1:20-33"],
+            "psalm": ["Psalm 19"],
+            "second": ["James 3:1-12"],
+            "gospel": ["Mark 8:27-38"]
         }
     },
     "Pentecost 19": {
         "complementary": {
-            "first": "Jeremiah 11:18-20",
-            "psalm": "Psalm 54",
-            "second": "James 3:13—4:3, 7-8a",
-            "gospel": "Mark 9:30-37"
+            "first": ["Jeremiah 11:18-20"],
+            "psalm": ["Psalm 54"],
+            "second": ["James 3:13—4:3, 7-8a"],
+            "gospel": ["Mark 9:30-37"]
         },
         "semicontinuous": {
-            "first": "Proverbs 31:10-31",
-            "psalm": "Psalm 1",
-            "second": "James 3:13—4:3, 7-8a",
-            "gospel": "Mark 9:30-37"
+            "first": ["Proverbs 31:10-31"],
+            "psalm": ["Psalm 1"],
+            "second": ["James 3:13—4:3, 7-8a"],
+            "gospel": ["Mark 9:30-37"]
         }
     },
     "Pentecost 20": {
         "complementary": {
-            "first": "Numbers 11:4-6, 10-16, 24-29",
-            "psalm": "Psalm 19:7-14",
-            "second": "James 5:13-20",
-            "gospel": "Mark 9:38-50"
+            "first": ["Numbers 11:4-6, 10-16, 24-29"],
+            "psalm": ["Psalm 19:7-14"],
+            "second": ["James 5:13-20"],
+            "gospel": ["Mark 9:38-50"]
         },
         "semicontinuous": {
-            "first": "Esther 7:1-6, 9-10; 9:20-22",
-            "psalm": "Psalm 124",
-            "second": "James 5:13-20",
-            "gospel": "Mark 9:38-50"
+            "first": ["Esther 7:1-6, 9-10; 9:20-22"],
+            "psalm": ["Psalm 124"],
+            "second": ["James 5:13-20"],
+            "gospel": ["Mark 9:38-50"]
         }
     },
     "Pentecost 21": {
         "complementary": {
-            "first": "Genesis 2:18-24",
-            "psalm": "Psalm 8",
-            "second": "Hebrews 1:1-4; 2:5-12",
-            "gospel": "Mark 10:2-16"
+            "first": ["Genesis 2:18-24"],
+            "psalm": ["Psalm 8"],
+            "second": ["Hebrews 1:1-4; 2:5-12"],
+            "gospel": ["Mark 10:2-16"]
         },
         "semicontinuous": {
-            "first": "Job 1:1; 2:1-10",
-            "psalm": "Psalm 26",
-            "second": "Hebrews 1:1-4; 2:5-12",
-            "gospel": "Mark 10:2-16"
+            "first": ["Job 1:1; 2:1-10"],
+            "psalm": ["Psalm 26"],
+            "second": ["Hebrews 1:1-4; 2:5-12"],
+            "gospel": ["Mark 10:2-16"]
         }
     },
     "Pentecost 22": {
         "complementary": {
-            "first": "Amos 5:6-7, 10-15",
-            "psalm": "Psalm 90:12-17",
-            "second": "Hebrews 4:12-16",
-            "gospel": "Mark 10:17-31"
+            "first": ["Amos 5:6-7, 10-15"],
+            "psalm": ["Psalm 90:12-17"],
+            "second": ["Hebrews 4:12-16"],
+            "gospel": ["Mark 10:17-31"]
         },
         "semicontinuous": {
-            "first": "Job 23:1-9, 16-17",
-            "psalm": "Psalm 22:1-15",
-            "second": "Hebrews 4:12-16",
-            "gospel": "Mark 10:17-31"
+            "first": ["Job 23:1-9, 16-17"],
+            "psalm": ["Psalm 22:1-15"],
+            "second": ["Hebrews 4:12-16"],
+            "gospel": ["Mark 10:17-31"]
         }
     },
     "All Saints": {
-        "first": "Isaiah 25:6-9",
-        "psalm": "Psalm 24 (5)",
-        "second": "Revelation 21:1-6a",
-        "gospel": "John 11:32-44"
+        "first": ["Isaiah 25:6-9"],
+        "psalm": ["Psalm 24 (5)"],
+        "second": ["Revelation 21:1-6a"],
+        "gospel": ["John 11:32-44"]
     },
     "Pentecost 23": {
         "complementary": {
-            "first": "Isaiah 53:4-12",
-            "psalm": "Psalm 91:9-16",
-            "second": "Hebrews 5:1-10",
-            "gospel": "Mark 10:35-45"
+            "first": ["Isaiah 53:4-12"],
+            "psalm": ["Psalm 91:9-16"],
+            "second": ["Hebrews 5:1-10"],
+            "gospel": ["Mark 10:35-45"]
         },
         "semicontinuous": {
-            "first": "Job 38:1-7 [34-41]",
-            "psalm": "Psalm 104:1-9, 24, 35b",
-            "second": "Hebrews 5:1-10",
-            "gospel": "Mark 10:35-45"
+            "first": ["Job 38:1-7 [34-41]"],
+            "psalm": ["Psalm 104:1-9, 24, 35b"],
+            "second": ["Hebrews 5:1-10"],
+            "gospel": ["Mark 10:35-45"]
         }
     },
     "Pentecost 24": {
         "complementary": {
-            "first": "Jeremiah 31:7-9",
-            "psalm": "Psalm 126",
-            "second": "Hebrews 7:23-28",
-            "gospel": "Mark 10:46-52"
+            "first": ["Jeremiah 31:7-9"],
+            "psalm": ["Psalm 126"],
+            "second": ["Hebrews 7:23-28"],
+            "gospel": ["Mark 10:46-52"]
         },
         "semicontinuous": {
-            "first": "Job 42:1-6, 10-17",
-            "psalm": "Psalm 34:1-8 [19-22]",
-            "second": "Hebrews 7:23-28",
-            "gospel": "Mark 10:46-52"
+            "first": ["Job 42:1-6, 10-17"],
+            "psalm": ["Psalm 34:1-8 [19-22]"],
+            "second": ["Hebrews 7:23-28"],
+            "gospel": ["Mark 10:46-52"]
         }
     },
     "Pentecost 25": {
         "complementary": {
-            "first": "Deuteronomy 6:1-9",
-            "psalm": "Psalm 119:1-8",
-            "second": "Hebrews 9:11-14",
-            "gospel": "Mark 12:28-34"
+            "first": ["Deuteronomy 6:1-9"],
+            "psalm": ["Psalm 119:1-8"],
+            "second": ["Hebrews 9:11-14"],
+            "gospel": ["Mark 12:28-34"]
         },
         "semicontinuous": {
-            "first": "Ruth 1:1-18",
-            "psalm": "Psalm 146",
-            "second": "Hebrews 9:11-14",
-            "gospel": "Mark 12:28-34"
+            "first": ["Ruth 1:1-18"],
+            "psalm": ["Psalm 146"],
+            "second": ["Hebrews 9:11-14"],
+            "gospel": ["Mark 12:28-34"]
         }
     },
     "Pentecost 26": {
         "complementary": {
-            "first": "1 Kings 17:8-16",
-            "psalm": "Psalm 146",
-            "second": "Hebrews 9:24-28",
-            "gospel": "Mark 12:38-44"
+            "first": ["1 Kings 17:8-16"],
+            "psalm": ["Psalm 146"],
+            "second": ["Hebrews 9:24-28"],
+            "gospel": ["Mark 12:38-44"]
         },
         "semicontinuous": {
-            "first": "Ruth 3:1-5; 4:13-17",
-            "psalm": "Psalm 127",
-            "second": "Hebrews 9:24-28",
-            "gospel": "Mark 12:38-44"
+            "first": ["Ruth 3:1-5; 4:13-17"],
+            "psalm": ["Psalm 127"],
+            "second": ["Hebrews 9:24-28"],
+            "gospel": ["Mark 12:38-44"]
         }
     },
     "Pentecost 27": {
         "complementary": {
-            "first": "Daniel 12:1-3",
-            "psalm": "Psalm 16",
-            "second": "Hebrews 10:11-14 [15-18] 19-25",
-            "gospel": "Mark 13:1-8"
+            "first": ["Daniel 12:1-3"],
+            "psalm": ["Psalm 16"],
+            "second": ["Hebrews 10:11-14 [15-18] 19-25"],
+            "gospel": ["Mark 13:1-8"]
         },
         "semicontinuous": {
-            "first": "1 Samuel 1:4-20",
-            "psalm": "1 Samuel 2:1-10",
-            "second": "Hebrews 10:11-14 [15-18] 19-25",
-            "gospel": "Mark 13:1-8"
+            "first": ["1 Samuel 1:4-20"],
+            "psalm": ["1 Samuel 2:1-10"],
+            "second": ["Hebrews 10:11-14 [15-18] 19-25"],
+            "gospel": ["Mark 13:1-8"]
         }
     },
     "Pentecost 28": {
         "complementary": {
-            "first": "Daniel 7:9-10, 13-14",
-            "psalm": "Psalm 93",
-            "second": "Revelation 1:4b-8",
-            "gospel": "John 18:33-37"
+            "first": ["Daniel 7:9-10, 13-14"],
+            "psalm": ["Psalm 93"],
+            "second": ["Revelation 1:4b-8"],
+            "gospel": ["John 18:33-37"]
         },
         "semicontinuous": {
-            "first": "2 Samuel 23:1-7",
-            "psalm": "Psalm 132:1-12 [13-18]",
-            "second": "Revelation 1:4b-8",
-            "gospel": "John 18:33-37"
+            "first": ["2 Samuel 23:1-7"],
+            "psalm": ["Psalm 132:1-12 [13-18]"],
+            "second": ["Revelation 1:4b-8"],
+            "gospel": ["John 18:33-37"]
         }
     }
 }
@@ -2222,607 +2222,607 @@ module.exports={
 },{}],13:[function(require,module,exports){
 module.exports={
     "Advent 1": {
-        "first": "Jeremiah 33:14-16",
-        "psalm": "Psalm 25:1-10",
-        "second": "1 Thessalonians 3:9-13",
-        "gospel": "Luke 21:25-36"
+        "first": ["Jeremiah 33:14-16"],
+        "psalm": ["Psalm 25:1-10"],
+        "second": ["1 Thessalonians 3:9-13"],
+        "gospel": ["Luke 21:25-36"]
     },
     "Advent 2": {
-        "first": "Baruch 5:1-9 or Malachi 3:1-4",
-        "psalm": "Luke 1:68-79",
-        "second": "Philippians 1:3-11",
-        "gospel": "Luke 3:1-6"
+        "first": ["Baruch 5:1-9", "Malachi 3:1-4"],
+        "psalm": ["Luke 1:68-79"],
+        "second": ["Philippians 1:3-11"],
+        "gospel": ["Luke 3:1-6"]
     },
     "Thanksgiving": {
-        "first": "Deuteronomy 8:7-18",
-        "psalm": "Psalm 65",
-        "second": "2 Corinthians 9:6-15",
-        "gospel": "Luke 17:11-19"
+        "first": ["Deuteronomy 8:7-18"],
+        "psalm": ["Psalm 65"],
+        "second": ["2 Corinthians 9:6-15"],
+        "gospel": ["Luke 17:11-19"]
     },
     "Advent 3": {
-        "first": "Zephaniah 3:14-20",
-        "psalm": "Isaiah 12:2-6",
-        "second": "Philippians 4:4-7",
-        "gospel": "Luke 3:7-18"
+        "first": ["Zephaniah 3:14-20"],
+        "psalm": ["Isaiah 12:2-6"],
+        "second": ["Philippians 4:4-7"],
+        "gospel": ["Luke 3:7-18"]
     },
     "Advent 4": {
-        "first": "Micah 5:2-5a",
-        "psalm": "Luke 1:46b-55 or Psalm 80:1-7",
-        "second": "Hebrews 10:5-10",
-        "gospel": "Luke 1:39-45 [46-55]"
+        "first": ["Micah 5:2-5a"],
+        "psalm": ["Luke 1:46b-55", "Psalm 80:1-7"],
+        "second": ["Hebrews 10:5-10"],
+        "gospel": ["Luke 1:39-45 [46-55]"]
     },
     "Christmas Eve": {
-        "first": "Isaiah 9:2-7",
-        "psalm": "Psalm 96",
-        "second": "Titus 2:11-14",
-        "gospel": "Luke 2:1-14 [15-20]"
+        "first": ["Isaiah 9:2-7"],
+        "psalm": ["Psalm 96"],
+        "second": ["Titus 2:11-14"],
+        "gospel": ["Luke 2:1-14 [15-20]"]
     },
     "Christmas Day": {
-        "first": "Isaiah 62:6-12",
-        "psalm": "Psalm 97",
-        "second": "Titus 3:4-7",
-        "gospel": "Luke 2:[1-7] 8-20"
+        "first": ["Isaiah 62:6-12"],
+        "psalm": ["Psalm 97"],
+        "second": ["Titus 3:4-7"],
+        "gospel": ["Luke 2:[1-7] 8-20"]
     },
     "Christmas 1": {
-        "first": "Isaiah 61:10—62:3",
-        "psalm": "Psalm 148",
-        "second": "Galatians 4:4-7",
-        "gospel": "Luke 2:22-40"
+        "first": ["Isaiah 61:10—62:3"],
+        "psalm": ["Psalm 148"],
+        "second": ["Galatians 4:4-7"],
+        "gospel": ["Luke 2:22-40"]
     },
     "Epiphany Sunday": {
-        "first": "Isaiah 60:1-6",
-        "psalm": "Psalm 72:1-7, 10-14",
-        "second": "Ephesians 3:1-12",
-        "gospel": "Matthew 2:1-12"
+        "first": ["Isaiah 60:1-6"],
+        "psalm": ["Psalm 72:1-7, 10-14"],
+        "second": ["Ephesians 3:1-12"],
+        "gospel": ["Matthew 2:1-12"]
     },
     "Epiphany Day": {
-        "first": "Isaiah 60:1-6",
-        "psalm": "Psalm 72:1-7, 10-14",
-        "second": "Ephesians 3:1-12",
-        "gospel": "Matthew 2:1-12"
+        "first": ["Isaiah 60:1-6"],
+        "psalm": ["Psalm 72:1-7, 10-14"],
+        "second": ["Ephesians 3:1-12"],
+        "gospel": ["Matthew 2:1-12"]
     },
     "Baptism": {
-        "first": "Isaiah 43:1-7",
-        "psalm": "Psalm 29",
-        "second": "Acts 8:14-17",
-        "gospel": "Luke 3:15-17, 21-22"
+        "first": ["Isaiah 43:1-7"],
+        "psalm": ["Psalm 29"],
+        "second": ["Acts 8:14-17"],
+        "gospel": ["Luke 3:15-17, 21-22"]
     },
     "Epiphany 2": {
-        "first": "Isaiah 62:1-5",
-        "psalm": "Psalm 36:5-10",
-        "second": "1 Corinthians 12:1-11",
-        "gospel": "John 2:1-11"
+        "first": ["Isaiah 62:1-5"],
+        "psalm": ["Psalm 36:5-10"],
+        "second": ["1 Corinthians 12:1-11"],
+        "gospel": ["John 2:1-11"]
     },
     "Epiphany 3": {
-        "first": "Nehemiah 8:1-3, 5-6, 8-10",
-        "psalm": "Psalm 19",
-        "second": "1 Corinthians 12:12-31a",
-        "gospel": "Luke 4:14-21"
+        "first": ["Nehemiah 8:1-3, 5-6, 8-10"],
+        "psalm": ["Psalm 19"],
+        "second": ["1 Corinthians 12:12-31a"],
+        "gospel": ["Luke 4:14-21"]
     },
     "Epiphany 4": {
-        "first": "Jeremiah 1:4-10",
-        "psalm": "Psalm 71:1-6",
-        "second": "1 Corinthians 13:1-13",
-        "gospel": "Luke 4:21-30"
+        "first": ["Jeremiah 1:4-10"],
+        "psalm": ["Psalm 71:1-6"],
+        "second": ["1 Corinthians 13:1-13"],
+        "gospel": ["Luke 4:21-30"]
     },
     "Epiphany 5": {
-        "first": "Isaiah 6:1-8 [9-13]",
-        "psalm": "Psalm 138",
-        "second": "1 Corinthians 15:1-11",
-        "gospel": "Luke 5:1-11"
+        "first": ["Isaiah 6:1-8 [9-13]"],
+        "psalm": ["Psalm 138"],
+        "second": ["1 Corinthians 15:1-11"],
+        "gospel": ["Luke 5:1-11"]
     },
     "Epiphany 6": {
-        "first": "Jeremiah 17:5-10",
-        "psalm": "Psalm 1",
-        "second": "1 Corinthians 15:12-20",
-        "gospel": "Luke 6:17-26"
+        "first": ["Jeremiah 17:5-10"],
+        "psalm": ["Psalm 1"],
+        "second": ["1 Corinthians 15:12-20"],
+        "gospel": ["Luke 6:17-26"]
     },
     "Epiphany 7": {
-        "first": "Genesis 45:3-11, 15",
-        "psalm": "Psalm 37:1-11, 39-40",
-        "second": "1 Corinthians 15:35-38, 42-50",
-        "gospel": "Luke 6:27-38"
+        "first": ["Genesis 45:3-11, 15"],
+        "psalm": ["Psalm 37:1-11, 39-40"],
+        "second": ["1 Corinthians 15:35-38, 42-50"],
+        "gospel": ["Luke 6:27-38"]
     },
     "Epiphany 8": {
-        "first": "Sirach 27:4-7 or Isaiah 55:10-13",
-        "psalm": "Psalm 92:1-4, 12-15",
-        "second": "1 Corinthians 15:51-58",
-        "gospel": "Luke 6:39-49"
+        "first": ["Sirach 27:4-7", "Isaiah 55:10-13"],
+        "psalm": ["Psalm 92:1-4, 12-15"],
+        "second": ["1 Corinthians 15:51-58"],
+        "gospel": ["Luke 6:39-49"]
     },
     "Epiphany 9": {
-        "first": "1 Kings 8:22-23, 41-43",
-        "psalm": "Psalm 96:1-9",
-        "second": "Galatians 1:1-12",
-        "gospel": "Luke 7:1-10"
+        "first": ["1 Kings 8:22-23, 41-43"],
+        "psalm": ["Psalm 96:1-9"],
+        "second": ["Galatians 1:1-12"],
+        "gospel": ["Luke 7:1-10"]
     },
     "Transfiguration": {
-        "first": "Exodus 34:29-35",
-        "psalm": "Psalm 99",
-        "second": "2 Corinthians 3:12—4:2",
-        "gospel": "Luke 9:28-36 [37-43]"
+        "first": ["Exodus 34:29-35"],
+        "psalm": ["Psalm 99"],
+        "second": ["2 Corinthians 3:12—4:2"],
+        "gospel": ["Luke 9:28-36 [37-43]"]
     },
     "Lent 1": {
-        "first": "Deuteronomy 26:1-11",
-        "psalm": "Psalm 91:1-2, 9-16",
-        "second": "Romans 10:8b-13",
-        "gospel": "Luke 4:1-13"
+        "first": ["Deuteronomy 26:1-11"],
+        "psalm": ["Psalm 91:1-2, 9-16"],
+        "second": ["Romans 10:8b-13"],
+        "gospel": ["Luke 4:1-13"]
     },
     "Lent 2": {
-        "first": "Genesis 15:1-12, 17-18",
-        "psalm": "Psalm 27",
-        "second": "Philippians 3:17—4:1",
-        "gospel": "Luke 13:31-35 or Luke 9:28-36"
+        "first": ["Genesis 15:1-12, 17-18"],
+        "psalm": ["Psalm 27"],
+        "second": ["Philippians 3:17—4:1"],
+        "gospel": ["Luke 13:31-35", "Luke 9:28-36"]
     },
     "Lent 3": {
-        "first": "Isaiah 55:1-9",
-        "psalm": "Psalm 63:1-8",
-        "second": "1 Corinthians 10:1-13",
-        "gospel": "Luke 13:1-9"
+        "first": ["Isaiah 55:1-9"],
+        "psalm": ["Psalm 63:1-8"],
+        "second": ["1 Corinthians 10:1-13"],
+        "gospel": ["Luke 13:1-9"]
     },
     "Lent 4": {
-        "first": "Joshua 5:9-12",
-        "psalm": "Psalm 32",
-        "second": "2 Corinthians 5:16-21",
-        "gospel": "Luke 15:1-3, 11b-32"
+        "first": ["Joshua 5:9-12"],
+        "psalm": ["Psalm 32"],
+        "second": ["2 Corinthians 5:16-21"],
+        "gospel": ["Luke 15:1-3, 11b-32"]
     },
     "Lent 5": {
-        "first": "Isaiah 43:16-21",
-        "psalm": "Psalm 126",
-        "second": "Philippians 3:4b-14",
-        "gospel": "John 12:1-8"
+        "first": ["Isaiah 43:16-21"],
+        "psalm": ["Psalm 126"],
+        "second": ["Philippians 3:4b-14"],
+        "gospel": ["John 12:1-8"]
     },
     "Palms": {
-        "first": "Isaiah 50:4-9a",
-        "psalm": "Psalm 31:9-16",
-        "second": "Philippians 2:5-11",
-        "gospel": "Luke 19:28-40"
+        "first": ["Isaiah 50:4-9a"],
+        "psalm": ["Psalm 31:9-16"],
+        "second": ["Philippians 2:5-11"],
+        "gospel": ["Luke 19:28-40"]
     },
     "Passion": {
-        "first": "Isaiah 50:4-9a",
-        "psalm": "Psalm 31:9-16",
-        "second": "Philippians 2:5-11",
-        "gospel": "Luke 22:14-23:56 or Luke 23:1-49"
+        "first": ["Isaiah 50:4-9a"],
+        "psalm": ["Psalm 31:9-16"],
+        "second": ["Philippians 2:5-11"],
+        "gospel": ["Luke 22:14-23:56", "Luke 23:1-49"]
     },
     "Holy Thursday": {
-        "first": "Exodus 12:1-4 [5-10] 11-14",
-        "psalm": "Psalm 116:1-2, 12-19",
-        "second": "1 Corinthians 11:23-26",
-        "gospel": "John 13:1-17, 31b-35"
+        "first": ["Exodus 12:1-4 [5-10] 11-14"],
+        "psalm": ["Psalm 116:1-2, 12-19"],
+        "second": ["1 Corinthians 11:23-26"],
+        "gospel": ["John 13:1-17, 31b-35"]
     },
     "Good Friday": {
-        "first": "Isaiah 52:13—53:12",
-        "psalm": "Psalm 22",
-        "second": "Hebrews 10:16-25 or Hebrews 4:14-16; 5:7-9",
-        "gospel": "John 18:1—19:42"
+        "first": ["Isaiah 52:13—53:12"],
+        "psalm": ["Psalm 22"],
+        "second": ["Hebrews 10:16-25", "Hebrews 4:14-16; 5:7-9"],
+        "gospel": ["John 18:1—19:42"]
     },
     "Easter Day": {
-        "first": "Acts 10:34-43 or Isaiah 25:6-9",
-        "psalm": "Psalm 118:1-2, 14-24",
-        "second": "1 Corinthians 15:1-11 or Acts 10:34-43",
-        "gospel": "John 20:1-18 or Mark 16:1-8"
+        "first": ["Acts 10:34-43", "Isaiah 25:6-9"],
+        "psalm": ["Psalm 118:1-2, 14-24"],
+        "second": ["1 Corinthians 15:1-11", "Acts 10:34-43"],
+        "gospel": ["John 20:1-18", "Mark 16:1-8"]
     },
     "Easter 2": {
-        "first": "Acts 5:27-32",
-        "psalm": "Psalm 118:14-29 or Psalm 150",
-        "second": "Revelation 1:4-8",
-        "gospel": "John 20:19-31"
+        "first": ["Acts 5:27-32"],
+        "psalm": ["Psalm 118:14-29", "Psalm 150"],
+        "second": ["Revelation 1:4-8"],
+        "gospel": ["John 20:19-31"]
     },
     "Easter 3": {
-        "first": "Acts 9:1-6 [7-20]",
-        "psalm": "Psalm 30",
-        "second": "Revelation 5:11-14",
-        "gospel": "John 21:1-19"
+        "first": ["Acts 9:1-6 [7-20]"],
+        "psalm": ["Psalm 30"],
+        "second": ["Revelation 5:11-14"],
+        "gospel": ["John 21:1-19"]
     },
     "Easter 4": {
-        "first": "Acts 9:36-43",
-        "psalm": "Psalm 23",
-        "second": "Revelation7:9-17",
-        "gospel": "John 10:22-30"
+        "first": ["Acts 9:36-43"],
+        "psalm": ["Psalm 23"],
+        "second": ["Revelation7:9-17"],
+        "gospel": ["John 10:22-30"]
     },
     "Easter 5": {
-        "first": "Acts 11:1-18",
-        "psalm": "Psalm 148",
-        "second": "Revelation 21:1-6",
-        "gospel": "John 13:31-35"
+        "first": ["Acts 11:1-18"],
+        "psalm": ["Psalm 148"],
+        "second": ["Revelation 21:1-6"],
+        "gospel": ["John 13:31-35"]
     },
     "Easter 6": {
-        "first": "Acts 16:9-15",
-        "psalm": "Psalm 67",
-        "second": "Revelation 21:10, 22—22:5",
-        "gospel": "John 14:23-29 or "
+        "first": ["Acts 16:9-15"],
+        "psalm": ["Psalm 67"],
+        "second": ["Revelation 21:10, 22—22:5"],
+        "gospel": ["John 14:23-29", ""]
     },
     "Easter 7": {
-        "first": "Acts 16:16-34",
-        "psalm": "Psalm 97",
-        "second": "Revelation 22:12-14, 16-17, 20-21",
-        "gospel": "John 17:20-26"
+        "first": ["Acts 16:16-34"],
+        "psalm": ["Psalm 97"],
+        "second": ["Revelation 22:12-14, 16-17, 20-21"],
+        "gospel": ["John 17:20-26"]
     },
     "Pentecost Day": {
-        "first": "Acts 2:1-21 or Genesis 11:1-9",
-        "psalm": "Psalm 104:24-34, 35b",
-        "second": "Romans 8:14-17 or Acts 2:1-21",
-        "gospel": "John 14:8-17 [25-27]"
+        "first": ["Acts 2:1-21", "Genesis 11:1-9"],
+        "psalm": ["Psalm 104:24-34, 35b"],
+        "second": ["Romans 8:14-17", "Acts 2:1-21"],
+        "gospel": ["John 14:8-17 [25-27]"]
     },
     "Trinity": {
-        "first": "Proverbs 8:1-4, 22-31",
-        "psalm": "Psalm 8",
-        "second": "Romans 5:1-5",
-        "gospel": "John 16:12-15"
+        "first": ["Proverbs 8:1-4, 22-31"],
+        "psalm": ["Psalm 8"],
+        "second": ["Romans 5:1-5"],
+        "gospel": ["John 16:12-15"]
     },
     "Pentecost 2": {
-        "first": "Sirach 27:4-7 or Isaiah 55:10-13",
-        "psalm": "Psalm 92:1-4, 12-15",
-        "second": "1 Corinthians 15:51-58",
-        "gospel": "Luke 6:39-49"
+        "first": ["Sirach 27:4-7", "Isaiah 55:10-13"],
+        "psalm": ["Psalm 92:1-4, 12-15"],
+        "second": ["1 Corinthians 15:51-58"],
+        "gospel": ["Luke 6:39-49"]
     },
     "Pentecost 3": {
         "complementary": {
-            "first": "1 Kings 8:22-23, 41-43",
-            "psalm": "Psalm 96:1-9",
-            "second": "Galatians 1:1-12",
-            "gospel": "Luke 7:1-10"
+            "first": ["1 Kings 8:22-23, 41-43"],
+            "psalm": ["Psalm 96:1-9"],
+            "second": ["Galatians 1:1-12"],
+            "gospel": ["Luke 7:1-10"]
         },
         "semicontinuous": {
-            "first": "1 Kings 18:20-21 [22-29] 30-39",
-            "psalm": "Psalm 96",
-            "second": "Galatians 1:1-12",
-            "gospel": "Luke 7:1-10"
+            "first": ["1 Kings 18:20-21 [22-29] 30-39"],
+            "psalm": ["Psalm 96"],
+            "second": ["Galatians 1:1-12"],
+            "gospel": ["Luke 7:1-10"]
         }
     },
     "Pentecost 4": {
         "complementary": {
-            "first": "1 Kings 17:17-24",
-            "psalm": "Psalm 30",
-            "second": "Galatians 1:11-24",
-            "gospel": "Luke 7:11-17"
+            "first": ["1 Kings 17:17-24"],
+            "psalm": ["Psalm 30"],
+            "second": ["Galatians 1:11-24"],
+            "gospel": ["Luke 7:11-17"]
         },
         "semicontinuous": {
-            "first": "1 Kings 17:8-16 [17-24]",
-            "psalm": "Psalm 146",
-            "second": "Galatians 1:11-24",
-            "gospel": "Luke 7:11-17"
+            "first": ["1 Kings 17:8-16 [17-24]"],
+            "psalm": ["Psalm 146"],
+            "second": ["Galatians 1:11-24"],
+            "gospel": ["Luke 7:11-17"]
         }
     },
     "Pentecost 5": {
         "complementary": {
-            "first": "2 Samuel 11:26—12:10, 13-15",
-            "psalm": "Psalm 32",
-            "second": "Galatians 2:15-21",
-            "gospel": "Luke 7:36—8:3"
+            "first": ["2 Samuel 11:26—12:10, 13-15"],
+            "psalm": ["Psalm 32"],
+            "second": ["Galatians 2:15-21"],
+            "gospel": ["Luke 7:36—8:3"]
         },
         "semicontinuous": {
-            "first": "1 Kings 21:1-10 [11-14] 15-21a",
-            "psalm": "Psalm 5:1-8",
-            "second": "Galatians 2:15-21",
-            "gospel": "Luke 7:36—8:3"
+            "first": ["1 Kings 21:1-10 [11-14] 15-21a"],
+            "psalm": ["Psalm 5:1-8"],
+            "second": ["Galatians 2:15-21"],
+            "gospel": ["Luke 7:36—8:3"]
         }
     },
     "Pentecost 6": {
         "complementary": {
-            "first": "Isaiah 65:1-9",
-            "psalm": "Psalm 22:19-28",
-            "second": "Galatians 3:23-29",
-            "gospel": "Luke 8:26-39"
+            "first": ["Isaiah 65:1-9"],
+            "psalm": ["Psalm 22:19-28"],
+            "second": ["Galatians 3:23-29"],
+            "gospel": ["Luke 8:26-39"]
         },
         "semicontinuous": {
-            "first": "1 Kings 19:1-4 [5-7] 8-15a",
-            "psalm": "Psalm 42 and 43",
-            "second": "Galatians 3:23-29",
-            "gospel": "Luke 8:26-39"
+            "first": ["1 Kings 19:1-4 [5-7] 8-15a"],
+            "psalm": ["Psalm 42 and 43"],
+            "second": ["Galatians 3:23-29"],
+            "gospel": ["Luke 8:26-39"]
         }
     },
     "Pentecost 7": {
         "complementary": {
-            "first": "1 Kings 19:15-16, 19-21",
-            "psalm": "Psalm 16",
-            "second": "Galatians 5:1, 13-25",
-            "gospel": "Luke 9:51-62"
+            "first": ["1 Kings 19:15-16, 19-21"],
+            "psalm": ["Psalm 16"],
+            "second": ["Galatians 5:1, 13-25"],
+            "gospel": ["Luke 9:51-62"]
         },
         "semicontinuous": {
-            "first": "2 Kings 2:1-2, 6-14",
-            "psalm": "Psalm 77:1-2, 11-20",
-            "second": "Galatians 5:1, 13-25",
-            "gospel": "Luke 9:51-62"
+            "first": ["2 Kings 2:1-2, 6-14"],
+            "psalm": ["Psalm 77:1-2, 11-20"],
+            "second": ["Galatians 5:1, 13-25"],
+            "gospel": ["Luke 9:51-62"]
         }
     },
     "Pentecost 8": {
         "complementary": {
-            "first": "Isaiah 66:10-14",
-            "psalm": "Psalm 66:1-9",
-            "second": "Galatians 6:[1-6] 7-16",
-            "gospel": "Luke 10:1-11, 16-20"
+            "first": ["Isaiah 66:10-14"],
+            "psalm": ["Psalm 66:1-9"],
+            "second": ["Galatians 6:[1-6] 7-16"],
+            "gospel": ["Luke 10:1-11, 16-20"]
         },
         "semicontinuous": {
-            "first": "2 Kings 5:1-14",
-            "psalm": "Psalm 30",
-            "second": "Galatians 6:[1-6] 7-16",
-            "gospel": "Luke 10:1-11, 16-20"
+            "first": ["2 Kings 5:1-14"],
+            "psalm": ["Psalm 30"],
+            "second": ["Galatians 6:[1-6] 7-16"],
+            "gospel": ["Luke 10:1-11, 16-20"]
         }
     },
     "Pentecost 9": {
         "complementary": {
-            "first": "Deuteronomy 30:9-14",
-            "psalm": "Psalm 25:1-10",
-            "second": "Colossians 1:1-14",
-            "gospel": "Luke 10:25-37"
+            "first": ["Deuteronomy 30:9-14"],
+            "psalm": ["Psalm 25:1-10"],
+            "second": ["Colossians 1:1-14"],
+            "gospel": ["Luke 10:25-37"]
         },
         "semicontinuous": {
-            "first": "Amos 7:7-17",
-            "psalm": "Psalm 82",
-            "second": "Colossians 1:1-14",
-            "gospel": "Luke 10:25-37"
+            "first": ["Amos 7:7-17"],
+            "psalm": ["Psalm 82"],
+            "second": ["Colossians 1:1-14"],
+            "gospel": ["Luke 10:25-37"]
         }
     },
     "Pentecost 10": {
         "complementary": {
-            "first": "Genesis 18:1-10a",
-            "psalm": "Psalm 15",
-            "second": "Colossians 1:15-28",
-            "gospel": "Luke 10:38-42"
+            "first": ["Genesis 18:1-10a"],
+            "psalm": ["Psalm 15"],
+            "second": ["Colossians 1:15-28"],
+            "gospel": ["Luke 10:38-42"]
         },
         "semicontinuous": {
-            "first": "Amos 8:1-12",
-            "psalm": "Psalm 52",
-            "second": "Colossians 1:15-28",
-            "gospel": "Luke 10:38-42"
+            "first": ["Amos 8:1-12"],
+            "psalm": ["Psalm 52"],
+            "second": ["Colossians 1:15-28"],
+            "gospel": ["Luke 10:38-42"]
         }
     },
     "Pentecost 11": {
         "complementary": {
-            "first": "Genesis 18:20-32",
-            "psalm": "Psalm 138",
-            "second": "Colossians 2:6-15 [16-19]",
-            "gospel": "Luke 11:1-13"
+            "first": ["Genesis 18:20-32"],
+            "psalm": ["Psalm 138"],
+            "second": ["Colossians 2:6-15 [16-19]"],
+            "gospel": ["Luke 11:1-13"]
         },
         "semicontinuous": {
-            "first": "Hosea 1:2-10",
-            "psalm": "Psalm 85",
-            "second": "Colossians 2:6-15 [16-19]",
-            "gospel": "Luke 11:1-13"
+            "first": ["Hosea 1:2-10"],
+            "psalm": ["Psalm 85"],
+            "second": ["Colossians 2:6-15 [16-19]"],
+            "gospel": ["Luke 11:1-13"]
         }
     },
     "Pentecost 12": {
         "complementary": {
-            "first": "Ecclesiastes 1:2, 12-14; 2:18-23",
-            "psalm": "Psalm 49:1-12",
-            "second": "Colossians 3:1-11",
-            "gospel": "Luke 12:13-21"
+            "first": ["Ecclesiastes 1:2, 12-14; 2:18-23"],
+            "psalm": ["Psalm 49:1-12"],
+            "second": ["Colossians 3:1-11"],
+            "gospel": ["Luke 12:13-21"]
         },
         "semicontinuous": {
-            "first": "Hosea 11:1-11",
-            "psalm": "Psalm 107:1-9, 43",
-            "second": "Colossians 3:1-11",
-            "gospel": "Luke 12:13-21"
+            "first": ["Hosea 11:1-11"],
+            "psalm": ["Psalm 107:1-9, 43"],
+            "second": ["Colossians 3:1-11"],
+            "gospel": ["Luke 12:13-21"]
         }
     },
     "Pentecost 13": {
         "complementary": {
-            "first": "Genesis 15:1-6",
-            "psalm": "Psalm 33:12-22",
-            "second": "Hebrews 11:1-3, 8-16",
-            "gospel": "Luke 12:32-40"
+            "first": ["Genesis 15:1-6"],
+            "psalm": ["Psalm 33:12-22"],
+            "second": ["Hebrews 11:1-3, 8-16"],
+            "gospel": ["Luke 12:32-40"]
         },
         "semicontinuous": {
-            "first": "Isaiah 1:1, 10-20",
-            "psalm": "Psalm 50:1-8, 22-23",
-            "second": "Hebrews 11:1-3, 8-16",
-            "gospel": "Luke 12:32-40"
+            "first": ["Isaiah 1:1, 10-20"],
+            "psalm": ["Psalm 50:1-8, 22-23"],
+            "second": ["Hebrews 11:1-3, 8-16"],
+            "gospel": ["Luke 12:32-40"]
         }
     },
     "Pentecost 14": {
         "complementary": {
-            "first": "Jeremiah 23:23-29",
-            "psalm": "Psalm 82",
-            "second": "Hebrews 11:29—12:2",
-            "gospel": "Luke 12:49-56"
+            "first": ["Jeremiah 23:23-29"],
+            "psalm": ["Psalm 82"],
+            "second": ["Hebrews 11:29—12:2"],
+            "gospel": ["Luke 12:49-56"]
         },
         "semicontinuous": {
-            "first": "Isaiah 5:1-7",
-            "psalm": "Psalm 80:1-2, 8-19",
-            "second": "Hebrews 11:29—12:2",
-            "gospel": "Luke 12:49-56"
+            "first": ["Isaiah 5:1-7"],
+            "psalm": ["Psalm 80:1-2, 8-19"],
+            "second": ["Hebrews 11:29—12:2"],
+            "gospel": ["Luke 12:49-56"]
         }
     },
     "Pentecost 15": {
         "complementary": {
-            "first": "Isaiah 58:9b-14",
-            "psalm": "Psalm 103:1-8",
-            "second": "Hebrews 12:18-29",
-            "gospel": "Luke 13:10-17"
+            "first": ["Isaiah 58:9b-14"],
+            "psalm": ["Psalm 103:1-8"],
+            "second": ["Hebrews 12:18-29"],
+            "gospel": ["Luke 13:10-17"]
         },
         "semicontinuous": {
-            "first": "Jeremiah 1:4-10",
-            "psalm": "Psalm 71:1-6",
-            "second": "Hebrews 12:18-29",
-            "gospel": "Luke 13:10-17"
+            "first": ["Jeremiah 1:4-10"],
+            "psalm": ["Psalm 71:1-6"],
+            "second": ["Hebrews 12:18-29"],
+            "gospel": ["Luke 13:10-17"]
         }
     },
     "Pentecost 16": {
         "complementary": {
-            "first": "Sirach 10:12-18 or Proverbs 25:6-7",
-            "psalm": "Psalm 112",
-            "second": "Hebrews 13:1-8, 15-16",
-            "gospel": "Luke 14:1, 7-14"
+            "first": ["Sirach 10:12-18", "Proverbs 25:6-7"],
+            "psalm": ["Psalm 112"],
+            "second": ["Hebrews 13:1-8, 15-16"],
+            "gospel": ["Luke 14:1, 7-14"]
         },
         "semicontinuous": {
-            "first": "Jeremiah 2:4-13",
-            "psalm": "Psalm 81:1, 10-16",
-            "second": "Hebrews 13:1-8, 15-16",
-            "gospel": "Luke 14:1, 7-14"
+            "first": ["Jeremiah 2:4-13"],
+            "psalm": ["Psalm 81:1, 10-16"],
+            "second": ["Hebrews 13:1-8, 15-16"],
+            "gospel": ["Luke 14:1, 7-14"]
         }
     },
     "Pentecost 17": {
         "complementary": {
-            "first": "Deuteronomy 30:15-20",
-            "psalm": "Psalm 1",
-            "second": "Philemon 1-21",
-            "gospel": "Luke 14:25-33"
+            "first": ["Deuteronomy 30:15-20"],
+            "psalm": ["Psalm 1"],
+            "second": ["Philemon 1-21"],
+            "gospel": ["Luke 14:25-33"]
         },
         "semicontinuous": {
-            "first": "Jeremiah 18:1-11",
-            "psalm": "Psalm 139:1-6, 13-18",
-            "second": "Philemon 1-21",
-            "gospel": "Luke 14:25-33"
+            "first": ["Jeremiah 18:1-11"],
+            "psalm": ["Psalm 139:1-6, 13-18"],
+            "second": ["Philemon 1-21"],
+            "gospel": ["Luke 14:25-33"]
         }
     },
     "Pentecost 18": {
         "complementary": {
-            "first": "Exodus 32:7-14",
-            "psalm": "Psalm 51:1-10",
-            "second": "1 Timothy 1:12-17",
-            "gospel": "Luke 15:1-10"
+            "first": ["Exodus 32:7-14"],
+            "psalm": ["Psalm 51:1-10"],
+            "second": ["1 Timothy 1:12-17"],
+            "gospel": ["Luke 15:1-10"]
         },
         "semicontinuous": {
-            "first": "Jeremiah 4:11-12, 22-28",
-            "psalm": "Psalm 14",
-            "second": "1 Timothy 1:12-17",
-            "gospel": "Luke 15:1-10"
+            "first": ["Jeremiah 4:11-12, 22-28"],
+            "psalm": ["Psalm 14"],
+            "second": ["1 Timothy 1:12-17"],
+            "gospel": ["Luke 15:1-10"]
         }
     },
     "Pentecost 19": {
         "complementary": {
-            "first": "Amos 8:4-7",
-            "psalm": "Psalm 113",
-            "second": "1 Timothy 2:1-7",
-            "gospel": "Luke 16:1-13"
+            "first": ["Amos 8:4-7"],
+            "psalm": ["Psalm 113"],
+            "second": ["1 Timothy 2:1-7"],
+            "gospel": ["Luke 16:1-13"]
         },
         "semicontinuous": {
-            "first": "Jeremiah 8:18—9:1",
-            "psalm": "Psalm 79:1-9",
-            "second": "1 Timothy 2:1-7",
-            "gospel": "Luke 16:1-13"
+            "first": ["Jeremiah 8:18—9:1"],
+            "psalm": ["Psalm 79:1-9"],
+            "second": ["1 Timothy 2:1-7"],
+            "gospel": ["Luke 16:1-13"]
         }
     },
     "Pentecost 20": {
         "complementary": {
-            "first": "Amos 6:1a, 4-7",
-            "psalm": "Psalm 146",
-            "second": "1 Timothy 6:6-19",
-            "gospel": "Luke 16:19-31"
+            "first": ["Amos 6:1a, 4-7"],
+            "psalm": ["Psalm 146"],
+            "second": ["1 Timothy 6:6-19"],
+            "gospel": ["Luke 16:19-31"]
         },
         "semicontinuous": {
-            "first": "Jeremiah 32:1-3a, 6-15",
-            "psalm": "Psalm 91:1-6, 14-16",
-            "second": "1 Timothy 6:6-19",
-            "gospel": "Luke 16:19-31"
+            "first": ["Jeremiah 32:1-3a, 6-15"],
+            "psalm": ["Psalm 91:1-6, 14-16"],
+            "second": ["1 Timothy 6:6-19"],
+            "gospel": ["Luke 16:19-31"]
         }
     },
     "Pentecost 21": {
         "complementary": {
-            "first": "Habakkuk 1:1-4; 2:1-4",
-            "psalm": "Psalm 37:1-9",
-            "second": "2 Timothy 1:1-14",
-            "gospel": "Luke 17:5-10"
+            "first": ["Habakkuk 1:1-4; 2:1-4"],
+            "psalm": ["Psalm 37:1-9"],
+            "second": ["2 Timothy 1:1-14"],
+            "gospel": ["Luke 17:5-10"]
         },
         "semicontinuous": {
-            "first": "Lamentations 1:1-6",
-            "psalm": "Lamentations 3:19-26 or Psalm 137",
-            "second": "2 Timothy 1:1-14",
-            "gospel": "Luke 17:5-10"
+            "first": ["Lamentations 1:1-6"],
+            "psalm": ["Lamentations 3:19-26", "Psalm 137"],
+            "second": ["2 Timothy 1:1-14"],
+            "gospel": ["Luke 17:5-10"]
         }
     },
     "Pentecost 22": {
         "complementary": {
-            "first": "2 Kings 5:1-3, 7-15c",
-            "psalm": "Psalm 111",
-            "second": "2 Timothy 2:8-15",
-            "gospel": "Luke 17:11-19"
+            "first": ["2 Kings 5:1-3, 7-15c"],
+            "psalm": ["Psalm 111"],
+            "second": ["2 Timothy 2:8-15"],
+            "gospel": ["Luke 17:11-19"]
         },
         "semicontinuous": {
-            "first": "Jeremiah 29:1, 4-7",
-            "psalm": "Psalm 66:1-12",
-            "second": "2 Timothy 2:8-15",
-            "gospel": "Luke 17:11-19"
+            "first": ["Jeremiah 29:1, 4-7"],
+            "psalm": ["Psalm 66:1-12"],
+            "second": ["2 Timothy 2:8-15"],
+            "gospel": ["Luke 17:11-19"]
         }
     },
     "All Saints": {
-        "first": "Isaiah 25:6-9",
-        "psalm": "Psalm 24 (5)",
-        "second": "Revelation 21:1-6a",
-        "gospel": "John 11:32-44"
+        "first": ["Isaiah 25:6-9"],
+        "psalm": ["Psalm 24 (5)"],
+        "second": ["Revelation 21:1-6a"],
+        "gospel": ["John 11:32-44"]
     },
     "Pentecost 23": {
         "complementary": {
-            "first": "Genesis 32:22-31",
-            "psalm": "Psalm 121",
-            "second": "2 Timothy 3:14—4:5",
-            "gospel": "Luke 18:1-8"
+            "first": ["Genesis 32:22-31"],
+            "psalm": ["Psalm 121"],
+            "second": ["2 Timothy 3:14—4:5"],
+            "gospel": ["Luke 18:1-8"]
         },
         "semicontinuous": {
-            "first": "Jeremiah 31:27-34",
-            "psalm": "Psalm 119:97-104",
-            "second": "2 Timothy 3:14—4:5",
-            "gospel": "Luke 18:1-8"
+            "first": ["Jeremiah 31:27-34"],
+            "psalm": ["Psalm 119:97-104"],
+            "second": ["2 Timothy 3:14—4:5"],
+            "gospel": ["Luke 18:1-8"]
         }
     },
     "Pentecost 24": {
         "complementary": {
-            "first": "Jeremiah 14:7-10, 19-22 or Sirach 35:12-17",
-            "psalm": "Psalm 84:1-7",
-            "second": "2 Timothy 4:6-8, 16-18",
-            "gospel": "Luke 18:9-14"
+            "first": ["Jeremiah 14:7-10, 19-22", "Sirach 35:12-17"],
+            "psalm": ["Psalm 84:1-7"],
+            "second": ["2 Timothy 4:6-8, 16-18"],
+            "gospel": ["Luke 18:9-14"]
         },
         "semicontinuous": {
-            "first": "Joel 2:23-32",
-            "psalm": "Psalm 65",
-            "second": "2 Timothy 4:6-8, 16-18",
-            "gospel": "Luke 18:9-14"
+            "first": ["Joel 2:23-32"],
+            "psalm": ["Psalm 65"],
+            "second": ["2 Timothy 4:6-8, 16-18"],
+            "gospel": ["Luke 18:9-14"]
         }
     },
     "Pentecost 25": {
         "complementary": {
-            "first": "Isaiah 1:10-18",
-            "psalm": "Psalm 32:1-7",
-            "second": "2 Thessalonians 1:1-4, 11-12",
-            "gospel": "Luke 19:1-10"
+            "first": ["Isaiah 1:10-18"],
+            "psalm": ["Psalm 32:1-7"],
+            "second": ["2 Thessalonians 1:1-4, 11-12"],
+            "gospel": ["Luke 19:1-10"]
         },
         "semicontinuous": {
-            "first": "Habakkuk 1:1-4, 2:1-4",
-            "psalm": "Psalm 119:137-144",
-            "second": "2 Thessalonians 1:1-4, 11-12",
-            "gospel": "Luke 19:1-10"
+            "first": ["Habakkuk 1:1-4, 2:1-4"],
+            "psalm": ["Psalm 119:137-144"],
+            "second": ["2 Thessalonians 1:1-4, 11-12"],
+            "gospel": ["Luke 19:1-10"]
         }
     },
     "Pentecost 26": {
         "complementary": {
-            "first": "Job 19:23-27a",
-            "psalm": "Psalm 17:1-9",
-            "second": "2 Thessalonians 2:1-5, 13-17",
-            "gospel": "Luke 20:27-38"
+            "first": ["Job 19:23-27a"],
+            "psalm": ["Psalm 17:1-9"],
+            "second": ["2 Thessalonians 2:1-5, 13-17"],
+            "gospel": ["Luke 20:27-38"]
         },
         "semicontinuous": {
-            "first": "Haggai 1:15b—2:9",
-            "psalm": "Psalm 145:1-5, 17-21 or Psalm 98",
-            "second": "2 Thessalonians 2:1-5, 13-17",
-            "gospel": "Luke 20:27-38"
+            "first": ["Haggai 1:15b—2:9"],
+            "psalm": ["Psalm 145:1-5, 17-21", "Psalm 98"],
+            "second": ["2 Thessalonians 2:1-5, 13-17"],
+            "gospel": ["Luke 20:27-38"]
         }
     },
     "Pentecost 27": {
         "complementary": {
-            "first": "Malachi 4:1-2a",
-            "psalm": "Psalm 98",
-            "second": "2 Thessalonians 3:6-13",
-            "gospel": "Luke 21:5-19"
+            "first": ["Malachi 4:1-2a"],
+            "psalm": ["Psalm 98"],
+            "second": ["2 Thessalonians 3:6-13"],
+            "gospel": ["Luke 21:5-19"]
         },
         "semicontinuous": {
-            "first": "Isaiah 65:17-25",
-            "psalm": "Isaiah 12",
-            "second": "2 Thessalonians 3:6-13",
-            "gospel": "Luke 21:5-19"
+            "first": ["Isaiah 65:17-25"],
+            "psalm": ["Isaiah 12"],
+            "second": ["2 Thessalonians 3:6-13"],
+            "gospel": ["Luke 21:5-19"]
         }
     },
     "Pentecost 28": {
         "complementary": {
-            "first": "Jeremiah 23:1-6",
-            "psalm": "Psalm 46",
-            "second": "Colossians 1:11-20",
-            "gospel": "Luke 23:33-43"
+            "first": ["Jeremiah 23:1-6"],
+            "psalm": ["Psalm 46"],
+            "second": ["Colossians 1:11-20"],
+            "gospel": ["Luke 23:33-43"]
         },
         "semicontinuous": {
-            "first": "Jeremiah 23:1-6",
-            "psalm": "Luke 1:68-79",
-            "second": "Colossians 1:11-20",
-            "gospel": "Luke 23:33-43"
+            "first": ["Jeremiah 23:1-6"],
+            "psalm": ["Luke 1:68-79"],
+            "second": ["Colossians 1:11-20"],
+            "gospel": ["Luke 23:33-43"]
         }
     }
 
