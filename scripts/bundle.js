@@ -1024,7 +1024,7 @@ module.exports={
         "gospel": ["Luke 2:[1-7] 8-20"]
     },
     "Christmas 1": {
-        "first": ["Isaiah 61:10—62:3"],
+        "first": ["Isaiah 61:10-62:3"],
         "psalm": ["Psalm 148"],
         "second": ["Galatians 4:4-7"],
         "gospel": ["Luke 2:22-40"]
@@ -1104,7 +1104,7 @@ module.exports={
     "Ash Wednesday": {
         "first": ["Joel 2:1-2, 12-17", "Isaiah 58:1-12"],
         "psalm": ["Psalm 51:1-17"],
-        "second": ["2 Corinthians 5:20b—6:10"],
+        "second": ["2 Corinthians 5:20b-6:10"],
         "gospel": ["Matthew 6:1-6, 16-21"]
     },
     "Lent 1": {
@@ -1156,10 +1156,10 @@ module.exports={
         "gospel": ["John 13:1-17, 31b-35"]
     },
     "Good Friday": {
-        "first": ["Isaiah 52:13—53:12"],
+        "first": ["Isaiah 52:13-53:12"],
         "psalm": ["Psalm 22"],
         "second": ["Hebrews 10:16-25", "Hebrews 4:14-16; 5:7-9"],
-        "gospel": ["John 18:1—19:42"]
+        "gospel": ["John 18:1-19:42"]
     },
     "Easter Day": {
         "first": ["Acts 10:34-43", "Isaiah 25:6-9"],
@@ -1216,7 +1216,7 @@ module.exports={
         "gospel": ["John 20:19-23", "John 7:37-39"]
     },
     "Trinity": {
-        "first": ["Genesis 1:1—2:4a"],
+        "first": ["Genesis 1:1-2:4a"],
         "psalm": ["Psalm 8"],
         "second": ["2 Corinthians 13:11-13"],
         "gospel": ["Matthew 28:16-20"]
@@ -1243,7 +1243,7 @@ module.exports={
     },
     "Pentecost 4": {
         "complementary": {
-            "first": ["Hosea 5:15—6:6"],
+            "first": ["Hosea 5:15-6:6"],
             "psalm": ["Psalm 50:7-15"],
             "second": ["Romans 4:13-25"],
             "gospel": ["Matthew 9:9-13, 18-26"]
@@ -1260,13 +1260,13 @@ module.exports={
             "first": ["Exodus 19:2-8a"],
             "psalm": ["Psalm 100"],
             "second": ["Romans 5:1-8"],
-            "gospel": ["Matthew 9:35—10:8 [9-23]"]
+            "gospel": ["Matthew 9:35-10:8 [9-23]"]
         },
         "semicontinuous": {
             "first": ["Genesis 18:1-15 [21:1-7]"],
             "psalm": ["Psalm 116:1-2, 12-19"],
             "second": ["Romans 5:1-8"],
-            "gospel": ["Matthew 9:35—10:8 [9-23]"]
+            "gospel": ["Matthew 9:35-10:8 [9-23]"]
         }
     },
     "Pentecost 6": {
@@ -1403,7 +1403,7 @@ module.exports={
             "gospel": ["Matthew 16:13-20"]
         },
         "semicontinuous": {
-            "first": ["Exodus 1:8—2:10"],
+            "first": ["Exodus 1:8-2:10"],
             "psalm": ["Psalm 124"],
             "second": ["Romans 12:1-8"],
             "gospel": ["Matthew 16:13-20"]
@@ -1453,7 +1453,7 @@ module.exports={
     },
     "Pentecost 19": {
         "complementary": {
-            "first": ["Jonah 3:10—4:11"],
+            "first": ["Jonah 3:10-4:11"],
             "psalm": ["Psalm 145:1-8"],
             "second": ["Philippians 1:21-30"],
             "gospel": ["Matthew 20:1-16"]
@@ -1644,7 +1644,7 @@ module.exports={
         "gospel": ["Luke 2:[1-7] 8-20"]
     },
     "Christmas 1": {
-        "first": ["Isaiah 61:10—62:3"],
+        "first": ["Isaiah 61:10-62:3"],
         "psalm": ["Psalm 148"],
         "second": ["Galatians 4:4-7"],
         "gospel": ["Luke 2:22-40"]
@@ -1713,7 +1713,7 @@ module.exports={
         "first": ["Deuteronomy 5:12-15"],
         "psalm": ["Psalm 81:1-10"],
         "second": ["2 Corinthians 4:5-12"],
-        "gospel": ["Mark 2:23—3:6"]
+        "gospel": ["Mark 2:23-3:6"]
     },
     "Transfiguration": {
         "first": ["2 Kings 2:1-12"],
@@ -1724,7 +1724,7 @@ module.exports={
     "Ash Wednesday": {
         "first": ["Joel 2:1-2, 12-17", "Isaiah 58:1-12"],
         "psalm": ["Psalm 51:1-17"],
-        "second": ["2 Corinthians 5:20b—6:10"],
+        "second": ["2 Corinthians 5:20b-6:10"],
         "gospel": ["Matthew 6:1-6, 16-21"]
     },
     "Lent 1": {
@@ -1767,7 +1767,7 @@ module.exports={
         "first": ["Isaiah 50:4-9a"],
         "psalm": ["Psalm 31:9-16"],
         "second": ["Philippians 2:5-11"],
-        "gospel": ["Mark 14:1—15:47", "Mark 15:1-39 [40-47]"]
+        "gospel": ["Mark 14:1-15:47", "Mark 15:1-39 [40-47]"]
     },
     "Holy Thursday": {
         "first": ["Exodus 12:1-4 [5-10] 11-14"],
@@ -1776,10 +1776,10 @@ module.exports={
         "gospel": ["John 13:1-17, 31b-35"]
     },
     "Good Friday": {
-        "first": ["Isaiah 52:13—53:12"],
+        "first": ["Isaiah 52:13-53:12"],
         "psalm": ["Psalm 22"],
         "second": ["Hebrews 10:16-25", "Hebrews 4:14-16; 5:7-9"],
-        "gospel": ["John 18:1—19:42"]
+        "gospel": ["John 18:1-19:42"]
     },
     "Easter Day": {
         "first": ["Acts 10:34-43", "Isaiah 25:6-9"],
@@ -1790,7 +1790,7 @@ module.exports={
     "Easter 2": {
         "first": ["Acts 4:32-35"],
         "psalm": ["Psalm 133"],
-        "second": ["1 John 1:1—2:2"],
+        "second": ["1 John 1:1-2:2"],
         "gospel": ["John 20:19-31"]
     },
     "Easter 3": {
@@ -1852,26 +1852,26 @@ module.exports={
             "first": ["Deuteronomy 5:12-15"],
             "psalm": ["Psalm 81:1-10"],
             "second": ["2 Corinthians 4:5-12"],
-            "gospel": ["Mark 2:23—3:6"]
+            "gospel": ["Mark 2:23-3:6"]
         },
         "semicontinuous": {
             "first": ["1 Samuel 3:1-10 [11-20]"],
             "psalm": ["Psalm 139:1-6, 13-18"],
             "second": ["2 Corinthians 4:5-12"],
-            "gospel": ["Mark 2:23—3:6"]
+            "gospel": ["Mark 2:23-3:6"]
         }
     },
     "Pentecost 4": {
         "complementary": {
             "first": ["Genesis 3:8-15"],
             "psalm": ["Psalm 130"],
-            "second": ["2 Corinthians 4:13—5:1"],
+            "second": ["2 Corinthians 4:13-5:1"],
             "gospel": ["Mark 3:20-35"]
         },
         "semicontinuous": {
             "first": ["1 Samuel 8:4-11 [12-15] 16-20 [11:14-15]"],
             "psalm": ["Psalm 138"],
-            "second": ["2 Corinthians 4:13—5:1"],
+            "second": ["2 Corinthians 4:13-5:1"],
             "gospel": ["Mark 3:20-35"]
         }
     },
@@ -1883,7 +1883,7 @@ module.exports={
             "gospel": ["Mark 4:26-34"]
         },
         "semicontinuous": {
-            "first": ["1 Samuel 15:34—16:13"],
+            "first": ["1 Samuel 15:34-16:13"],
             "psalm": ["Psalm 20"],
             "second": ["2 Corinthians 5:6-10 [11-13] 14-17"],
             "gospel": ["Mark 4:26-34"]
@@ -1897,7 +1897,7 @@ module.exports={
             "gospel": ["Mark 4:35-41"]
         },
         "semicontinuous": {
-            "first": ["1 Samuel 17:[1a, 4-11, 19-23] 32-49", "1 Samuel 17:57—18:5, 10-16"],
+            "first": ["1 Samuel 17:[1a, 4-11, 19-23] 32-49", "1 Samuel 17:57-18:5, 10-16"],
             "psalm": ["Psalm 9:9-20", "Psalm 133"],
             "second": ["2 Corinthians 6:1-13"],
             "gospel": ["Mark 4:35-41"]
@@ -1981,7 +1981,7 @@ module.exports={
             "gospel": ["John 6:24-35"]
         },
         "semicontinuous": {
-            "first": ["2 Samuel 11:26—12:13a"],
+            "first": ["2 Samuel 11:26-12:13a"],
             "psalm": ["Psalm 51:1-12"],
             "second": ["Ephesians 4:1-16"],
             "gospel": ["John 6:24-35"]
@@ -1991,13 +1991,13 @@ module.exports={
         "complementary": {
             "first": ["1 Kings 19:4-8"],
             "psalm": ["Psalm 34:1-8"],
-            "second": ["Ephesians 4:25—5:2"],
+            "second": ["Ephesians 4:25-5:2"],
             "gospel": ["John 6:35, 41-51"]
         },
         "semicontinuous": {
             "first": ["2 Samuel 18:5-9, 15, 31-33"],
             "psalm": ["Psalm 130"],
-            "second": ["Ephesians 4:25—5:2"],
+            "second": ["Ephesians 4:25-5:2"],
             "gospel": ["John 6:35, 41-51"]
         }
     },
@@ -2075,13 +2075,13 @@ module.exports={
         "complementary": {
             "first": ["Jeremiah 11:18-20"],
             "psalm": ["Psalm 54"],
-            "second": ["James 3:13—4:3, 7-8a"],
+            "second": ["James 3:13-4:3, 7-8a"],
             "gospel": ["Mark 9:30-37"]
         },
         "semicontinuous": {
             "first": ["Proverbs 31:10-31"],
             "psalm": ["Psalm 1"],
-            "second": ["James 3:13—4:3, 7-8a"],
+            "second": ["James 3:13-4:3, 7-8a"],
             "gospel": ["Mark 9:30-37"]
         }
     },
@@ -2264,7 +2264,7 @@ module.exports={
         "gospel": ["Luke 2:[1-7] 8-20"]
     },
     "Christmas 1": {
-        "first": ["Isaiah 61:10—62:3"],
+        "first": ["Isaiah 61:10-62:3"],
         "psalm": ["Psalm 148"],
         "second": ["Galatians 4:4-7"],
         "gospel": ["Luke 2:22-40"]
@@ -2338,7 +2338,7 @@ module.exports={
     "Transfiguration": {
         "first": ["Exodus 34:29-35"],
         "psalm": ["Psalm 99"],
-        "second": ["2 Corinthians 3:12—4:2"],
+        "second": ["2 Corinthians 3:12-4:2"],
         "gospel": ["Luke 9:28-36 [37-43]"]
     },
     "Lent 1": {
@@ -2350,7 +2350,7 @@ module.exports={
     "Lent 2": {
         "first": ["Genesis 15:1-12, 17-18"],
         "psalm": ["Psalm 27"],
-        "second": ["Philippians 3:17—4:1"],
+        "second": ["Philippians 3:17-4:1"],
         "gospel": ["Luke 13:31-35", "Luke 9:28-36"]
     },
     "Lent 3": {
@@ -2390,10 +2390,10 @@ module.exports={
         "gospel": ["John 13:1-17, 31b-35"]
     },
     "Good Friday": {
-        "first": ["Isaiah 52:13—53:12"],
+        "first": ["Isaiah 52:13-53:12"],
         "psalm": ["Psalm 22"],
         "second": ["Hebrews 10:16-25", "Hebrews 4:14-16; 5:7-9"],
-        "gospel": ["John 18:1—19:42"]
+        "gospel": ["John 18:1-19:42"]
     },
     "Easter Day": {
         "first": ["Acts 10:34-43", "Isaiah 25:6-9"],
@@ -2428,7 +2428,7 @@ module.exports={
     "Easter 6": {
         "first": ["Acts 16:9-15"],
         "psalm": ["Psalm 67"],
-        "second": ["Revelation 21:10, 22—22:5"],
+        "second": ["Revelation 21:10, 22-22:5"],
         "gospel": ["John 14:23-29", ""]
     },
     "Easter 7": {
@@ -2485,16 +2485,16 @@ module.exports={
     },
     "Pentecost 5": {
         "complementary": {
-            "first": ["2 Samuel 11:26—12:10, 13-15"],
+            "first": ["2 Samuel 11:26-12:10, 13-15"],
             "psalm": ["Psalm 32"],
             "second": ["Galatians 2:15-21"],
-            "gospel": ["Luke 7:36—8:3"]
+            "gospel": ["Luke 7:36-8:3"]
         },
         "semicontinuous": {
             "first": ["1 Kings 21:1-10 [11-14] 15-21a"],
             "psalm": ["Psalm 5:1-8"],
             "second": ["Galatians 2:15-21"],
-            "gospel": ["Luke 7:36—8:3"]
+            "gospel": ["Luke 7:36-8:3"]
         }
     },
     "Pentecost 6": {
@@ -2613,13 +2613,13 @@ module.exports={
         "complementary": {
             "first": ["Jeremiah 23:23-29"],
             "psalm": ["Psalm 82"],
-            "second": ["Hebrews 11:29—12:2"],
+            "second": ["Hebrews 11:29-12:2"],
             "gospel": ["Luke 12:49-56"]
         },
         "semicontinuous": {
             "first": ["Isaiah 5:1-7"],
             "psalm": ["Psalm 80:1-2, 8-19"],
-            "second": ["Hebrews 11:29—12:2"],
+            "second": ["Hebrews 11:29-12:2"],
             "gospel": ["Luke 12:49-56"]
         }
     },
@@ -2687,7 +2687,7 @@ module.exports={
             "gospel": ["Luke 16:1-13"]
         },
         "semicontinuous": {
-            "first": ["Jeremiah 8:18—9:1"],
+            "first": ["Jeremiah 8:18-9:1"],
             "psalm": ["Psalm 79:1-9"],
             "second": ["1 Timothy 2:1-7"],
             "gospel": ["Luke 16:1-13"]
@@ -2745,13 +2745,13 @@ module.exports={
         "complementary": {
             "first": ["Genesis 32:22-31"],
             "psalm": ["Psalm 121"],
-            "second": ["2 Timothy 3:14—4:5"],
+            "second": ["2 Timothy 3:14-4:5"],
             "gospel": ["Luke 18:1-8"]
         },
         "semicontinuous": {
             "first": ["Jeremiah 31:27-34"],
             "psalm": ["Psalm 119:97-104"],
-            "second": ["2 Timothy 3:14—4:5"],
+            "second": ["2 Timothy 3:14-4:5"],
             "gospel": ["Luke 18:1-8"]
         }
     },
@@ -2791,7 +2791,7 @@ module.exports={
             "gospel": ["Luke 20:27-38"]
         },
         "semicontinuous": {
-            "first": ["Haggai 1:15b—2:9"],
+            "first": ["Haggai 1:15b-2:9"],
             "psalm": ["Psalm 145:1-5, 17-21", "Psalm 98"],
             "second": ["2 Thessalonians 2:1-5, 13-17"],
             "gospel": ["Luke 20:27-38"]
