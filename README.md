@@ -1,6 +1,5 @@
-# multiclock
-circular clock visualizations with d3
+# LectionaryClock
 
-You must do this after checking out:
+ Circular time visualization of the Christian lectionary using SVG
 
-browserify app.js > bundle.js
+ Big thanks to @revdave33 and https://www.npmjs.com/package/lectionary
