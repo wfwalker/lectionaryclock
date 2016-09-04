@@ -7,24 +7,22 @@
 
   // On install, cache resources and skip waiting so the worker won't
   // wait for clients to be closed before becoming active.
-  self.addEventListener('install', event =>
-    event.waitUntil(
-      oghliner.cacheResources()
-      .then(() => self.skipWaiting())
-    )
-  );
+  self.addEventListener('install', function (event) {
+    event.waitUntil(oghliner.cacheResources().then(function () {
+      return self.skipWaiting();
+    }));
+  });
 
   // On activation, delete old caches and start controlling the clients
   // without waiting for them to reload.
-  self.addEventListener('activate', event =>
-    event.waitUntil(
-      oghliner.clearOtherCaches()
-      .then(() => self.clients.claim())
-    )
-  );
+  self.addEventListener('activate', function (event) {
+    event.waitUntil(oghliner.clearOtherCaches().then(function () {
+      return self.clients.claim();
+    }));
+  });
 
   // Retrieves the request following oghliner strategy.
-  self.addEventListener('fetch', event => {
+  self.addEventListener('fetch', function (event) {
     if (event.request.method === 'GET') {
       event.respondWith(oghliner.get(event.request));
     } else {
@@ -39,11 +37,12 @@
 
     // This is the unique name for the cache controlled by this version of the worker.
     get CACHE_NAME() {
-      return this.CACHE_PREFIX + 'f9b5e7b2e026c2871dc9d324468692468eb8a5cc';
+      return this.CACHE_PREFIX + 'bb302c1eb1a66d803ac1ec647ac341000de77a28';
     },
 
     // This is a list of resources that will be cached.
     RESOURCES: [
+      './', // cache always the current root to make the default page available
       './images/apple-touch-icon-114x114.png', // d18039f8fea99e40a95174ef9e9b1535bb31b19b
       './images/apple-touch-icon-120x120.png', // 2896b0be6873f681ecd2f340e7cf8291f3f8a4df
       './images/apple-touch-icon-144x144.png', // 05417d5990eff50a96104bf1c4d3120c9dd97b29
@@ -53,7 +52,9 @@
       './images/apple-touch-icon-72x72.png', // 357e78f8ea62af3a9dc9869ac797871799277b16
       './images/apple-touch-icon-76x76.png', // 8c81f23bd12150e31723405cb261aec8bb882961
       './images/favicon-128x128.png', // 5ab189c4e3a7091fb0588020e93ded3c146a7ecf
+      './images/favicon-16x16.png', // f159e70f0c1d2819d768e37b4999fb355d3bc2aa
       './images/favicon-196x196.png', // 524d3c8e68cc7de2b8cf1ee293780758a9444ec7
+      './images/favicon-32x32.png', // 07422f1e20069d66f825e794f2c6f54f0ee80d51
       './images/favicon-96x96.png', // 7589187bf561d0ebb8fe12074c0d95d20d826bfd
       './images/mstile-144x144.png', // 1143726c60ee73b882af65e408745782282d618c
       './images/mstile-150x150.png', // 70afb464b27eb37de2af5ed8c9e6857444eb0895
@@ -78,44 +79,51 @@
       var now = Date.now();
       var baseUrl = self.location;
       return this.prepareCache()
-      .then(cache => Promise.all(this.RESOURCES.map(resource => {
-        // Bust the request to get a fresh response
-        var url = new URL(resource, baseUrl);
-        var bustParameter = (url.search ? '&' : '') + '__bust=' + now;
-        var bustedUrl = new URL(url.toString());
-        bustedUrl.search += bustParameter;
+      .then(function (cache) {
+        return Promise.all(this.RESOURCES.map(function (resource) {
+          // Bust the request to get a fresh response
+          var url = new URL(resource, baseUrl);
+          var bustParameter = (url.search ? '&' : '') + '__bust=' + now;
+          var bustedUrl = new URL(url.toString());
+          bustedUrl.search += bustParameter;
 
-        // But cache the response for the original request
-        var requestConfig = { credentials: 'same-origin' };
-        var originalRequest = new Request(url.toString(), requestConfig);
-        var bustedRequest = new Request(bustedUrl.toString(), requestConfig);
-        return fetch(bustedRequest)
-        .then(response => {
-          if (response.ok) {
-            return cache.put(originalRequest, response);
-          }
-          console.error('Error fetching ' + url + ', status was ' + response.status);
-        });
-      })));
+          // But cache the response for the original request
+          var requestConfig = { credentials: 'same-origin' };
+          var originalRequest = new Request(url.toString(), requestConfig);
+          var bustedRequest = new Request(bustedUrl.toString(), requestConfig);
+          return fetch(bustedRequest).then(function (response) {
+            if (response.ok) {
+              return cache.put(originalRequest, response);
+            }
+            console.error('Error fetching ' + url + ', status was ' + response.status);
+          });
+        }));
+      }.bind(this));
     },
 
     // Remove the offline caches not controlled by this worker.
     clearOtherCaches: function () {
-      var outOfDate = cacheName => cacheName.startsWith(this.CACHE_PREFIX) && cacheName !== this.CACHE_NAME;
+      var deleteIfNotCurrent = function (cacheName) {
+        if (cacheName.indexOf(this.CACHE_PREFIX) !== 0 || cacheName === this.CACHE_NAME) {
+          return Promise.resolve();
+        }
+        return self.caches.delete(cacheName);
+      }.bind(this);
 
       return self.caches.keys()
-      .then(cacheNames => Promise.all(
-        cacheNames
-        .filter(outOfDate)
-        .map(cacheName => self.caches.delete(cacheName))
-      ));
+      .then(function (cacheNames) {
+        return Promise.all(cacheNames.map(deleteIfNotCurrent));
+      });
+
     },
 
     // Get a response from the current offline cache or from the network.
     get: function (request) {
       return this.openCache()
-      .then(cache => cache.match(() => this.extendToIndex(request)))
-      .then(response => {
+      .then(function (cache) {
+        return cache.match(request);
+      })
+      .then(function (response) {
         if (response) {
           return response;
         }
@@ -123,21 +131,9 @@
       });
     },
 
-    // Make requests to directories become requests to index.html
-    extendToIndex: function (request) {
-      var url = new URL(request.url, self.location);
-      var path = url.pathname;
-      if (path[path.length - 1] !== '/') {
-        return request;
-      }
-      url.pathname += 'index.html';
-      return new Request(url.toString(), request);
-    },
-
     // Prepare the cache for installation, deleting it before if it already exists.
     prepareCache: function () {
-      return self.caches.delete(this.CACHE_NAME)
-      .then(() => this.openCache());
+      return self.caches.delete(this.CACHE_NAME).then(this.openCache.bind(this));
     },
 
     // Open and cache the offline cache promise to improve the performance when
