@@ -39,7 +39,7 @@
 
     // This is the unique name for the cache controlled by this version of the worker.
     get CACHE_NAME() {
-      return this.CACHE_PREFIX + '9d00112b158ce6cc11d97c10da7929d668f86874';
+      return this.CACHE_PREFIX + '24f1108a11a5b624c7aec34d72d743aac41e3c17';
     },
 
     // This is a list of resources that will be cached.
@@ -53,7 +53,9 @@
       './images/apple-touch-icon-72x72.png', // 357e78f8ea62af3a9dc9869ac797871799277b16
       './images/apple-touch-icon-76x76.png', // 8c81f23bd12150e31723405cb261aec8bb882961
       './images/favicon-128x128.png', // 5ab189c4e3a7091fb0588020e93ded3c146a7ecf
+      './images/favicon-16x16.png', // f159e70f0c1d2819d768e37b4999fb355d3bc2aa
       './images/favicon-196x196.png', // 524d3c8e68cc7de2b8cf1ee293780758a9444ec7
+      './images/favicon-32x32.png', // 07422f1e20069d66f825e794f2c6f54f0ee80d51
       './images/favicon-96x96.png', // 7589187bf561d0ebb8fe12074c0d95d20d826bfd
       './images/mstile-144x144.png', // 1143726c60ee73b882af65e408745782282d618c
       './images/mstile-150x150.png', // 70afb464b27eb37de2af5ed8c9e6857444eb0895
@@ -64,7 +66,7 @@
       './images/prev.png', // edf7f52c4498b1effb7694f3df8faed4fac37f81
       './index.html', // 7b292d2773eae307618283eb3fd0f81dc9c59e89
       './scripts/app.js', // 2388f8453b26601987f403b8c3843ac76b75b535
-      './scripts/bundle.js', // 226df62440bab6433b48cb02a1eb895c674c066c
+      './scripts/bundle.js', // 739253713c4f341582ad87a2228afd2626675fa9
       './scripts/d3.v3.min.js', // 751927cc0f71697c6b6f680192ac84a6d7ff3787
       './scripts/main.js', // ebb75faf6f7e87caecc0e285253be2036df2ef1c
       './scripts/offline-manager.js', // e2e09e000c5b64035940ae44e9c0936eb25ecd51

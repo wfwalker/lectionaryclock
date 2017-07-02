@@ -1221,13 +1221,13 @@ module.exports={
         "second": ["2 Corinthians 13:11-13"],
         "gospel": ["Matthew 28:16-20"]
     },
-    "Pentecost 2": {
+    "WEIRD YEAR A EIGHT SUNDAY AFTER EPIPHANY Pentecost 2": {
         "first": ["Isaiah 49:8-16a"],
         "psalm": ["Psalm 131"],
         "second": ["1 Corinthians 4:1-5"],
         "gospel": ["Matthew 6:24-34"]
     },
-    "Pentecost 3": {
+    "WEIRD YEAR A NINTH SUNDAY AFTER EPIPHANY Pentecost 3": {
         "complementary": {
             "first": ["Deuteronomy 11:18-21, 26-28"],
             "psalm": ["Psalm 31:1-5, 19-24"],
@@ -1241,7 +1241,7 @@ module.exports={
             "gospel": ["Matthew 7:21-29"]
         }
     },
-    "Pentecost 4": {
+    "WEIRD YEAR A TENTH SUNDAY AFTER EPIPHANY Pentecost 4": {
         "complementary": {
             "first": ["Hosea 5:15-6:6"],
             "psalm": ["Psalm 50:7-15"],
@@ -1255,7 +1255,7 @@ module.exports={
             "gospel": ["Matthew 9:9-13, 18-26"]
         }
     },
-    "Pentecost 5": {
+    "Pentecost 2": {
         "complementary": {
             "first": ["Exodus 19:2-8a"],
             "psalm": ["Psalm 100"],
@@ -1269,7 +1269,7 @@ module.exports={
             "gospel": ["Matthew 9:35-10:8 [9-23]"]
         }
     },
-    "Pentecost 6": {
+    "Pentecost 3": {
         "complementary": {
             "first": ["Jeremiah 20:7-13"],
             "psalm": ["Psalm 69:7-10 [11-15] 16-18"],
@@ -1283,7 +1283,7 @@ module.exports={
             "gospel": ["Matthew 10:24-39"]
         }
     },
-    "Pentecost 7": {
+    "Pentecost 4": {
         "complementary": {
             "first": ["Jeremiah 28:5-9"],
             "psalm": ["Psalm 89:1-4, 15-18"],
@@ -1297,7 +1297,7 @@ module.exports={
             "gospel": ["Matthew 10:40-42"]
         }
     },
-    "Pentecost 8": {
+    "Pentecost 5": {
         "complementary": {
             "first": ["Zechariah 9:9-12"],
             "psalm": ["Psalm 145:8-14"],
@@ -1311,7 +1311,7 @@ module.exports={
             "gospel": ["Matthew 11:16-19, 25-30"]
         }
     },
-    "Pentecost 9": {
+    "Pentecost 6": {
         "complementary": {
             "first": ["Isaiah 55:10-13"],
             "psalm": ["Psalm 65:[1-8] 9-13"],
@@ -1325,7 +1325,7 @@ module.exports={
             "gospel": ["Matthew 13:1-9, 18-23"]
         }
     },
-    "Pentecost 10": {
+    "Pentecost 7": {
         "complementary": {
             "first": ["Wisdom 12:13, 16-19", "Isaiah 44:6-8"],
             "psalm": ["Psalm 86:11-17"],
@@ -1339,7 +1339,7 @@ module.exports={
             "gospel": ["Matthew 13:24-30, 36-43"]
         }
     },
-    "Pentecost 11": {
+    "Pentecost 8": {
         "complementary": {
             "first": ["1 Kings 3:5-12"],
             "psalm": ["Psalm 119:129-136"],
@@ -1353,7 +1353,7 @@ module.exports={
             "gospel": ["Matthew 13:31-33, 44-52"]
         }
     },
-    "Pentecost 12": {
+    "Pentecost 9": {
         "complementary": {
             "first": ["Isaiah 55:1-5"],
             "psalm": ["Psalm 145:8-9, 14-21"],
@@ -1367,7 +1367,7 @@ module.exports={
             "gospel": ["Matthew 14:13-21"]
         }
     },
-    "Pentecost 13": {
+    "Pentecost 10": {
         "complementary": {
             "first": ["1 Kings 19:9-18"],
             "psalm": ["Psalm 85:8-13"],
@@ -1381,7 +1381,7 @@ module.exports={
             "gospel": ["Matthew 14:22-33"]
         }
     },
-    "Pentecost 14": {
+    "Pentecost 11": {
         "complementary": {
             "first": ["Isaiah 56:1, 6-8"],
             "psalm": ["Psalm 67"],
@@ -1395,7 +1395,7 @@ module.exports={
             "gospel": ["Matthew 15:[10-20] 21-28"]
         }
     },
-    "Pentecost 15": {
+    "Pentecost 12": {
         "complementary": {
             "first": ["Isaiah 51:1-6"],
             "psalm": ["Psalm 138"],
@@ -1409,7 +1409,7 @@ module.exports={
             "gospel": ["Matthew 16:13-20"]
         }
     },
-    "Pentecost 16": {
+    "Pentecost 13": {
         "complementary": {
             "first": ["Jeremiah 15:15-21"],
             "psalm": ["Psalm 26:1-8"],
@@ -1423,7 +1423,7 @@ module.exports={
             "gospel": ["Matthew 16:21-28"]
         }
     },
-    "Pentecost 17": {
+    "Pentecost 14": {
         "complementary": {
             "first": ["Ezekiel 33:7-11"],
             "psalm": ["Psalm 119:33-40"],
@@ -1437,7 +1437,7 @@ module.exports={
             "gospel": ["Matthew 18:15-20"]
         }
     },
-    "Pentecost 18": {
+    "Pentecost 15": {
         "complementary": {
             "first": ["Genesis 50:15-21"],
             "psalm": ["Psalm 103:[1-7] 8-13"],
@@ -1451,7 +1451,7 @@ module.exports={
             "gospel": ["Matthew 18:21-35"]
         }
     },
-    "Pentecost 19": {
+    "Pentecost 16": {
         "complementary": {
             "first": ["Jonah 3:10-4:11"],
             "psalm": ["Psalm 145:1-8"],
@@ -1465,7 +1465,7 @@ module.exports={
             "gospel": ["Matthew 20:1-16"]
         }
     },
-    "Pentecost 20": {
+    "Pentecost 17": {
         "complementary": {
             "first": ["Ezekiel 18:1-4, 25-32"],
             "psalm": ["Psalm 25:1-9"],
@@ -1479,7 +1479,7 @@ module.exports={
             "gospel": ["Matthew 21:23-32"]
         }
     },
-    "Pentecost 21": {
+    "Pentecost 18": {
         "complementary": {
             "first": ["Isaiah 5:1-7"],
             "psalm": ["Psalm 80:7-15"],
@@ -1493,7 +1493,7 @@ module.exports={
             "gospel": ["Matthew 21:33-46"]
         }
     },
-    "Pentecost 22": {
+    "Pentecost 19": {
         "complementary": {
             "first": ["Isaiah 25:1-9"],
             "psalm": ["Psalm 23"],
@@ -1507,7 +1507,7 @@ module.exports={
             "gospel": ["Matthew 22:1-14"]
         }
     },
-    "Pentecost 23": {
+    "Pentecost 20": {
         "complementary": {
             "first": ["Isaiah 45:1-7"],
             "psalm": ["Psalm 96:1-9 [10-13]"],
@@ -1527,7 +1527,7 @@ module.exports={
         "second": ["Revelation 21:1-6a"],
         "gospel": ["John 11:32-44"]
     },
-    "Pentecost 24": {
+    "Pentecost 21": {
         "complementary": {
             "first": ["Leviticus 19:1-2, 15-18"],
             "psalm": ["Psalm 1"],
@@ -1541,7 +1541,7 @@ module.exports={
             "gospel": ["Matthew 22:34-46"]
         }
     },
-    "Pentecost 25": {
+    "Pentecost 22": {
         "complementary": {
             "first": ["Micah 3:5-12"],
             "psalm": ["Psalm 43"],
@@ -1555,7 +1555,7 @@ module.exports={
             "gospel": ["Matthew 23:1-12"]
         }
     },
-    "Pentecost 26": {
+    "Pentecost 23": {
         "complementary": {
             "first": ["Wisdom 6:12-16", "Amos 5:18-24"],
             "psalm": ["Wisdom 6:17-20", "Psalm 70"],
@@ -1569,7 +1569,7 @@ module.exports={
             "gospel": ["Matthew 25:1-13"]
         }
     },
-    "Pentecost 27": {
+    "Pentecost 24": {
         "complementary": {
             "first": ["Zephaniah 1:7, 12-18"],
             "psalm": ["Psalm 90:1-8 [9-11] 12"],
@@ -1583,7 +1583,7 @@ module.exports={
             "gospel": ["Matthew 25:14-30"]
         }
     },
-    "Pentecost 28": {
+    "Pentecost 25": {
         "complementary": {
             "first": ["Ezekiel 34:11-16, 20-24"],
             "psalm": ["Psalm 95:1-7a"],
