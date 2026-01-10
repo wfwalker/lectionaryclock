@@ -10,7 +10,7 @@
   "dependencies": {
     "d3": "^3.5.17",
     "dateformat": "^5.0.3",
-    "lectionary": "wfwalker/lectionary"
+    "lectionary": "github:wfwalker/lectionary"
   },
   "devDependencies": {
     "vite": "^6.0.0",
