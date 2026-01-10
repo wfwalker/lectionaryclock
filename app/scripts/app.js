@@ -4,8 +4,8 @@
 // browserify app.js > bundle.js
 
 // dependencies
-var lectionary = require('lectionary');
-var dateformat = require('dateformat');
+import lectionary from 'lectionary';
+import dateformat from 'dateformat';
 
 var oneDay = 1000 * 60 * 60 * 24;
 
@@ -80,7 +80,7 @@ function showSunday(aSunday) {
 	document.getElementById('year').textContent = 'Year ' + aSunday.lectionaryYear;
 	document.getElementById('dates').textContent = dateformat(aSunday.date, 'mmmm dS');
 
-	scriptures = aSunday.scriptures;
+	var scriptures = aSunday.scriptures;
 
 	if (scriptures.complementary || scriptures.semicontinuous) {
 		document.getElementById('scriptureRadio').hidden = false;
