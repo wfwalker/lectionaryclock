@@ -7,7 +7,7 @@ export default defineConfig({
 	build: {
 	    // Tell Vite to put the final website in /dist at the project root
 	    // Since 'root' is 'app', we go up one level to find the root's /dist
-	    outDir: '../dist',
+	    outDir: 'dist',
 	    emptyOutDir: true,
 	  },
 
